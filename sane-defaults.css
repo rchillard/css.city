@@ -3,3 +3,7 @@ kbd {
   padding: 1px 2px 0;
   border: 1px solid black;
 }
+
+u {
+  text-decoration: red wavy underline;
+}
