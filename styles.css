@@ -49,8 +49,12 @@ nav #menu-templates {
 
 main {
   grid-area: main;
+}
+
+.construction {
   margin: 0 auto;
   text-align: center;
+  margin-top: 1rem;
 }
 
 /* MEDIA QUERIES */
