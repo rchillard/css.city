@@ -30,14 +30,14 @@
         CSS stands for Cascading Style Sheets.  CSS is a sister technology to Hypertext Markup Language (HTML), because it enables you to modify the
         appearance of your HTML.  If you think of a website as a house, then HTML is used to provide structure like the frame, walls, appliances
         and furniture, while CSS is used to paint the walls, hang the lights, frame the pictures, and position your furniture.  This introduction to 
-        CSS assumes that you know basic HTML.  If you have not learned HTML yet, then I recommend you do that first by checking out 
+        CSS assumes that you know basic HTML.  If you have not learned HTML fundamentals yet, then I recommend you do that first by checking out 
         <a href="https://html.haus/learn.html">HTML.Haus</a> for an easy to read singe page tutorial.
       </p>
       <h2>What is CSS?</h2>
       <p>
         CSS is a programming language for styling webpages written in HTML.  You can change the color and size of HTML elements with CSS.  You can change the font of
         textual elements, as well as font characteristics like bold, italics, and spacing.  You can change the layout of a webpage as well as how and where the
-        elements inside the page display.  If HTML lets you build with raw materials, then CSS gives you a paint brush, a measuring tape, a level, all the tools
+        elements display on the page.  If HTML lets you build with raw materials, then CSS gives you a paint brush, a measuring tape, a level, all the tools
         you need to refine the appearance, layout, and style of a webpage.
       </p>
       <p>
@@ -45,13 +45,13 @@
         form.  The easiest way to start using CSS is by applying it directly to individual elements using the <em>style</em> attribute in your HTML:
       </p>
       <textarea>
-<p style="color: red">She's a brick haus!</p>
+<p style="color: royalblue">She's a brick haus!</p>
       </textarea>
-      <p style="color: red">She's a brick haus!</p>
+      <p style="color: royalblue">She's a brick haus!</p>
       <h3>Inline Styles</h3>
       <p>
         This way of using CSS is called in-line styling, because the styles appear in the same line as the HTML.  You can probably see the shortcomings
-        of this approach almost immediately.  If you want to make all your paragraphs display in red, then you'll have to add this style attribute to each one.
+        of this approach almost immediately.  If you want to make all your paragraphs display in blue, then you'll have to add this style attribute to each one.
         That's going to quickly add up to a lot of duplicative work, and if you ever want to change the color later on, then it'll be even more work to update
         each one.
       </p>
@@ -60,11 +60,11 @@
         Before we go any further, as a part of active learning it's important to do exercises and practice, as well as read and comprehend. 
         Actively exercising the knowledge you just learned actually ingrains that knowledge in your brain, making it accessible later on. 
         For that reason, for every concept we learn, I highly recommend you try it yourself. Take the sample I provide and make it your own 
-        by changing the styling.  Typing it out and practicing will really, truly help with your retention. You will learn through this tutorial, 
-        but you should also build a number of sample pages to go along with your learning.
+        by changing the styling.  Typing it out and practicing will really, truly help with your retention. You will learn best through this 
+        tutorial by building a number of sample pages and styling them alongside the exercises.
       </p>
       <p>
-        Build as you learn.
+        Learn as you build.
       </p>
       <h3>Embedded Styles</h3>
       <p>
@@ -96,7 +96,7 @@
         you can safely complete the rest of these exercises and continue learning CSS.
       </p>
       <p>
-        As you can see in your local playground, we've changed the color of all paragraphs.  How'd we do it?
+        As you can see in your local playground, we've changed the color of both paragraphs.  How'd we do it?  These 5 lines of code:
       </p>
       <textarea rows="6">
 <style>
@@ -105,13 +105,15 @@
   }
 </style>
       </textarea>
-
-
-selector { 
-  property: value;
-}
-    
-
+      <p>What we see defined above is a CSS rule.  Each CSS rule is composed of three parts: selector, property, and value:</p>
+      <img class="diagram" src="assets/style-embedded.svg" alt="annotated diagram of style element" height="160">
+      <p>These three parts break down succinctly as:</p>
+      <ul>
+        <li>Selector defines the target of the rule or what part of the HTML this rule will be applied on (e.g. all p tags or paragraphs).</li>
+        <li>Property defines what about the target is going to be changed, so in this case it's the font color of paragraphs.</li>
+        <li>Value defines the property's new setting, so in this case, the font color property now has a value of royalblue.</li>
+      </ul>
+      <p>Think of all the HTML elements you know.  You can now change the color of anything!</p>
       <h2>Selectors</h2>
       <ul>
         <li>Element</li>

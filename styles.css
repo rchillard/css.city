@@ -73,6 +73,10 @@ main {
   margin-top: 1rem;
 }
 
+.diagram {
+  width: 100%;
+}
+
 /* ELEMENTS by ID */
 
 #logo {
