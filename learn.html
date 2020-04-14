@@ -26,8 +26,92 @@
     <main>
       <p class="construction">Work in progress</p>
       <h1>Learn CSS</h1>
-      <p>CSS stands for Cascading Style Sheets.</p>
-      <h2>Properties</h2>
+      <p>
+        CSS stands for Cascading Style Sheets.  CSS is a sister technology to Hypertext Markup Language (HTML), because it enables you to modify the
+        appearance of your HTML.  If you think of a website as a house, then HTML is used to provide structure like the frame, walls, appliances
+        and furniture, while CSS is used to paint the walls, hang the lights, frame the pictures, and position your furniture.  This introduction to 
+        CSS assumes that you know basic HTML.  If you have not learned HTML yet, then I recommend you do that first by checking out 
+        <a href="https://html.haus/learn.html">HTML.Haus</a> for an easy to read singe page tutorial.
+      </p>
+      <h2>What is CSS?</h2>
+      <p>
+        CSS is a programming language for styling webpages written in HTML.  You can change the color and size of HTML elements with CSS.  You can change the font of
+        textual elements, as well as font characteristics like bold, italics, and spacing.  You can change the layout of a webpage as well as how and where the
+        elements inside the page display.  If HTML lets you build with raw materials, then CSS gives you a paint brush, a measuring tape, a level, all the tools
+        you need to refine the appearance, layout, and style of a webpage.
+      </p>
+      <p>
+        If you completed the <a href="https://html.haus/learn.html">HTML.Haus</a> tutorial, then you've already seen a little CSS, at least in its simplest
+        form.  The easiest way to start using CSS is by applying it directly to individual elements using the <em>style</em> attribute in your HTML:
+      </p>
+      <textarea>
+<p style="color: red">She's a brick haus!</p>
+      </textarea>
+      <p style="color: red">She's a brick haus!</p>
+      <h3>Inline Styles</h3>
+      <p>
+        This way of using CSS is called in-line styling, because the styles appear in the same line as the HTML.  You can probably see the shortcomings
+        of this approach almost immediately.  If you want to make all your paragraphs display in red, then you'll have to add this style attribute to each one.
+        That's going to quickly add up to a lot of duplicative work, and if you ever want to change the color later on, then it'll be even more work to update
+        each one.
+      </p>
+      <h3>Build to Learn</h3>
+      <p>
+        Before we go any further, as a part of active learning it's important to do exercises and practice, as well as read and comprehend. 
+        Actively exercising the knowledge you just learned actually ingrains that knowledge in your brain, making it accessible later on. 
+        For that reason, for every concept we learn, I highly recommend you try it yourself. Take the sample I provide and make it your own 
+        by changing the styling.  Typing it out and practicing will really, truly help with your retention. You will learn through this tutorial, 
+        but you should also build a number of sample pages to go along with your learning.
+      </p>
+      <p>
+        Build as you learn.
+      </p>
+      <h3>Embedded Styles</h3>
+      <p>
+        Let's get back to our problem of having to add a style attribute to every HTML element we want to change.  There's an easier way to do this.  
+        If you want to add styles to an entire page, then you can also put these in the head section of your HTML.
+      </p>
+      <p>Here's an example:</p>
+      <textarea rows="18">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS Playground</title>
+    <style>
+      p {
+        color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Let's Paint the Town</h1>
+    <p>I'm excited you're starting your CSS journey. Let's learn how to style together!</p>
+    <p>We'll be stronger together, and learning CSS while expanding your knowledge of HTML is the way to go.</p>
+  </body>
+</html>
+      </textarea>
+      <p>
+        Copy and paste the textarea above into a blank file and save it as 'index.html'.  Opening it with a browser will give you a playground where 
+        you can safely complete the rest of these exercises and continue learning CSS.
+      </p>
+      <p>
+        As you can see in your local playground, we've changed the color of all paragraphs.  How'd we do it?
+      </p>
+      <textarea rows="6">
+<style>
+  p {
+    color: royalblue;
+  }
+</style>
+      </textarea>
+
+
+selector { 
+  property: value;
+}
+    
+
       <h2>Selectors</h2>
       <ul>
         <li>Element</li>
@@ -36,6 +120,7 @@
         <li>Important</li>
         <li></li>
       </ul>
+      <h2>Properties</h2>
       <h3>Cascade</h3>
       Define the cascade and explain why it's called Cascading Style Sheets
       <h3>Inline Styles</h3>
