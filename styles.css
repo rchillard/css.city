@@ -102,6 +102,8 @@ main {
   textarea {
     border: 1px solid var(--cityblue);
     scrollbar-base-color: var(--cityblue);
+    scrollbar-face-color: var(--cityblue);
+    scrollbar-track-color: var(--cityblue);
     width: 90%;
   }
 
@@ -125,6 +127,8 @@ main {
   textarea {
     border: 1px solid var(--cityblue);
     scrollbar-base-color: var(--cityblue);
+    scrollbar-face-color: var(--cityblue);
+    scrollbar-track-color: var(--cityblue);
     width: 90%;
   }
 
@@ -148,6 +152,8 @@ main {
   textarea {
     border: 1px solid var(--cityblue);
     scrollbar-base-color: var(--cityblue);
+    scrollbar-face-color: var(--cityblue);
+    scrollbar-track-color: var(--cityblue);
     width: 95%;
   }
 
@@ -171,6 +177,8 @@ main {
   textarea {
     border: 1px solid var(--cityblue);
     scrollbar-base-color: var(--cityblue);
+    scrollbar-face-color: var(--cityblue);
+    scrollbar-track-color: var(--cityblue);
     width: 100%;
   }
 
@@ -194,6 +202,8 @@ main {
   textarea {
     border: 1px solid var(--cityblue);
     scrollbar-base-color: var(--cityblue);
+    scrollbar-face-color: var(--cityblue);
+    scrollbar-track-color: var(--cityblue);
     width: 100%;
   }
 }
