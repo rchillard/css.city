@@ -77,6 +77,11 @@ main {
   width: 100%;
 }
 
+.lyrics {
+  color: royalblue;
+  line-height: 120%;
+}
+
 /* ELEMENTS by ID */
 
 #logo {

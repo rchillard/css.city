@@ -45,9 +45,9 @@
         form.  The easiest way to start using CSS is by applying it directly to individual elements using the <em>style</em> attribute in your HTML:
       </p>
       <textarea>
-<p style="color: royalblue">She's a brick haus!</p>
+<p style="color: royalblue">Think of London, a small city</p>
       </textarea>
-      <p style="color: royalblue">She's a brick haus!</p>
+      <p style="color: royalblue">Think of London, a small city</p>
       <h3>Inline Styles</h3>
       <p>
         This way of using CSS is called in-line styling, because the styles appear in the same line as the HTML.  You can probably see the shortcomings
@@ -156,13 +156,50 @@ p {
         you tell the browser what CSS rules to apply to the HTML document it just received.  The CSS sheet referenced can contain any number of rules.
       </p>
       <h2>Selectors</h2>
+      <p>
+        Selectors define the target for the CSS rule you're defining, and up until now, we've only seen one type of selector for elements.  The element selector is powerful, because
+        you can modify the display properties of all the instances of that element on a page, but what if you want to be more <em>selective</em> and only target certain elements?
+      </p>
+      <p>That's where the additional selectors come in:</p>
       <ul>
-        <li>Element</li>
-        <li>Class</li>
-        <li>Identifier</li>
-        <li>Important</li>
-        <li></li>
+        <li><strong>Element</strong> selectors refer to HTML elements by type (e.g. p) and change all the instances of that element on a page</li>
+        <li><strong>Class</strong> selectors refer to HTML elements by their class attribute.  class is a global HTML attribute available to all elements</li>
+        <li><strong>Identifier</strong> selectors refer to a single specific HTML element as defined by the id attribute assigned to it.  id is also global.</li>
       </ul>
+      <h3>Class</h3>
+      <p>
+        The class attribute can be applied to any HTML element, and it can be used to span different types of elements, so that you can easily select them in your CSS by using
+        the class selector.  The class selector syntax is a period . followed by the name of your class.  For example:
+      </p>
+      <textarea rows="6">
+.lyrics {
+  color: royalblue;
+  line-height: 120%;
+}
+      </textarea>
+      <p>When applied to a set of song lyrics like this one would appear as:</p>
+      <blockquote>
+        <p class="lyrics">
+          Think of London, a small city
+        </p>
+        <p class="lyrics">
+          It's dark, dark in the daytime<br>
+          The people sleep, sleep in the daytime<br>
+          If they want to, if they want to
+        </p>
+        <p class="lyrics">
+          I'm checking them out<br>
+          I'm checking them out<br>
+          I got it figured out<br>
+          I got it figured out<br>
+          There's good points and bad points<br>
+          Find a city<br>
+          Find myself a city to live in...
+        </p>
+        <cite>-Talking Heads</cite>
+      </blockquote>
+      <h3>Identifier</h3>
+      <h3>Important</h3>
       <h2>Properties</h2>
       <h3>Cascade</h3>
       Define the cascade and explain why it's called Cascading Style Sheets
