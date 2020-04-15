@@ -109,11 +109,52 @@
       <img class="diagram" src="assets/style-embedded.svg" alt="annotated diagram of style element" height="160">
       <p>These three parts break down succinctly as:</p>
       <ul>
-        <li>Selector defines the target of the rule or what part of the HTML this rule will be applied on (e.g. all p tags or paragraphs).</li>
-        <li>Property defines what about the target is going to be changed, so in this case it's the font color of paragraphs.</li>
-        <li>Value defines the property's new setting, so in this case, the font color property now has a value of royalblue.</li>
+        <li><strong>Selector</strong> defines the target of the rule or what part of the HTML this rule will be applied on (e.g. all p tags or paragraphs).</li>
+        <li><strong>Property</strong> defines what about the target is going to be changed, so in this case it's the font color of paragraphs.</li>
+        <li><strong>Value</strong> defines the property's new setting, so in this case, the font color property now has a value of royalblue.</li>
       </ul>
-      <p>Think of all the HTML elements you know.  You can now change the color of anything!</p>
+      <p>
+        This second way of defining styles is more useful, because you can define rules that apply to an entire HTML webpage.  Think of all the HTML elements you know.  
+        You can now change the color of anything!  However, once again, you're probably already asking questions about the shortcomings that might accompany using the 
+        style tag in the head of your document.
+      </p>
+      <p>Questions like:</p>
+      <ul>
+        <li>What if I have a lot of CSS rules?  My head element will be really big.</li>
+        <li>What if I want to share the same styles across multiple pages?</li>
+      </ul>
+      <p>The final (most widely accepted) way to incorporate CSS into HTML is through using external stylesheets.</p>
+      <h3>External Styles</h3>
+      <p>
+        You can link to a separate CSS file where you save all of your rules apart from your HTML.  This answers both of the questions above, because now you can reference
+        as many external stylesheets as you need, and you only need a single line of code for each stylesheet.  Let's see what that looks like:
+      </p>
+      <p>Your <strong>index.html</strong> file would contain the following:</p>
+      <textarea rows="14">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS Playground</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Let's Paint the Town</h1>
+    <p>I'm excited you're starting your CSS journey. Let's learn how to style together!</p>
+    <p>We'll be stronger together, and learning CSS while expanding your knowledge of HTML is the way to go.</p>
+  </body>
+</html>
+      </textarea>
+      <p>While your <strong>styles.css</strong> file would contain the rule:</p>
+      <textarea rows="4">
+p {
+  color: royalblue;
+}
+      </textarea>
+      <p>
+        By adding the link element, identifying the relative reference as being to a stylesheet, and through using the href attribute to refer to the location of that stylesheet, 
+        you tell the browser what CSS rules to apply to the HTML document it just received.  The CSS sheet referenced can contain any number of rules.
+      </p>
       <h2>Selectors</h2>
       <ul>
         <li>Element</li>
