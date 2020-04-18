@@ -209,8 +209,177 @@ p {
       <h2>Positioning</h2>
       <h2>Display</h2>
       <h2>Colors</h2>
+      <p>
+        Color can be expressed in four different formats.  There are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">named colors</a>, 
+        and then there are colors defined by specific values.  For colors defined by specific values, CSS offers three different approaches or formats:
+      </p>
+      <ul>
+        <li>Hexadecimal</li>
+        <li>Hue, Saturation, Lightness (HSL)</li>
+        <li>Red, Green, Blue (RGB)</li>
+      </ul>
+      <p>
+        Each format has advantages and disadvantages.  For starters, let's see the same named color, royalblue, in all the formats:
+      </p>
+      <textarea rows="19">
+p {
+  color: royalblue;
+}
+
+/* Hexadecimal */
+p {
+  color: #4169e1;
+}
+
+/* Hue, Saturation, Lightness */
+p {
+  color: hsl(225, 73%, 57%);
+}
+
+/* Red, Green Blue */
+p {
+  color: rgb(65, 105, 225);
+}
+      </textarea>
+      <p>
+        Each one of the rules above will make the paragraph elements on a page the same color blue, so if they're all the same, why does CSS offer so many ways of defining color?
+      </p>
+      <p>
+        It all comes down to different use cases and who is defining color and consuming color.
+      </p>
+      <h3>Hexadecimal</h3>
+      <p>
+        Hexadecimal is the most common way you see colors defined, because a single numerical value can represent an entire color.  When designing your own styles, you will most likely
+        find yourself using a color picker like this one (click the input below):
+      </p>
+      <input type="color" value="#4169e1">
+      <p>
+        The color picker tells you the values in each format (HSL, RGB) for the given color you've chosen, and the hexadecimal value appears in the "Color name:" 
+        field.  Having a color represented as a single value is useful because it's easier for you to work with one value in your code and to go from color picker directly to CSS.
+        You just copy the "Color name" hexadecimal value from the picker and then paste that single value into your CSS, and you're off to a colorful race track!
+      </p>
+      <p>
+        One shortcoming of defining colors in hexadecimal is that it's difficult for a human to read.  The values are defined as #RRGGBB, meaning two place are saved for how much
+        Red (RR), Green (GG), and Blue (BB) make up the whole color.  However, it's hard to look at two colors, say #E71C1C, and #1C5AE7, and tell that they're a red and a blue.
+      </p>
+      <p>
+        That's where the Hue, Saturation, and Lightness color format come in to play.
+      </p>
+      <h3>Hue, Saturation, Lightness (HSL)</h3>
+      <p>
+        HSL was invented by a french engineer, Georges Valensi, who in 1938 was trying to solve a television broadcasting problem.  TV broadcasters needed a way to maintain backwards
+        compatability with monochrome (black and white) TV receivers and the new color TVs.  Luminance (how much black or white existed) was broadcast as an unmodified value, so Mr. Valensi 
+        came up with the HSL color space in order to support color, while still maintaining compatability with existing monochrome TVs.  
+      </p>
+      <h4>Hue</h4>
+      <p>
+        HSL color space is shaped as a cylinder, so the first attribute, <strong>hue</strong>, has an acceptable range aligned with the number of degrees in a circle (360).  The hue 
+        (also called chroma) value chosen is essentially the base color.  To see what I mean, I have created a table of color values below along with their hues, so you can see how each
+        30 degree "chunk" of the circle corresponds to actual colors.  You can click on any of these color picker inputs to see how hue changes.
+      </p>
+      <table>
+        <tr>
+          <th scope="row">Name</th>
+          <td>red</td>
+          <td>orange</td>
+          <td>yellow</td>
+          <td>lime</td>
+          <td>green</td>
+          <td>irish</td>
+          <td>cyan</td>
+          <td>azure</td>
+          <td>blue</td>
+          <td>purple</td>
+          <td>magenta</td>
+          <td>hot pink</td>
+        </tr>
+        <tr>
+          <th scope="row">Hue</th>
+          <td>0</td>
+          <td>30</td>
+          <td>60</td>
+          <td>90</td>
+          <td>120</td>
+          <td>150</td>
+          <td>180</td>
+          <td>210</td>
+          <td>240</td>
+          <td>270</td>
+          <td>300</td>
+          <td>330</td>
+        </tr>
+        <tr>
+          <th scope="row">Color</th>
+          <td><input type="color" value="#FF0000"></td>
+          <td><input type="color" value="#FF8000"></td>
+          <td><input type="color" value="#FFFF00"></td>
+          <td><input type="color" value="#80FF00"></td>
+          <td><input type="color" value="#00FF00"></td>
+          <td><input type="color" value="#00FF80"></td>
+          <td><input type="color" value="#00FFFF"></td>
+          <td><input type="color" value="#0080FF"></td>
+          <td><input type="color" value="#0000FF"></td>
+          <td><input type="color" value="#8000FF"></td>
+          <td><input type="color" value="#FF00FF"></td>
+          <td><input type="color" value="#FF0080"></td>
+        </tr>
+      </table>
+      <p>
+        So now, if you remember that Red is when Hue is 0, Green is when Hue is 120, and Blue is when Hue is 240, then for colors defined in the HSL format, you can pretty easily tell
+        which ballpark you're in, just by looking at a single value (the first one, Hue).  That's why HSL is often referred to as a human readable or human digestible color format.
+      </p>
+      <p>
+        When defining color using HSL in CSS, you use the following format: <br>
+<pre>
+  color: hsl(hue, saturation, lightness);
+</pre>
+      </p>
+      <p>Without knowing what saturation or lightness do, can you look at the CSS rule below and the hue value to guess the color?</p>
+<pre>
+  <code>
+    p {
+      color: hsl(230,75%,90%);
+    }
+  </code>
+</pre>
+<details>
+  <summary>Guess the color before expanding this paragraph!</summary>
+  <p style="color: #3956E6">
+    Did you guess a shade of <strong>blue</strong>?  If so, well done!  If not, look at hues and colors above once more.  See how the hue for azure is 210 and the hue for blue is 240?
+    Since the hue in the CSS rule above is 230, between azure and blue, we could safely guess that the paragraph would be colored some shade of blue.
+  </p>
+</details>
+
+
+      <h3>Red, Green, Blue (RGB)</h3>
+      <textarea rows="4">
+p {
+  color: rgb(65, 105, 225);
+}
+      </textarea>
+      
+      
+
+      <h3>Alpha Channel</h3>
+      <p>
+        Finally, for both RGB and HSL color definitions, you have the option of adding an additional dimension for transparency.  This is called the alpha channel, and it defines
+        how transparent the color renders.  The values for Alpha range from 0-1 with 0 representing full transparency (invisible) and 1 representing full color (no transparency).
+      </p>
+<textarea rows="4">
+p {
+  color: rgba(65, 105, 225, 1)
+}
+</textarea>
+
+<textarea rows="4">
+p {
+  color: hsla(225, 73%, 57%, 1);
+}
+</textarea>  
       <h2>Typography</h2>
       <h2>Grid</h2>
+      <h2>Sources</h2>
+      Read more about Mr. Valensi and HSL on <a href="https://en.wikipedia.org/wiki/HSL_and_HSV">Wikipedia</a>.
     </main>
 
     <!-- More images
