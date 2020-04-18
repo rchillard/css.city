@@ -210,8 +210,8 @@ p {
       <h2>Display</h2>
       <h2>Colors</h2>
       <p>
-        Color can be expressed in four different formats.  There are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">named colors</a>, 
-        and then there are colors defined by specific values.  For colors defined by specific values, CSS offers three different approaches or formats:
+        Color can be expressed in four different formats.  There are a limited number of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">named colors</a>, 
+        and then there are colors defined by specific values.  For colors defined by specific values, CSS offers three different ways to express them:
       </p>
       <ul>
         <li>Hexadecimal</li>
@@ -242,7 +242,8 @@ p {
 }
       </textarea>
       <p>
-        Each one of the rules above will make the paragraph elements on a page the same color blue, so if they're all the same, why does CSS offer so many ways of defining color?
+        Each one of the rules above will make the paragraph elements on a page the same color blue. So if they're all the same, you're probably wondering, why does CSS offer so
+        many ways of doing the same thing, defining color?
       </p>
       <p>
         It all comes down to different use cases and who is defining color and consuming color.
@@ -263,7 +264,7 @@ p {
         Red (RR), Green (GG), and Blue (BB) make up the whole color.  However, it's hard to look at two colors, say #E71C1C, and #1C5AE7, and tell that they're a red and a blue.
       </p>
       <p>
-        That's where the Hue, Saturation, and Lightness color format come in to play.
+        Making color easier to understand for humans is where the Hue, Saturation, and Lightness color format come in to play.
       </p>
       <h3>Hue, Saturation, Lightness (HSL)</h3>
       <p>
@@ -277,7 +278,7 @@ p {
         (also called chroma) value chosen is essentially the base color.  To see what I mean, I have created a table of color values below along with their hues, so you can see how each
         30 degree "chunk" of the circle corresponds to actual colors.  You can click on any of these color picker inputs to see how hue changes.
       </p>
-      <table>
+      <table style="border: 1px solid black">
         <tr>
           <th scope="row">Name</th>
           <td>red</td>
@@ -337,20 +338,111 @@ p {
       <p>Without knowing what saturation or lightness do, can you look at the CSS rule below and the hue value to guess the color?</p>
 <pre>
   <code>
-    p {
-      color: hsl(230,75%,90%);
-    }
+  p {
+    color: hsl(230,75%,90%);
+  }
   </code>
 </pre>
-<details>
-  <summary>Guess the color before expanding this paragraph!</summary>
-  <p style="color: #3956E6">
-    Did you guess a shade of <strong>blue</strong>?  If so, well done!  If not, look at hues and colors above once more.  See how the hue for azure is 210 and the hue for blue is 240?
-    Since the hue in the CSS rule above is 230, between azure and blue, we could safely guess that the paragraph would be colored some shade of blue.
-  </p>
-</details>
-
-
+      <details>
+        <summary>Guess the color before expanding this paragraph!</summary>
+        <p style="color: #3956E6">
+          Did you guess a shade of <strong>blue</strong>?  If so, well done!  If not, look at hues and colors above once more.  See how the hue for azure is 210 and the hue for blue is 240?
+          Since the hue in the CSS rule above is 230, between azure and blue, we could safely guess that the paragraph would be colored some shade of blue.
+        </p>
+      </details>
+      <p>Next we're going to learn how the rest of the HSL color format is defined.</p>
+      <h4>Saturation</h4>
+      <p>
+        Saturation is a value that ranges from 0-100% and it defines how much or how strong the color you've chosen appears.  In our example below, we'll use purple to see how changing
+        the saturation changes the color.  A total lack of saturation (no color) leaves us with just white, while full saturation (all the color) results in a bold purple.
+      </p>
+      <table style="border: 1px solid black">
+        <tr>
+          <th scope="row">Saturation</th>
+          <td>0</td>
+          <td>10</td>
+          <td>20</td>
+          <td>30</td>
+          <td>40</td>
+          <td>50</td>
+          <td>60</td>
+          <td>70</td>
+          <td>80</td>
+          <td>90</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <th scope="row">Color</th>
+          <td><input type="color" value="#FFFFFF"></td>
+          <td><input type="color" value="#F2E6FF"></td>
+          <td><input type="color" value="#E4CCFF"></td>
+          <td><input type="color" value="#D7B3FF"></td>
+          <td><input type="color" value="#C999FF"></td>
+          <td><input type="color" value="#BC80FF"></td>
+          <td><input type="color" value="#AE66FF"></td>
+          <td><input type="color" value="#A14DFF"></td>
+          <td><input type="color" value="#9333FF"></td>
+          <td><input type="color" value="#8619FF"></td>
+          <td><input type="color" value="#7900FF"></td>
+        </tr>
+      </table>
+      <h4>Lightness</h4>
+      <p>
+        Lightness is a value that also ranges from 0-100%, but it defines how much black (0%) or white (100%) is in the color.  As you can imagine, a total lack of lightness (0%) results
+        in a block color, while full lightness (100%) gives you bright, fully lit colors.
+      </p>
+      <table style="border: 1px solid black">
+        <tr>
+          <th scope="row">Lightness</th>
+          <td>0</td>
+          <td>10</td>
+          <td>20</td>
+          <td>30</td>
+          <td>40</td>
+          <td>50</td>
+          <td>60</td>
+          <td>70</td>
+          <td>80</td>
+          <td>90</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <th scope="row">Color</th>
+          <td><input type="color" value="#000000"></td>
+          <td><input type="color" value="#000D1A"></td>
+          <td><input type="color" value="#001A33"></td>
+          <td><input type="color" value="#00274D"></td>
+          <td><input type="color" value="#003466"></td>
+          <td><input type="color" value="#004180"></td>
+          <td><input type="color" value="#004E99"></td>
+          <td><input type="color" value="#005BB3"></td>
+          <td><input type="color" value="#0068CC"></td>
+          <td><input type="color" value="#0075E6"></td>
+          <td><input type="color" value="#0080FF"></td>
+        </tr>
+      </table>
+      <p>
+        Stepping back for a second to combine our new understanding for all three aspects of the HSL format:
+      </p>
+      <ul>
+        <li>Hue: the basic color to be rendered</li>
+        <li>Saturation: the amount or strength of that color</li>
+        <li>Lightness: the brightness or lightness of that color</li>
+      </ul>
+      <p>
+        It's now easier for us to return to our original guessing example and see how the different values effect the color rendered:
+      </p>
+<pre>
+  <code>
+  p {
+    color: hsl(230,75%,90%);
+  }
+  </code>
+</pre>
+      <p style="color: #3956E6">
+        We definitely have a blue (hue = 230), there's a lot of blue (saturation = 75%), and it's a bright shade of blue (lightness = 90%).
+      </p>
+      <p>If HSL is easier for humans, then what about computers?  How do they make sense of color?  That's why we have RGB.</p>
       <h3>Red, Green, Blue (RGB)</h3>
       <textarea rows="4">
 p {

@@ -67,6 +67,10 @@ main {
   grid-area: main;
 }
 
+table {
+  text-align: center;
+}
+
 .construction {
   margin: 0 auto;
   text-align: center;
