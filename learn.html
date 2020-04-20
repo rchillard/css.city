@@ -29,8 +29,8 @@
       <p>
         CSS stands for Cascading Style Sheets.  CSS is a sister technology to Hypertext Markup Language (HTML), because it enables you to modify the
         appearance of your HTML.  If you think of a website as a house, then HTML is used to provide structure like the frame, walls, appliances
-        and furniture, while CSS is used to paint the walls, hang the lights, frame the pictures, and position your furniture.  This introduction to 
-        CSS assumes that you know basic HTML.  If you have not learned HTML fundamentals yet, then I recommend you do that first by checking out 
+        and furniture, while CSS is used to paint the walls, hang the lights, frame the pictures, and even to position your furniture.  This introduction
+        to CSS assumes that you know basic HTML.  If you have not learned HTML fundamentals yet, then I recommend you do that first by checking out 
         <a href="https://html.haus/learn.html">HTML.Haus</a> for an easy to read singe page tutorial.
       </p>
       <h2>What is CSS?</h2>
@@ -92,8 +92,8 @@
 </html>
       </textarea>
       <p>
-        Copy and paste the textarea above into a blank file and save it as 'index.html'.  Opening it with a browser will give you a playground where 
-        you can safely complete the rest of these exercises and continue learning CSS.
+        Copy and paste the code above into a blank file and save it as 'index.html'.  Opening it with a browser will give you a local playground where 
+        you can safely complete the rest of these exercises and continue learning CSS.  Just save your file, then reload your browser to see your changes.
       </p>
       <p>
         As you can see in your local playground, we've changed the color of both paragraphs.  How'd we do it?  These 5 lines of code:
@@ -198,7 +198,18 @@ p {
         </p>
         <cite>-Talking Heads</cite>
       </blockquote>
+      <p>The song above is a blockquote containing three paragraphs.  If we had used inline styles, then we'd have to add our styles to each paragraph.
+        However, because we defined a class, thne we can simply add the class to each paragraph, making everything easier.  Now, if we want to style songs
+        the same way on all the pages of our site, we just need to import this stylesheet and then add the lyrics class to the elements representing songs.
+      </p>
+      <p>The same class can be applied to any number of elements, but what about when you have a truly unique or single element that you want to style in
+          a special or certain way?  That's what the HTML id attribute is for.
+      </p>
       <h3>Identifier</h3>
+      <p>
+        Using the identifier "id" attribute, CSS can target individual elements on a page.  As a quick refresher, the value of the id attribute must be
+        unique on a page, meaning one and only one element with an id of the given value can exist.
+      </p>
       <h3>Important</h3>
       <h2>Colors</h2>
       <p>
@@ -500,14 +511,14 @@ p {
         (invisible) and 1 representing full color (no transparency).  This royalblue definition using rgba is the same as not specifying alpha:
       </p>
 <textarea rows="4">
-  p {
-    color: rgba(65, 105, 225, 1)
-  }
+p {
+  color: rgba(65, 105, 225, 1)
+}
 </textarea>
       <p>
         The alpha channel is typically used for backgrounds, because it allows you to blend different colors together on multiple layers.
       </p>
-<textarea rows="4">
+<textarea rows="5">
 p {
   background-color: hsla(30, 75%, 57%, 0.25);
   color: hsla(225, 73%, 57%, 0.75);
