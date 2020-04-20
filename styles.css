@@ -81,6 +81,11 @@ table {
   width: 100%;
 }
 
+.ex-alphachannel {
+  background-color: hsla(30, 75%, 57%, 0.25);
+  color: hsla(225, 73%, 57%, 0.75);
+}
+
 .lyrics {
   color: royalblue;
   line-height: 120%;

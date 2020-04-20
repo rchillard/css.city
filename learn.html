@@ -35,8 +35,8 @@
       </p>
       <h2>What is CSS?</h2>
       <p>
-        CSS is a programming language for styling webpages written in HTML.  You can change the color and size of HTML elements with CSS.  You can change the font of
-        textual elements, as well as font characteristics like bold, italics, and spacing.  You can change the layout of a webpage as well as how and where the
+        CSS is a specific language for styling webpages written in HTML.  You can change the color and size of HTML elements with CSS.  You can change the font of
+        textual elements, as well as characteristics like bold, italics, and spacing.  You can change the layout of a webpage as well as where the
         elements display on the page.  If HTML lets you build with raw materials, then CSS gives you a paint brush, a measuring tape, a level, all the tools
         you need to refine the appearance, layout, and style of a webpage.
       </p>
@@ -160,10 +160,10 @@ p {
         Selectors define the target for the CSS rule you're defining, and up until now, we've only seen one type of selector for elements.  The element selector is powerful, because
         you can modify the display properties of all the instances of that element on a page, but what if you want to be more <em>selective</em> and only target certain elements?
       </p>
-      <p>That's where the additional selectors come in:</p>
+      <p>That's where knowing all of the possible selectors comes in handy and can help you:</p>
       <ul>
-        <li><strong>Element</strong> selectors refer to HTML elements by type (e.g. p) and change all the instances of that element on a page</li>
-        <li><strong>Class</strong> selectors refer to HTML elements by their class attribute.  class is a global HTML attribute available to all elements</li>
+        <li><strong>Element</strong> selectors refer to HTML elements by type (e.g. p) and change all the instances of that element on a page.</li>
+        <li><strong>Class</strong> selectors refer to HTML elements by their class attribute.  Class is a global HTML attribute available to all elements.</li>
         <li><strong>Identifier</strong> selectors refer to a single specific HTML element as defined by the id attribute assigned to it.  id is also global.</li>
       </ul>
       <h3>Class</h3>
@@ -444,30 +444,90 @@ p {
       </p>
       <p>If HSL is easier for humans, then what about computers?  How do they make sense of color?  That's why we have RGB.</p>
       <h3>Red, Green, Blue (RGB)</h3>
+      <p>
+        The red, green, blue or RGB color model is based on adding three base colors together (you've probably already guessed which)
+        to produce every other color in the rainbow.  Unlike HSL where hue is essentially the color, RGB colors are determined by how much of
+        each base color is present.  RGB values can range from 0-255 with 0 representing none of the color being present and 255 representing 
+        the maximum of that color.  The color notation is similar to that of HSL, except with rgb instead:
+      </p>
+<pre>
+  color: rgb(red,green,blue);
+</pre>
+      <table style="border: 1px solid black">
+        <tr>
+          <th scope="row">Values</th>
+          <td>rgb(255,0,0)</td>
+          <td>rgb(0,255,0)</td>
+          <td>rgb(0,0,255)</td>
+        </tr>
+        <tr>
+          <th scope="row">Color</th>
+          <td><input type="color" value="#FF0000"></td>
+          <td><input type="color" value="#00FF00"></td>
+          <td><input type="color" value="#0000FF"></td>
+        </tr>
+      </table>
+      <p>So, if you want a color like orange, then what colors combined make orange?  Can you guess?</p>
+      <details>
+        <summary>Click here to see the answer!</summary>
+        <p>To make orange you start with a lot of red (255) and then add about half green (125).  You don't need any blue (0).</p>
+<pre>
+  color: rgb(255,125,0)
+</pre>
+        <p>And you get a bright, strong, bold orange like this:</p>
+        <input type="color" value="#FF7D00">
+      </details>
+      <p>That was probably pretty difficult to guess though, right?</p>
+      <p>Imagine if you saw a color defined like this:</p>
       <textarea rows="4">
 p {
   color: rgb(65, 105, 225);
 }
       </textarea>
-      
-      
+      <p>Any idea what color that might be?</p>
+      <p>
+        There's about 25% of the possible red, 40% of the possible green, and a large amount of blue 90%ish.  It's probably a blue,
+        and maybe it's some sort of green-ish blue, since there's so much green in it?  I can't really tell what color this will end
+        up as just based off the raw RGB values.
+      </p>
+      <p style="color: royalblue">Guess what?  It's our original royalblue.</p>
+      <input type="color" value="#4169e1">
+      <p>That's why RGB is a color format designed for computers and electronic devices. It's not very human readable.</p>
+      <p>So why does RGB exist?</p>
+      <p>
+        Well, the combination of 256 values (0 to 255) of each color means that 16,777,216 (256 * 256 *256) precisely defined colors are available in
+        this color format.  That's a huge color spectrum.  Also, defining color in this way is easier, computationally, on computers.
+        Today, that doesn't matter anymore, because computers are very fast, but when different color formats were being adopted by 
+        early computers, this mattered a lot.
+      </p>
 
       <h3>Alpha Channel</h3>
       <p>
-        Finally, for both RGB and HSL color definitions, you have the option of adding an additional dimension for transparency.  This is called the alpha channel, and it defines
-        how transparent the color renders.  The values for Alpha range from 0-1 with 0 representing full transparency (invisible) and 1 representing full color (no transparency).
+        Finally, for both RGB and HSL color definitions, you have the option of adding an additional dimension for transparency.  This is called the 
+        alpha channel, and it defines how transparent the color renders.  The values for Alpha range from 0-1 with 0 representing full transparency 
+        (invisible) and 1 representing full color (no transparency).  This royalblue definition using rgba is the same as not specifying alpha:
+      </p>
+<textarea rows="4">
+  p {
+    color: rgba(65, 105, 225, 1)
+  }
+</textarea>
+      <p>
+        The alpha channel is typically used for backgrounds, because it allows you to blend different colors together on multiple layers.
       </p>
 <textarea rows="4">
 p {
-  color: rgba(65, 105, 225, 1)
-}
-</textarea>
-
-<textarea rows="4">
-p {
-  color: hsla(225, 73%, 57%, 1);
+  background-color: hsla(30, 75%, 57%, 0.25);
+  color: hsla(225, 73%, 57%, 0.75);
 }
 </textarea>  
+      <p class="ex-alphachannel">
+        Blending color with alpha opens another door to displaying elements together using CSS!
+      </p>
+      <p>The paragraph above actually has a bright, bold orange color selected for its background, but it's rendering as a faded orange because
+        the alpha channel is telling the browser to only render it at 25% transparency.  The same is true for the faded blue of the text, which
+        is our same royalblue, but is now set at 75% transparency and is blending in with the background orange. 
+      </p>
       <h2>Typography</h2>
       <h2>Grid</h2>
       <h2>Sources</h2>
