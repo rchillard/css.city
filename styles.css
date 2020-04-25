@@ -86,6 +86,10 @@ table {
   color: hsla(225, 73%, 57%, 0.75);
 }
 
+.logo {
+  width: 1rem;
+}
+
 .lyrics {
   color: royalblue;
   line-height: 120%;
