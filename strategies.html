@@ -34,6 +34,93 @@
         <li>CSS Modules</li>
         <li>Styled-components</li>
       </ul>
+
+      <h2>Stylesheets</h2>
+      <h3>Units</h3>
+      <p>Various units are useful for different manipulations in CSS.  Here's a simple chart breaking down when to use what.  There are three values:</p>
+      <ul>
+        <li>Y - Yes, use this unit for this purpose!</li>
+        <li>N - No, avoid this unit for this purpose.</li>
+        <li>/ - It's a mixed bag and sometimes you'll need this unit for this purpose.</li>
+      </ul>
+      <table style="border: 1px black solid">
+        <thead>
+          <tr>
+            <td>Purpose</td>
+            <td>px</td>
+            <td>em</td>
+            <td>rem</td>
+            <td>%</td>
+            <td>vh/vw</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>position</td>
+            <td>/</td>
+            <td>N</td>
+            <td>N</td>
+            <td>Y</td>
+            <td>Y</td>
+          </tr>
+          <tr>
+            <td>margin</td>
+            <td>N</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>N</td>
+            <td>N</td>
+          </tr>
+          <tr>
+            <td>padding</td>
+            <td>/</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>N</td>
+            <td>N</td>
+          </tr>
+          <tr>
+            <td>border</td>
+            <td>Y</td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+          </tr>
+          <tr>
+            <td>shadows</td>
+            <td>Y</td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+          </tr>
+          <tr>
+            <td>font size</td>
+            <td>N</td>
+            <td>Y</td>
+            <td>Y</td>
+            <td>N</td>
+            <td>N</td>
+          </tr>
+          <tr>
+            <td>small layouts</td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+            <td>Y</td>
+            <td>/</td>
+          </tr>
+          <tr>
+            <td>large layouts</td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+            <td>/</td>
+            <td>Y</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
 
     <!-- More images

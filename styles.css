@@ -71,6 +71,11 @@ table {
   text-align: center;
 }
 
+tr,
+td {
+  border: 1px solid black;
+}
+
 .construction {
   margin: 0 auto;
   text-align: center;
