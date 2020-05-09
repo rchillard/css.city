@@ -164,30 +164,34 @@ p {
       <ul>
         <li><strong>Element</strong> selectors refer to HTML elements by type (e.g. p) and change all the instances of that element on a page.</li>
         <li><strong>Class</strong> selectors refer to HTML elements by their class attribute.  Class is a global HTML attribute available to all elements.</li>
-        <li><strong>Identifier</strong> selectors refer to a single specific HTML element as defined by the id attribute assigned to it.  id is also global.</li>
+        <li><strong>Identifier</strong> selectors refer to a single specific HTML element's id attribute.  id is also global, but unlike class must be unique.</li>
       </ul>
       <h3>Class</h3>
       <p>
         The class attribute can be applied to any HTML element, and it can be used to span different types of elements, so that you can easily select them in your CSS by using
         the class selector.  The class selector syntax is a period . followed by the class name:
       </p>
-      <textarea rows="5">
+      <textarea rows="10">
+/* CSS */
 .lyrics {
   color: royalblue;
   line-height: 120%;
 }
+
+<!-- HTML -->
+<p>David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, <quote class="lyrics">"Think of London, a small city"</quote>.</p>
       </textarea>
       <p>When applied to a set of song lyrics like this one would appear as:</p>
-      <blockquote>
-        <p class="lyrics">
+      <blockquote class="lyrics">
+        <p>
           Think of London, a small city
         </p>
-        <p class="lyrics">
+        <p>
           It's dark, dark in the daytime<br>
           The people sleep, sleep in the daytime<br>
           If they want to, if they want to
         </p>
-        <p class="lyrics">
+        <p>
           I'm checking them out<br>
           I'm checking them out<br>
           I got it figured out<br>
@@ -198,9 +202,23 @@ p {
         </p>
         <cite>-Talking Heads</cite>
       </blockquote>
-      <p>The song above is a blockquote containing three paragraphs.  If we had used inline styles, then we'd have to add our styles to each paragraph.
-        However, because we defined a class, then we can simply add the class to each paragraph, making everything easier.  Now, if we want to style songs
-        the same way on all the pages of our site, we just need to import this stylesheet and then add the lyrics class to the elements representing songs.
+      <p>And to this smaller snippet embedded in a sentence as well:</p>
+      <p>David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, <quote class="lyrics">"Think of London, a small city"</quote>.</p>
+      <p>The multiple lines of the song above are a blockquote, while the single opening lyric in the previous sentence is a quote element.  If we're only using either
+        inline styles or element selectors, then we have a few problems:</p>
+      <ul>
+        <li>If we had used inline styles, then we'd have to add a style attribute to both elements.</li>
+        <li>If we had used an element selector, then we'd have to write two rules:
+          <ul>
+            <li>one for blockquote elements</li>
+            <li>one for quote elements</li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        However, because we defined a class, then we can simply add the class to each element we want to appear like a lyric, reducing the need to write extra CSS.  
+        Now, if we want to style songs the same way on all the pages of our site, we just need to import this stylesheet and then add the lyrics class to the elements
+        representing songs.
       </p>
       <p>The same class can be applied to any number of elements, but what about when you have a truly unique or single element that you want to style in
           a special or certain way?  That's what the HTML id attribute is for.
@@ -210,6 +228,20 @@ p {
         Using the identifier "id" attribute, CSS can target individual elements on a page.  As a quick refresher, the value of the id attribute must be
         unique on a page, meaning one and only one element with an id of the given value can exist.
       </p>
+<textarea rows="9">
+/* CSS */
+#call-to-action {
+  background-color: lightgray;
+  color: blueviolet;
+}
+
+<!-- HTML -->
+<p>Like the lyrics you just read? <span id="call-to-action">Listen to the Talking Heads Right Now!</span></p>
+</textarea>
+      <p>
+        Such as in this call to action:
+      </p>
+      <p>Like the lyrics you just read? <span id="call-to-action">Listen to the Talking Heads Right Now!</span></p>
       <h3>Important</h3>
       <h2>Colors</h2>
       <p>

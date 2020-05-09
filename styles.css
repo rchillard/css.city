@@ -102,6 +102,11 @@ td {
 
 /* ELEMENTS by ID */
 
+#call-to-action {
+  background-color: lightgray;
+  color: blueviolet;
+}
+
 #logo {
   padding-right: 0.25rem;
   vertical-align: text-bottom;
