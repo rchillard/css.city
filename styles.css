@@ -100,8 +100,18 @@ td {
   line-height: 120%;
 }
 
-/* ELEMENTS by ID */
+/* COMBINED SELECTORS (ELEMENT+CLASS) */
 
+li.priority {
+  font-weight: bold;
+}
+
+/* HIERARCHICAL SELECTORS */
+p q {
+  font-style: italic;
+}
+
+/* ELEMENTS by ID */
 #call-to-action {
   background-color: lightgray;
   color: blueviolet;

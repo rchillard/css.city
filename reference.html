@@ -28,6 +28,49 @@
       <h1>Reference</h1>
       <p>This is a reference for CSS selectors, variables, methods, and syntax.</p>
       <p>See an error on this page?  Place a pull request on <a href="https://github.com/rchillard/css.city">GitHub <img class="logo" src="assets/github.svg"></a> to fix it!</p>
+      <h2>Selectors</h2>
+      <h3>Element</h3>
+      <h3>Class</h3>
+      <h3>Identifier</h3>
+      <h3>Important</h3>
+      <h3>Advanced</h3>
+      <h4>Combined</h4>
+      <p>
+         Combine both element and class selectors to target subsets of elements.  For example, displaying priority items inside of a list.
+      </p>
+<textarea rows="12">
+/* CSS */
+li.priority {
+  font-weight: bold;
+}
+
+<!-- HTML -->
+<ul>
+  <li class="priority">Find a water supply</li>
+  <li>Choose a location</li>
+  <li>Build connecting roads</li>
+</ul>
+</textarea>
+      <p>And the results for my "How to build a city" to do list displays as:</p>
+      <ul>
+        <li class="priority">Find a water supply</li>
+        <li>Choose a location</li>
+        <li>Build connecting roads</li>
+      </ul>
+      <h4>Hierarchy</h4>
+      <p>Define hiearchies by putting a space between selectors:</p>
+<textarea rows="9">
+/* CSS */
+p q {
+  font-style: italic;
+}
+
+<!-- HTML -->
+<p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness, then came the strangers.</q></p>
+</textarea>
+      <p>And the resulting display of quotes anywere in the document will be italicized:</p>
+      <p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness, then came the strangers.</q></p>
+      <h4>Pseudo-class</h4>
       <h2>Units</h2>
       <h3>Absolute</h3>
       <p>Absolute units can be more difficult to make responsive and scalable.</p>
