@@ -36,14 +36,12 @@
       <h3>Advanced</h3>
       <h4>Combined</h4>
       <p>
-         Combine both element and class selectors to target subsets of elements.  For example, displaying priority items inside of a list.
+         If you need more precision in how to select elements and apply CSS rules to thme, then you can combine different types of selectors.
+         For example, combine both element and class selectors to target subsets of elements.  For example, displaying priority items inside of a list.
       </p>
-<textarea rows="12">
-/* CSS */
-li.priority {
-  font-weight: bold;
-}
 
+<figure class="code">
+<textarea rows="7">
 <!-- HTML -->
 <ul>
   <li class="priority">Find a water supply</li>
@@ -51,6 +49,14 @@ li.priority {
   <li>Build connecting roads</li>
 </ul>
 </textarea>
+<textarea rows="7">
+/* CSS */
+li.priority {
+  font-weight: bold;
+}
+</textarea>
+</figure>
+
       <p>And the results for my "How to build a city" to do list displays as:</p>
       <ul>
         <li class="priority">Find a water supply</li>
@@ -59,16 +65,19 @@ li.priority {
       </ul>
       <h4>Hierarchy</h4>
       <p>Define hiearchies by putting a space between selectors:</p>
-<textarea rows="9">
+<figure class="code">
+<textarea rows="5">
+<!-- HTML -->
+<p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness, then came the strangers.</q></p>
+</textarea>
+<textarea rows="5">
 /* CSS */
 p q {
   font-style: italic;
 }
-
-<!-- HTML -->
-<p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness, then came the strangers.</q></p>
 </textarea>
-      <p>And the resulting display of quotes anywere in the document will be italicized:</p>
+</figure>
+      <p>And the resulting display of quotes inside of paragraph elements in the document will be italicized:</p>
       <p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness, then came the strangers.</q></p>
       <h4>Pseudo-class</h4>
       <h2>Units</h2>

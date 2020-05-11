@@ -9,6 +9,8 @@
   --cityblue: #0073c0;
 }
 
+/* ELEMENT SELECTORS */
+
 a {
   color: var(--cityblue);
 }
@@ -76,6 +78,14 @@ td {
   border: 1px solid black;
 }
 
+/* CLASS SELECTORS */
+
+.code {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2;
+}
+
 .construction {
   margin: 0 auto;
   text-align: center;
@@ -111,7 +121,7 @@ p q {
   font-style: italic;
 }
 
-/* ELEMENTS by ID */
+/* ID SELECTORS */
 #call-to-action {
   background-color: lightgray;
   color: blueviolet;
