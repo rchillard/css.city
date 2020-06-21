@@ -48,6 +48,82 @@
     text-decoration: red wavy underline;
   }  
 </textarea>
+
+<figure class="code">
+  <textarea rows="11">
+<!-- HTML -->
+<header>
+  <p>This is your header</p>
+</header>
+<main>
+  <h1>This is Your H1</h1>
+</main>
+<footer>
+  <p>This is your footer</p>
+</footer>
+</textarea>
+    <textarea rows="11">
+/* CSS */
+body {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". header ."
+    ". main ."
+    ". footer .";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* MEDIA QUERIES */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+      grid-template-columns: 3% 94% 3%;
+    }
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+      grid-template-columns: 5% 90% 5%;
+    }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+      grid-template-columns: 12.5% 75% 12.5%;
+    }
+}
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+      grid-template-columns: 20% 60% 20%;
+    }
+}
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+      grid-template-columns: 25% 50% 25%;
+    }
+}
+    </textarea>
+</figure>
+
     </main>
 
     <!-- More images
