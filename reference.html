@@ -36,27 +36,31 @@
       <h3>Advanced</h3>
       <h4>Combined</h4>
       <p>
-         If you need more precision in how to select elements and apply CSS rules to thme, then you can combine different types of selectors.
+         If you need more precision in how to select elements and apply CSS rules to them, then you can combine different types of selectors.
          For example, combine both element and class selectors to target subsets of elements.  For example, displaying priority items inside of a list.
       </p>
 
-<figure class="code">
+    <div class="code">
+      <figure>
+      <figcaption>HTML</figcaption>
 <textarea rows="7">
-<!-- HTML -->
-<ul>
-  <li class="priority">Find a water supply</li>
-  <li>Choose a location</li>
-  <li>Build connecting roads</li>
-</ul>
+  <ul>
+    <li class="priority">Find a water supply</li>
+    <li>Choose a location</li>
+    <li>Build connecting roads</li>
+  </ul>
 </textarea>
+      </figure>
+      <figure>
+        <figcaption>CSS</figcaption>
 <textarea rows="7">
-/* CSS */
-li.priority {
-  font-weight: bold;
-}
+  /* CSS */
+  li.priority {
+    font-weight: bold;
+  }
 </textarea>
-</figure>
-
+      </figure>
+    </div>
       <p>And the results for my "How to build a city" to do list displays as:</p>
       <ul>
         <li class="priority">Find a water supply</li>
