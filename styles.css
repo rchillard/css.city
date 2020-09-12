@@ -138,6 +138,12 @@ p q {
   width: 32px;
 }
 
+#menu-title a {
+  color: purple;
+  text-decoration: underline; 
+  text-decoration-color: black;
+}
+
 /* MEDIA QUERIES */
 
 /* Extra small devices (phones, 600px and down) */
