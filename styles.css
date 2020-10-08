@@ -26,6 +26,10 @@ body {
   font-family: "Noto Sans", "Noto Sans CJK KR", sans-serif;
 }
 
+code {
+  border: 1px solid var(--cityblue);
+}
+
 footer {
   grid-area: footer;
   /* margin-bottom: 1rem; */
@@ -73,6 +77,11 @@ main {
   grid-area: main;
 }
 
+style, script {
+  font-family: monospace, monospace;  /* monospace font */
+  white-space: pre;        /* behave like <pre> */
+}
+
 table {
   text-align: center;
 }
@@ -80,6 +89,13 @@ table {
 tr,
 td {
   border: 1px solid black;
+}
+
+textarea {
+  border: 1px solid var(--cityblue);
+  scrollbar-base-color: var(--cityblue);
+  scrollbar-face-color: var(--cityblue);
+  scrollbar-track-color: var(--cityblue);
 }
 
 [contenteditable] {
@@ -164,10 +180,6 @@ p q {
   }
 
   textarea {
-    border: 1px solid var(--cityblue);
-    scrollbar-base-color: var(--cityblue);
-    scrollbar-face-color: var(--cityblue);
-    scrollbar-track-color: var(--cityblue);
     width: 90%;
   }
 
@@ -189,10 +201,6 @@ p q {
   }
 
   textarea {
-    border: 1px solid var(--cityblue);
-    scrollbar-base-color: var(--cityblue);
-    scrollbar-face-color: var(--cityblue);
-    scrollbar-track-color: var(--cityblue);
     width: 90%;
   }
 
@@ -214,10 +222,6 @@ p q {
   }
 
   textarea {
-    border: 1px solid var(--cityblue);
-    scrollbar-base-color: var(--cityblue);
-    scrollbar-face-color: var(--cityblue);
-    scrollbar-track-color: var(--cityblue);
     width: 95%;
   }
 
@@ -239,10 +243,6 @@ p q {
   }
 
   textarea {
-    border: 1px solid var(--cityblue);
-    scrollbar-base-color: var(--cityblue);
-    scrollbar-face-color: var(--cityblue);
-    scrollbar-track-color: var(--cityblue);
     width: 100%;
   }
 
@@ -264,10 +264,6 @@ p q {
   }
 
   textarea {
-    border: 1px solid var(--cityblue);
-    scrollbar-base-color: var(--cityblue);
-    scrollbar-face-color: var(--cityblue);
-    scrollbar-track-color: var(--cityblue);
     width: 100%;
   }
 }
