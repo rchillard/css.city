@@ -82,12 +82,17 @@ td {
   border: 1px solid black;
 }
 
+[contenteditable] {
+  /* will match all elements with contenteditable attribute */
+  display: block;
+}
+
 /* CLASS SELECTORS */
 
 .code {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 2;
 }
 
