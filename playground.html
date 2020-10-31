@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS Playground</title>
+    <style>
+        body {
+            padding: 5rem;
+        }
+
+        [contenteditable] {
+            /* will match all elements with contenteditable attribute */
+            display: block;
+        }
+
+        style, script {
+            font-family: monospace, monospace;  /* monospace font */
+            white-space: pre;        /* behave like <pre> */
+        }
+    </style>
+</head>
+<body>
+    <h1>Playground for CSS</h1>
+    <p>You can modify the style elements below to see how that changes this page.</p>
+    <code>
+    <style contenteditable>
+body {
+    margin: 0 auto;
+}
+h1 {
+    color: blue;
+    font-size: 5rem;
+}
+p {
+    background-color: gray;
+}
+    </style>
+    </code>
+</body>

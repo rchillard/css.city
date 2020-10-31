@@ -7,8 +7,9 @@
     <meta name="Description" content="Reference for CSS attributes, selectors, variables, and methods, containing syntax, sample code, and examples">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="/css/vendor/prism.css">
+    <link rel="stylesheet" type="text/css" href="/css/vendor/prism.css"> -->
     <script src="js/vendor/prism.js"></script>
+    <script src="js/vendor/escapeHTML.js"></script>
     <!-- <base href="https://css.city/"> -->
   </head>
   <body>
@@ -27,6 +28,11 @@
     </header>
     <main>
       <p class="construction">Work in progress</p>
+      <pre>
+        <code class="language-html">
+          &lt;mark&gt; and a closing tag &lt;/mark&gt;
+        </code>
+      </pre>
       <h1>Reference</h1>
       <p>This is a reference for CSS selectors, variables, methods, and syntax.</p>
       <p>See an error on this page?  Place a pull request on <a href="https://github.com/rchillard/css.city">GitHub <img class="logo" src="assets/github.svg"></a> to fix it!</p>
@@ -45,30 +51,39 @@
     <div class="code">
       <figure>
       <figcaption>HTML</figcaption>
-<textarea rows="7">
-  <ul>
-    <li class="priority">Find a water supply</li>
-    <li>Choose a location</li>
-    <li>Build connecting roads</li>
-  </ul>
+      <script>
+        
+      </script>
+<textarea class="language-html" readonly rows="7">
+    <ul>
+      <li class="priority">Find a water supply</li>
+      <li>Choose a location</li>
+      <li>Build connecting roads</li>
+    </ul>
 </textarea>
+<!-- <textarea rows="7" readonly>
+
+</textarea> -->
+      </figure>
+      <figure contenteditable>
+        <figcaption>Display</figcaption>
+        <ul>
+          <li class="priority">Find a water supply</li>
+          <li>Choose a location</li>
+          <li>Build connecting roads</li>
+        </ul>
       </figure>
       <figure>
         <figcaption>CSS</figcaption>
-<code class="language-css">
-<script contenteditable>
+<pre>
+<code contenteditable>
+  <style contenteditable>
   li.priority {
     font-weight: bold;
   }
-</script>
-</code>
-<textarea rows="7">
-  /* CSS */
-  li.priority {
-    font-weight: bold;
-  }
-</textarea>
-      </figure>
+</style></code>
+</pre>
+
     </div>
       <p>And the results for my "How to build a city" to do list displays as:</p>
       <ul>
