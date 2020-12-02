@@ -16,6 +16,8 @@ a {
 }
 
 body {
+  border-image: linear-gradient(to right, #743ad5, #d53a9d) 1;
+  border-top: solid 2px darkorchid;
   display: grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: auto;
@@ -24,6 +26,8 @@ body {
     ". main ."
     ". footer .";
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", sans-serif;
+  font-size: 16px;
+  margin: 0;
 }
 
 pre {
@@ -47,40 +51,22 @@ figure {
 }
 
 nav {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  place-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav #menu-title {
-  justify-self: start;
-  font-size: 1.3em;
-  grid-column: 1;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 nav #menu-title a {
-  color: darkorchid;
-  vertical-align: middle;
+  font-size: 1.1rem;
+  color:  darkorchid;
 }
 
-nav #menu-title img {
-  vertical-align: middle;
-}
-
-nav #menu-learn {
-  grid-column: 2;
-}
-
-nav #menu-reference {
-  grid-column: 3;
-}
-
-nav #menu-strategies {
-  grid-column: 4;
-}
-
-nav #menu-templates {
-  grid-column: 5;
+nav > :nth-child(1) {
+  margin-right: auto;
 }
 
 main {
@@ -115,8 +101,6 @@ textarea {
 
 /* CLASS SELECTORS */
 
-
-
 .code {
   display: grid;
   grid-gap: 1rem;
@@ -148,9 +132,12 @@ textarea {
   line-height: 120%;
 }
 
+.nav-link {
+  padding-left: 2rem;
+}
+
 .nav-link a {
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 /* COMBINED SELECTORS (ELEMENT+CLASS) */
@@ -171,8 +158,9 @@ p q {
 }
 
 #logo {
-  padding-right: 0.25rem;
-  width: 32px;
+  height: 24px;
+  vertical-align: text-top;
+  /* line-height: 1.5; */
 }
 
 /* MEDIA QUERIES */
@@ -185,16 +173,8 @@ p q {
     /* 570 px */
   }
 
-  nav {
-    font-size: 0.9rem;
-  }
-
   textarea {
     width: 90%;
-  }
-
-  #logo {
-    width: 20px;
   }
 }
 
@@ -206,16 +186,8 @@ p q {
     /* 540 px */
   }
 
-  nav {
-    font-size: 1rem;
-  }
-
   textarea {
     width: 90%;
-  }
-
-  #logo {
-    width: 24px;
   }
 }
 
@@ -227,16 +199,8 @@ p q {
     /* 576px */
   }
 
-  nav {
-    font-size: 1.1rem;
-  }
-
   textarea {
     width: 95%;
-  }
-
-  #logo {
-    width: 28px;
   }
 }
 
@@ -248,16 +212,9 @@ p q {
     /* 595.2 px */
   }
 
-  nav {
-    font-size: 1.2rem;
-  }
 
   textarea {
     width: 100%;
-  }
-
-  #logo {
-    width: 28px;
   }
 }
 
@@ -267,10 +224,6 @@ p q {
     grid-template-columns: 25% 50% 25%;
     /* width: 50vw; */
     /* 600 px */
-  }
-
-  nav {
-    font-size: 1.3rem;
   }
 
   textarea {
