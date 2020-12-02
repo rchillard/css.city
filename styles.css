@@ -56,8 +56,9 @@ nav {
 }
 
 nav #menu-title {
+  align-self: flex-start;
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 nav #menu-title a {
@@ -123,17 +124,14 @@ textarea {
   color: hsla(225, 73%, 57%, 0.75);
 }
 
-.logo {
-  width: 1rem;
-}
-
 .lyrics {
   color: royalblue;
   line-height: 120%;
 }
 
 .nav-link {
-  padding-left: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 .nav-link a {
@@ -159,7 +157,9 @@ p q {
 
 #logo {
   height: 24px;
+  padding-right: .5rem;
   vertical-align: text-top;
+  /* width: 1rem; */
   /* line-height: 1.5; */
 }
 
