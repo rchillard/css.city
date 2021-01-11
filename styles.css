@@ -62,8 +62,11 @@ nav #menu-title {
 }
 
 nav #menu-title a {
-  font-size: 1.1rem;
-  color:  darkorchid;
+  border: 2px solid darkorchid;
+  background-color: black;
+  color:  white;
+  height: 24px;
+  padding-left: .5ch;
 }
 
 nav > :nth-child(1) {
@@ -157,7 +160,6 @@ p q {
 
 #logo {
   height: 24px;
-  padding-right: .5rem;
   vertical-align: text-top;
   /* width: 1rem; */
   /* line-height: 1.5; */
