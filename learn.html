@@ -28,15 +28,15 @@
         CSS stands for Cascading Style Sheets.  CSS is a sister technology to Hypertext Markup Language (HTML), because it enables you to modify the
         appearance of your HTML.  If you think of a website as a house, then HTML is used to provide structure like the frame, walls, appliances
         and furniture, while CSS is used to paint the walls, hang the lights, frame the pictures, and even to position your furniture.  This introduction
-        to CSS assumes that you know basic HTML.  If you have not learned HTML fundamentals yet, then I recommend you do that first by checking out 
+        to CSS assumes that you know basic HTML.  If you have not learned HTML yet, then I recommend you do that first by checking out 
         <a href="https://html.haus/learn.html">HTML.Haus</a> for an easy to read singe page tutorial.
       </p>
       <h2>What is CSS?</h2>
       <p>
-        CSS is a specific language for styling webpages written in HTML.  You can change the color and size of HTML elements with CSS.  You can change the font of
-        textual elements, as well as characteristics like bold, italics, and spacing.  You can change the layout of a webpage as well as where the
+        CSS is a specific language for styling web pages written in HTML.  You can change the color and size of HTML elements with CSS.  You can change the font of
+        textual elements, as well as characteristics like bold, italics, and spacing.  You can change the layout of a web page as well as where the
         elements display on the page.  If HTML lets you build with raw materials, then CSS gives you a paint brush, a measuring tape, a level, all the tools
-        you need to refine the appearance, layout, and style of a webpage.
+        you need to refine the appearance, layout, and style of a page.
       </p>
       <p>
         If you completed the <a href="https://html.haus/learn.html">HTML.Haus</a> tutorial, then you've already seen a little CSS, at least in its simplest
@@ -90,7 +90,7 @@
 </html>
       </textarea>
       <p>
-        Copy and paste the code above into a blank file and save it as 'index.html'.  Opening it with a browser will give you a local playground where 
+        Copy and paste the code above into a text editor and save it as 'index.html'.  Opening it with a browser will give you a local playground where 
         you can safely complete the rest of these exercises and continue learning CSS.  Just save your file, then reload your browser to see your changes.
       </p>
       <p>
@@ -112,7 +112,7 @@
         <li><strong>Value</strong> defines the property's new setting, so in this case, the font color property now has a value of royalblue.</li>
       </ul>
       <p>
-        This second way of defining styles is more useful, because you can define rules that apply to an entire HTML webpage.  Think of all the HTML elements you know.  
+        This second way of defining styles is more useful, because you can define rules that apply to an entire HTML web page.  Think of all the HTML elements you know.  
         You can now change the color of anything!  However, once again, you're probably already asking questions about the shortcomings that might accompany using the 
         style tag in the head of your document.
       </p>
@@ -169,16 +169,27 @@ p {
         The class attribute can be applied to any HTML element, and it can be used to span different types of elements, so that you can easily select them in your CSS by using
         the class selector.  The class selector syntax is a period . followed by the class name:
       </p>
-      <textarea rows="10">
-/* CSS */
-.lyrics {
-  color: royalblue;
-  line-height: 120%;
-}
-
-<!-- HTML -->
+      <div class="code">
+        <figure>
+          <figcaption>HTML</figcaption>
+          <textarea rows="6" readonly>
 <p>David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, <q class="lyrics">Think of London, a small city</q>.</p>
-      </textarea>
+          </textarea>
+        </figure>
+        <figure>
+          <figcaption>CSS</figcaption>
+          <pre><code><style contenteditable>
+  .lyrics {
+    color: royalblue;
+    line-height: 120%;
+  }
+          </style></code></pre>
+        </figure>
+        <figure>
+          <figcaption>Display</figcaption>
+          <p>David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, <q class="lyrics">Think of London, a small city</q>.</p>
+        </figure>
+      </div>
       <p>When applied to a set of song lyrics like this one would appear as:</p>
       <blockquote class="lyrics">
         <p>
@@ -226,20 +237,28 @@ p {
         Using the identifier attribute (abbreviated as id in HTML), CSS can target individual elements on a page.  As a quick refresher, the value of the id attribute must be
         unique on a page, meaning one and only one element with an id of the given value can exist.
       </p>
-<textarea rows="9">
-/* CSS */
-#call-to-action {
-  background-color: lightgray;
-  color: blueviolet;
-}
-
-<!-- HTML -->
-<p>Like the lyrics you just read? <span id="ex-call-to-action">Listen to the Talking Heads Right Now!</span></p>
-</textarea>
-      <p>
-        Such as in this call to action:
-      </p>
-      <p>Like the lyrics you just read? <span id="call-to-action">Listen to the Talking Heads Right Now!</span></p>
+      <div class="code">
+        <figure>
+          <figcaption>HTML</figcaption>
+          <textarea rows="5" readonly>
+  <p>Like the lyrics you just read? <br><br>
+    <span id="call-to-action">Listen to the Talking Heads Right Now!</span></p>
+          </textarea>
+        </figure>
+        <figure>
+          <figcaption>CSS</figcaption>
+          <pre><code><style contenteditable>
+  #call-to-action {
+    background-color: lightgray;
+    color: blueviolet;
+  }
+          </style></code></pre>
+        </figure>
+        <figure>
+          <figcaption>Display</figcaption>
+          <p>Like the lyrics you just read?<br><br> <span id="call-to-action">Listen to the Talking Heads Right Now!</span></p>
+        </figure>
+      </div>
       <h3>Important</h3>
       <h2>Colors</h2>
       <p>
@@ -586,11 +605,18 @@ p {
       <li>Build connecting roads</li>
     </ul>
 </textarea>
-<!-- <textarea rows="7" readonly>
 
-</textarea> -->
       </figure>
-      <figure contenteditable>
+      <figure>
+        <figcaption>CSS</figcaption>
+<pre><code contenteditable><style contenteditable>
+  li.priority {
+    font-weight: bold;
+  }
+</style></code>
+</pre>
+      </figure>
+      <figure>
         <figcaption>Display</figcaption>
         <ul>
           <li class="priority">Find a water supply</li>
@@ -598,40 +624,31 @@ p {
           <li>Build connecting roads</li>
         </ul>
       </figure>
-      <figure>
-        <figcaption>CSS</figcaption>
-<pre>
-<code contenteditable>
-  <style contenteditable>
-  li.priority {
-    font-weight: bold;
-  }
-</style></code>
-</pre>
-    </figure>
+
     </div>
-      <p>And the results for my "How to build a city" to do list displays as:</p>
-      <ul>
-        <li class="priority">Find a water supply</li>
-        <li>Choose a location</li>
-        <li>Build connecting roads</li>
-      </ul>
       <h4>Hierarchy</h4>
       <p>Define hiearchies by putting a space between selectors:</p>
-<figure class="code">
-<textarea rows="5">
-<!-- HTML -->
-<p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness, then came the strangers.</q></p>
-</textarea>
-<textarea rows="5">
-/* CSS */
-p q {
-  font-style: italic;
-}
-</textarea>
-</figure>
-      <p>And the resulting display of quotes inside of paragraph elements in the document will be italicized:</p>
-      <p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness, then came the strangers.</q></p>
+      <div class="code">
+        <figure>
+          <figcaption>HTML</figcaption>
+          <textarea rows="5" readonly>
+  <p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness, then came the strangers.</q></p>
+          </textarea>
+        </figure>
+        <figure>
+          <figcaption>CSS</figcaption>
+          <pre><code><style contenteditable>
+  p q {
+    font-style: italic;
+  }
+          </style></code></pre>
+        </figure>
+        <figure>
+          <figcaption>Display</figcaption>
+          <p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness, then came the strangers.</q></p>
+        </figure>
+      </div>
+      <p>And the resulting display of quotes inside of paragraph elements in the document will be italicized, as you see above.</p>
       <h4>Pseudo-class</h4>
       <h2>Typography</h2>
       <p>Introduction paragraph on typography</p>

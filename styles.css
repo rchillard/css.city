@@ -32,6 +32,7 @@ body {
 
 pre {
   border: 1px solid var(--cityblue);
+  margin: .5rem 0 0 0;
 }
 
 footer {
@@ -44,6 +45,11 @@ footer {
 header {
   grid-area: header;
   margin-top: 1rem;
+}
+
+figcaption {
+  font-weight: bold;
+  text-align: center;
 }
 
 figure {
@@ -95,6 +101,12 @@ textarea {
   scrollbar-base-color: var(--cityblue);
   scrollbar-face-color: var(--cityblue);
   scrollbar-track-color: var(--cityblue);
+  margin-top: .5rem;
+}
+
+textarea:read-only {
+  border: none;
+  resize: none;
 }
 
 [contenteditable] {
