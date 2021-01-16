@@ -58,14 +58,13 @@ nav {
 nav #menu-title {
   align-self: flex-start;
   font-weight: bold;
-  /* text-decoration: underline; */
+  font-size: 20px;
 }
 
 nav #menu-title a {
   border: 2px solid darkorchid;
   background-color: black;
   color:  white;
-  height: 24px;
   padding-left: .5ch;
 }
 
@@ -161,8 +160,6 @@ p q {
 #logo {
   height: 24px;
   vertical-align: text-top;
-  /* width: 1rem; */
-  /* line-height: 1.5; */
 }
 
 /* MEDIA QUERIES */
