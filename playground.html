@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <head>
-    <title>CSS Playground</title>
+    <meta charset="UTF-8">
+    <title>CSS City | Playground</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description"
+      content="Illustrating a world of CSS possibilities by teaching the basics to beginners, comparing different strategies for the adepts, and providing a reference for the experts">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <base href="https://css.city/"> -->
     <style>
-        body {
-            padding: 5rem;
-        }
-
         [contenteditable] {
             /* will match all elements with contenteditable attribute */
             display: block;
@@ -16,22 +21,39 @@
             white-space: pre;        /* behave like <pre> */
         }
     </style>
-</head>
+  </head>
 <body>
-    <h1>Playground for CSS</h1>
-    <p>You can modify the style elements below to see how that changes this page.</p>
-    <code>
-    <style contenteditable>
-body {
-    margin: 0 auto;
-}
-h1 {
-    color: blue;
-    font-size: 5rem;
-}
-p {
-    background-color: gray;
-}
-    </style>
-    </code>
+    <header>
+        <nav>
+          <span class="nav-link" id="menu-title"><a href="index.html">CSS <img id="logo" src="assets/city-sunset.png" alt="City at sunset"></a></span>
+          <span class="nav-link"><a href="learn.html">Learn</a></span>
+          <span class="nav-link"><a href="playground.html">Playground</a></span>
+          <span class="nav-link"><a href="reference.html">Reference</a></span>
+          <span class="nav-link"><a href="strategies.html">Strategies</a></span>
+          <span class="nav-link"><a href="templates.html">Templates</a></span>
+        </nav>
+      </header>
+    <main>
+        <div contenteditable>
+            <h1>Playground</h1>
+            <p>You can modify the CSS rules below and your changes will update in real time.  Have fun, play around!</p>
+        </div>
+        <pre><code><style contenteditable>
+    body {
+        margin: 0 auto;
+    }
+
+    h1 {
+        color: darkslategrey;
+        font-size: 3rem;
+    }
+
+    p {
+        background-color: gray;
+        color: whitesmoke;
+        height: 2rem;
+        padding: 1rem;
+    }
+        </style></code></pre>
+    </main>
 </body>
