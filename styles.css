@@ -9,6 +9,10 @@
   --cityblue: #0073c0;
 }
 
+* {
+	scrollbar-color: #743ad5 #d53a9d;
+}
+
 /* ELEMENT SELECTORS */
 
 a {
@@ -28,6 +32,7 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", sans-serif;
   font-size: 16px;
   margin: 0;
+  overflow-x: hidden;
 }
 
 pre {
@@ -45,6 +50,11 @@ footer {
 header {
   grid-area: header;
   margin-top: 1rem;
+  text-align: center;
+}
+
+[hidden] {
+  display: none;
 }
 
 figcaption {
@@ -57,29 +67,67 @@ figure {
 }
 
 nav {
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
-nav #menu-title {
-  align-self: flex-start;
-  font-weight: bold;
-  font-size: 20px;
+nav a {
+  text-decoration: none;
 }
 
-nav #menu-title a {
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 0.5rem;
+  position: relative;
+  text-align: left;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul {
+  display: none;
+  height: auto;
+  left: -2px;
+  padding: .5rem 1rem;
+  position: absolute;
+  top: 1.7rem;
+  white-space: nowrap;
+  width: auto;
+}
+
+nav ul li ul li,
+nav ul li ul li a {
+    display: block;
+}
+/* 
+nav #menu-title {
+  align-self: flex-start;
   border: 2px solid darkorchid;
   background-color: black;
   color:  white;
+  font-weight: bold;
+  font-size: 20px;
   padding-left: .5ch;
-}
+} */
 
-nav > :nth-child(1) {
+/* nav > :nth-child(1) {
   margin-right: auto;
-}
+} */
 
 main {
   grid-area: main;
+}
+
+* {
+  scrollbar-color: 
 }
 
 style, script {
@@ -146,10 +194,6 @@ textarea:read-only {
 .nav-link {
   padding-left: .5rem;
   padding-right: .5rem;
-}
-
-.nav-link a {
-  text-decoration: none;
 }
 
 /* COMBINED SELECTORS (ELEMENT+CLASS) */
