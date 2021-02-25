@@ -257,3 +257,52 @@ textarea:read-only {
 		width: 100%;
 	}
 }
+
+/* Blocks */
+
+/* Utilities */
+.code {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 2;
+}
+
+.construction {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.diagram {
+	width: 100%;
+}
+
+.ex-alphachannel {
+	background-color: hsla(30, 75%, 57%, 0.25);
+	color: hsla(225, 73%, 57%, 0.75);
+}
+
+.lyrics {
+	color: royalblue;
+	line-height: 120%;
+}
+
+.nav-link {
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+
+li.priority {
+	font-weight: bold;
+}
+
+#call-to-action {
+	background-color: lightgray;
+	color: blueviolet;
+}
+
+#logo {
+	height: 24px;
+	vertical-align: text-top;
+}
