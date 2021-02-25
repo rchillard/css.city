@@ -8,8 +8,7 @@
   <meta name="Description"
     content="Illustrating a world of CSS possibilities by teaching the basics to beginners, comparing different strategies for the adepts, and providing a reference for the experts">
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/sane.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <!-- <base href="https://css.city/"> -->
 </head>
@@ -17,12 +16,26 @@
 <body>
   <header>
     <nav>
-      <span class="nav-link" id="menu-title"><a href="index.html">CSS <img id="logo" src="assets/city-sunset.png" alt="City at sunset"></a></span>
-      <span class="nav-link"><a href="learn.html">Learn</a></span>
-      <span class="nav-link"><a href="playground.html">Playground</a></span>
-      <span class="nav-link"><a href="reference.html">Reference</a></span>
-      <span class="nav-link"><a href="strategies.html">Strategies</a></span>
-      <span class="nav-link"><a href="templates.html">Templates</a></span>
+      <a href="index.html">
+        CSS <img id="logo" src="assets/city-sunset.png" alt="City at sunset">
+      </a>
+      <ul>
+        <li><a href="learn.html">Learn</a></li>
+        <li></li>
+        <ul>
+          <li>Building Memory</li>
+          <li><a href="playground.html">Experimenting</a></li>
+          <li>Playing Games</li>
+        </ul>
+        <li>
+          <a href="reference.html">Reference</a>
+          <ul>
+            <li><a href="strategies.html">Strategies</a></li>
+            <li><a href="templates.html">Templates</a></li>
+          </ul>
+        </li>
+        <li>Tools</li>
+      </ul>
     </nav>
   </header>
   <main class="construction">
