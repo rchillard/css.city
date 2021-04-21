@@ -1,140 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>CSS City | CSS Strategies</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="Reference for CSS attributes, selectors, variables, and methods, containing syntax, sample code, and examples">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/sane.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- <base href="https://css.city/"> -->
-  </head>
-  <body>
-    <header>
-      <nav>
-        <span class="nav-link" id="menu-title"><a href="index.html">CSS <img id="logo" src="assets/city-sunset.png" alt="City at sunset"></a></span>
-        <span class="nav-link"><a href="learn.html">Learn</a></span>
-        <span class="nav-link"><a href="playground.html">Playground</a></span>
-        <span class="nav-link"><a href="reference.html">Reference</a></span>
-        <span class="nav-link"><a href="strategies.html">Strategies</a></span>
-        <span class="nav-link"><a href="templates.html">Templates</a></span>
-      </nav>
-    </header>
-    <main>
-      <p class="construction">Work in progress</p>
-      <h1>Strategies</h1>
-      <p>This page reviews the various strategies you can apply to tackle CSS, tracing their strengths and weaknesses, and comparing them against one another.</p>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS City | CSS Strategies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description"
+    content="Reference for CSS attributes, selectors, variables, and methods, containing syntax, sample code, and examples">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/sane.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- <base href="https://css.city/"> -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a id="menu-title" href="index.html">
+        CSS <img id="logo" src="assets/city-sunset.png" alt="City at sunset">
+      </a>
       <ul>
-        <li>Stylesheets</li>
-        <!-- <li>Inline styling</li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="practice.html">Practice</a>
+          <ul>
+            <li><a href="building-memory.html">Building Memory</a></li>
+            <li><a href="playground.html">Experimenting</a></li>
+            <li><a href="playing-games.html">Playing Games</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="reference.html">Reference</a>
+          <ul>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="strategies.html">Strategies</a></li>
+            <li><a href="templates.html">Templates</a></li>
+          </ul>
+        </li>
+        <li><a href="tools.html">Tools</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p class="construction">Work in progress</p>
+    <h1>Strategies</h1>
+    <p>This page reviews the various strategies you can apply to tackle CSS, tracing their strengths and weaknesses, and
+      comparing them against one another.</p>
+    <ul>
+      <li>Stylesheets</li>
+      <!-- <li>Inline styling</li>
         <li>Sass</li>
         <li>CSS-in-JS</li>
         <li>CSS Modules</li>
         <li>Styled-components</li> -->
-      </ul>
+    </ul>
 
-      <h2>Stylesheets</h2>
-      <h3>Methodologies</h3>
-      <p>Methodologies organize your CSS as the size of your website or web application grows.  They're adopted to create a regular way of
-         writing CSS rules and applying them in HTML.  
-      </p>
-      <ul>
-        <li><a href="http://getbem.com/"><abbr title="Block Element Modifier">BEM</abbr></a>, a method to create reusable components via consistent naming and structure</li>
-        <li><a href="https://cube.fyi/"><abbr title="Composition Utility Block Exception">CubeCSS</abbr></a>, an extension of CSS that embraces the cascade and inheritance</li>
-      </ul>
-      <h3>Units</h3>
-      <p>Various units are useful for different manipulations in CSS.  Here's a simple chart breaking down when to use what.  There are three values:</p>
-      <ul>
-        <li>Y - Yes, use this unit for this purpose!</li>
-        <li>N - No, avoid this unit for this purpose.</li>
-        <li>/ - It's a mixed bag and sometimes you'll need this unit for this purpose.</li>
-      </ul>
-      <table style="border: 1px black solid">
-        <thead>
-          <tr>
-            <td>Purpose</td>
-            <td>px</td>
-            <td>em</td>
-            <td>rem</td>
-            <td>%</td>
-            <td>vh/vw</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>position</td>
-            <td>Y</td>
-            <td>N</td>
-            <td>N</td>
-            <td>Y</td>
-            <td>Y</td>
-          </tr>
-          <tr>
-            <td>margin</td>
-            <td>N</td>
-            <td>Y</td>
-            <td>Y</td>
-            <td>N</td>
-            <td>N</td>
-          </tr>
-          <tr>
-            <td>padding</td>
-            <td>/</td>
-            <td>Y</td>
-            <td>Y</td>
-            <td>N</td>
-            <td>N</td>
-          </tr>
-          <tr>
-            <td>border</td>
-            <td>Y</td>
-            <td>N</td>
-            <td>N</td>
-            <td>N</td>
-            <td>N</td>
-          </tr>
-          <tr>
-            <td>shadows</td>
-            <td>Y</td>
-            <td>N</td>
-            <td>N</td>
-            <td>N</td>
-            <td>N</td>
-          </tr>
-          <tr>
-            <td>font size</td>
-            <td>N</td>
-            <td>Y</td>
-            <td>Y</td>
-            <td>N</td>
-            <td>N</td>
-          </tr>
-          <tr>
-            <td>small layouts</td>
-            <td>N</td>
-            <td>N</td>
-            <td>N</td>
-            <td>Y</td>
-            <td>/</td>
-          </tr>
-          <tr>
-            <td>large layouts</td>
-            <td>N</td>
-            <td>N</td>
-            <td>N</td>
-            <td>/</td>
-            <td>Y</td>
-          </tr>
-        </tbody>
-      </table>
-    </main>
+    <h2>Stylesheets</h2>
+    <h3>Methodologies</h3>
+    <p>Methodologies organize your CSS as the size of your website or web application grows. They're adopted to create a
+      regular way of
+      writing CSS rules and applying them in HTML.
+    </p>
+    <ul>
+      <li><a href="http://getbem.com/"><abbr title="Block Element Modifier">BEM</abbr></a>, a method to create reusable
+        components via consistent naming and structure</li>
+      <li><a href="https://cube.fyi/"><abbr title="Composition Utility Block Exception">CubeCSS</abbr></a>, an extension
+        of CSS that embraces the cascade and inheritance</li>
+    </ul>
+    <h3>Units</h3>
+    <p>Various units are useful for different manipulations in CSS. Here's a simple chart breaking down when to use
+      what. There are three values:</p>
+    <ul>
+      <li>Y - Yes, use this unit for this purpose!</li>
+      <li>N - No, avoid this unit for this purpose.</li>
+      <li>/ - It's a mixed bag and sometimes you'll need this unit for this purpose.</li>
+    </ul>
+    <table style="border: 1px black solid">
+      <thead>
+        <tr>
+          <td>Purpose</td>
+          <td>px</td>
+          <td>em</td>
+          <td>rem</td>
+          <td>%</td>
+          <td>vh/vw</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>position</td>
+          <td>Y</td>
+          <td>N</td>
+          <td>N</td>
+          <td>Y</td>
+          <td>Y</td>
+        </tr>
+        <tr>
+          <td>margin</td>
+          <td>N</td>
+          <td>Y</td>
+          <td>Y</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td>padding</td>
+          <td>/</td>
+          <td>Y</td>
+          <td>Y</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td>border</td>
+          <td>Y</td>
+          <td>N</td>
+          <td>N</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td>shadows</td>
+          <td>Y</td>
+          <td>N</td>
+          <td>N</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td>font size</td>
+          <td>N</td>
+          <td>Y</td>
+          <td>Y</td>
+          <td>N</td>
+          <td>N</td>
+        </tr>
+        <tr>
+          <td>small layouts</td>
+          <td>N</td>
+          <td>N</td>
+          <td>N</td>
+          <td>Y</td>
+          <td>/</td>
+        </tr>
+        <tr>
+          <td>large layouts</td>
+          <td>N</td>
+          <td>N</td>
+          <td>N</td>
+          <td>/</td>
+          <td>Y</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
 
-    <!-- More images
+  <!-- More images
     <img src="assets/jonathan-roger-LY1eyQMFeyo-unsplash.jpg" alt="City skyline in the evening bathed in blue and purple light by Jonathan Roger on Unsplash" width="60%">
     <img src="assets/alex-knight-Ys-DBJeX0nE-unsplash.jpg" alt="City at night in blue, green, and pink light by Alex Knight on Unsplash" width="60%"> -->
-    <footer>
-      <!-- Created by <a href="https://rchillard.com/">RCH</a> -->
-    </footer>
-  </body>
+  <footer>
+    <!-- Created by <a href="https://rchillard.com/">RCH</a> -->
+  </footer>
+</body>
+
 </html>

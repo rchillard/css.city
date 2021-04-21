@@ -46,12 +46,6 @@ footer {
 	text-align: center;
 }
 
-/*   '300': $gorko-base-size * 0.8,
-  '400': $gorko-base-size,
-  '500': $gorko-base-size * 1.33,
-  '600': $gorko-base-size * 1.77,
-  '700': $gorko-base-size * 2.4 */
-
 h1,
 h2,
 h3 {
@@ -95,10 +89,6 @@ nav {
 	justify-content: space-between;
 }
 
-nav a {
-	text-decoration: none;
-}
-
 nav ul {
 	list-style: none;
 	padding: 0;
@@ -106,9 +96,14 @@ nav ul {
 
 nav ul li {
 	display: inline-block;
-	margin: 0 0.5rem;
+	padding-left: 1rem;
+	/* margin: 0 0.5rem; */
 	position: relative;
 	text-align: left;
+}
+
+nav ul li a {
+	text-decoration: none;
 }
 
 nav ul li:hover ul {
@@ -119,9 +114,9 @@ nav ul li ul {
 	display: none;
 	height: auto;
 	left: -2px;
-	padding: .5rem 1rem;
+	padding: .5rem 1rem .5rem 0;
 	position: absolute;
-	top: 1.7rem;
+	top: 1.5rem;
 	white-space: nowrap;
 	width: auto;
 }
@@ -147,6 +142,10 @@ nav #menu-title {
 
 main {
 	grid-area: main;
+}
+
+main > * {
+	margin-top: 1rem;
 }
 
 p q {
@@ -305,4 +304,19 @@ li.priority {
 #logo {
 	height: 24px;
 	vertical-align: text-top;
+}
+
+#menu-title {
+	text-decoration: underline;
+	text-decoration-color: var(--color-purple);
+}
+
+#menu-title img {
+	align-self: flex-start;
+	border: 2px solid darkorchid;
+	background-color: black;
+	color:  white;
+	font-weight: bold;
+	font-size: 20px;
+	padding-left: .5ch;
 }

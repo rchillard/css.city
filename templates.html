@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>CSS City | CSS Templates</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="High level CSS templates that can be used as quick starters for everything from basic web pages to advanced websites">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/sane.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- <base href="https://css.city/"> -->
-  </head>
-  <body>
-    <header>
-      <nav>
-        <span class="nav-link" id="menu-title"><a href="index.html">CSS <img id="logo" src="assets/city-sunset.png" alt="City at sunset"></a></span>
-        <span class="nav-link"><a href="learn.html">Learn</a></span>
-        <span class="nav-link"><a href="playground.html">Playground</a></span>
-        <span class="nav-link"><a href="reference.html">Reference</a></span>
-        <span class="nav-link"><a href="strategies.html">Strategies</a></span>
-        <span class="nav-link"><a href="templates.html">Templates</a></span>
-      </nav>
-    </header>
-    <main>
-      <p class="construction">Work in progress</p>
-      <h1>Templates</h1>
-      <p>
-        A series of CSS templates that are free to use and help you get started.  Each category of templates helps you get started with a sane set of defaults,
-        but addresses different use cases and needs.  
-      </p>
-      <h2>Sane Defaults</h2>
-      <p>This stylesheet takes regular HTML elements and apply what I call "sane defaults" to them, so they make more sense.  This is basically:</p>
-      <ul>
-        <li>Making keyboard input clearly in a visual way</li>
-        <li>Making the u element appear as a red, wavy underlined word (as a spellchecked word)</li>
-      </ul>
 
-<textarea rows="10">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS City | CSS Templates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description"
+    content="High level CSS templates that can be used as quick starters for everything from basic web pages to advanced websites">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/sane.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- <base href="https://css.city/"> -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a id="menu-title" href="index.html">
+        CSS <img id="logo" src="assets/city-sunset.png" alt="City at sunset">
+      </a>
+      <ul>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="practice.html">Practice</a>
+          <ul>
+            <li><a href="building-memory.html">Building Memory</a></li>
+            <li><a href="playground.html">Experimenting</a></li>
+            <li><a href="playing-games.html">Playing Games</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="reference.html">Reference</a>
+          <ul>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="strategies.html">Strategies</a></li>
+            <li><a href="templates.html">Templates</a></li>
+          </ul>
+        </li>
+        <li><a href="tools.html">Tools</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p class="construction">Work in progress</p>
+    <h1>Templates</h1>
+    <p>
+      A series of CSS templates that are free to use and help you get started. Each category of templates helps you get
+      started with a sane set of defaults,
+      but addresses different use cases and needs.
+    </p>
+    <h2>Sane Defaults</h2>
+    <p>This stylesheet takes regular HTML elements and apply what I call "sane defaults" to them, so they make more
+      sense. This is basically:</p>
+    <ul>
+      <li>Making keyboard input clearly in a visual way</li>
+      <li>Making the u element appear as a red, wavy underlined word (as a spellchecked word)</li>
+    </ul>
+
+    <textarea rows="10">
   kbd {
     border-radius: 3px;
     padding: 1px 2px 0;
@@ -47,8 +68,8 @@
   }  
 </textarea>
 
-<figure class="code">
-  <textarea rows="11">
+    <figure class="code">
+      <textarea rows="11">
 <!-- HTML -->
 <header>
   <p>This is your header</p>
@@ -60,7 +81,7 @@
   <p>This is your footer</p>
 </footer>
 </textarea>
-    <textarea rows="11">
+      <textarea rows="11">
 /* CSS */
 body {
   display: grid;
@@ -120,15 +141,16 @@ footer {
     }
 }
     </textarea>
-</figure>
+    </figure>
 
-    </main>
+  </main>
 
-    <!-- More images
+  <!-- More images
     <img src="assets/jonathan-roger-LY1eyQMFeyo-unsplash.jpg" alt="City skyline in the evening bathed in blue and purple light by Jonathan Roger on Unsplash" width="60%">
     <img src="assets/alex-knight-Ys-DBJeX0nE-unsplash.jpg" alt="City at night in blue, green, and pink light by Alex Knight on Unsplash" width="60%"> -->
-    <footer>
-      <!-- Created by <a href="https://rchillard.com/">RCH</a> -->
-    </footer>
-  </body>
+  <footer>
+    <!-- Created by <a href="https://rchillard.com/">RCH</a> -->
+  </footer>
+</body>
+
 </html>
