@@ -22,14 +22,12 @@ a {
 
 body {
 	border-image: linear-gradient(to right, var(--color-purple) var(--color-pink)) 1;
-	border-top: solid 2px var(--color-purple);
+	border-top: solid 5px var(--color-purple);
 	display: grid;
 	grid-template-columns: 10% 80% 10%;
 	grid-template-rows: auto;
 	grid-template-areas: ". header ." ". main ." ". footer .";
 	font-family: var(--font-stack);
-	font-size: 16px;
-	margin: 0;
 	overflow-x: hidden;
 	scrollbar-color: var(--color-purple) var(--color-pink);
 }
@@ -41,8 +39,6 @@ pre {
 
 footer {
 	grid-area: footer;
-	/* margin-bottom: 1rem; */
-	/* margin-top: 1rem; */
 	text-align: center;
 }
 
@@ -125,20 +121,6 @@ nav ul li ul li,
 nav ul li ul li a {
 	display: block;
 }
-/* 
-nav #menu-title {
-  align-self: flex-start;
-  border: 2px solid darkorchid;
-  background-color: black;
-  color:  white;
-  font-weight: bold;
-  font-size: 20px;
-  padding-left: .5ch;
-} */
-
-/* nav > :nth-child(1) {
-  margin-right: auto;
-} */
 
 main {
 	grid-area: main;

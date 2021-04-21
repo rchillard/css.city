@@ -1,92 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>CSS City | Learn CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="Single page tutorial to teach the basics of CSS to beginners">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/sane.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- <base href="https://css.city/"> -->
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a id="menu-title" href="index.html">
-          CSS <img id="logo" src="assets/city-sunset.png" alt="City at sunset">
-        </a>
-        <ul>
-          <li><a href="learn.html">Learn</a></li>
-          <li><a href="practice.html">Practice</a>
-            <ul>
-              <li><a href="building-memory.html">Building Memory</a></li>
-              <li><a href="playground.html">Experimenting</a></li>
-              <li><a href="playing-games.html">Playing Games</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="reference.html">Reference</a>
-            <ul>
-              <li><a href="articles.html">Articles</a></li>
-              <li><a href="strategies.html">Strategies</a></li>
-              <li><a href="templates.html">Templates</a></li>
-            </ul>
-          </li>
-          <li><a href="tools.html">Tools</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <p class="construction">Work in progress</p>
-      <h1>Learn CSS</h1>
-      <p>
-        CSS stands for Cascading Style Sheets.  CSS is a sister technology to Hypertext Markup Language (HTML), because it enables you to modify the
-        appearance of your HTML.  If you think of a website as a house, then HTML is used to provide structure like the frame, walls, appliances
-        and furniture, while CSS is used to paint the walls, hang the lights, frame the pictures, and even to position your furniture.  This introduction
-        to CSS assumes that you know basic HTML.  If you have not learned HTML yet, then I recommend you do that first by checking out 
-        <a href="https://html.haus/learn.html">HTML.Haus</a> for an easy to read singe page tutorial.
-      </p>
-      <h2>What is CSS?</h2>
-      <p>
-        CSS is a specific language for styling web pages written in HTML.  You can change the color and size of HTML elements with CSS.  You can change the font of
-        textual elements, as well as characteristics like bold, italics, and spacing.  You can change the layout of a web page as well as where the
-        elements display on the page.  If HTML lets you build with raw materials, then CSS gives you a paint brush, a measuring tape, a level, all the tools
-        you need to refine the appearance, layout, and style of a page.
-      </p>
-      <p>
-        If you completed the <a href="https://html.haus/learn.html">HTML.Haus</a> tutorial, then you've already seen a little CSS, at least in its simplest
-        form.  The easiest way to start using CSS is by applying it directly to individual elements using the <em>style</em> attribute in your HTML:
-      </p>
-      <textarea>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS City | Learn CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="Single page tutorial to teach the basics of CSS to beginners">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/sane.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- <base href="https://css.city/"> -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a id="menu-title" href="index.html">
+        CSS <img id="logo" src="assets/city-sunset.png" alt="City at sunset">
+      </a>
+      <ul>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="practice.html">Practice</a>
+          <ul>
+            <li><a href="building-memory.html">Building Memory</a></li>
+            <li><a href="playground.html">Experimenting</a></li>
+            <li><a href="playing-games.html">Playing Games</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="reference.html">Reference</a>
+          <ul>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="strategies.html">Strategies</a></li>
+            <li><a href="templates.html">Templates</a></li>
+          </ul>
+        </li>
+        <li><a href="tools.html">Tools</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p class="construction">Work in progress</p>
+    <h1>Learn CSS</h1>
+    <p>
+      CSS stands for Cascading Style Sheets. CSS is a sister technology to Hypertext Markup Language (HTML), because it
+      enables you to modify the
+      appearance of your HTML. If you think of a website as a house, then HTML is used to provide structure like the
+      frame, walls, appliances
+      and furniture, while CSS is used to paint the walls, hang the lights, frame the pictures, and even to position
+      your furniture. This introduction
+      to CSS assumes that you know basic HTML. If you have not learned HTML yet, then I recommend you do that first by
+      checking out
+      <a href="https://html.haus/learn.html">HTML.Haus</a> for an easy to read singe page tutorial.
+    </p>
+    <h2>What is CSS?</h2>
+    <p>
+      CSS is a specific language for styling web pages written in HTML. You can change the color and size of HTML
+      elements with CSS. You can change the font of
+      textual elements, as well as characteristics like bold, italics, and spacing. You can change the layout of a web
+      page as well as where the
+      elements display on the page. If HTML lets you build with raw materials, then CSS gives you a paint brush, a
+      measuring tape, a level, all the tools
+      you need to refine the appearance, layout, and style of a page.
+    </p>
+    <p>
+      If you completed the <a href="https://html.haus/learn.html">HTML.Haus</a> tutorial, then you've already seen a
+      little CSS, at least in its simplest
+      form. The easiest way to start using CSS is by applying it directly to individual elements using the
+      <em>style</em> attribute in your HTML:
+    </p>
+    <textarea>
 <p style="color: royalblue">Think of London, a small city</p>
       </textarea>
-      <p style="color: royalblue">Think of London, a small city</p>
-      <h3>Inline Styles</h3>
-      <p>
-        This way of using CSS is called in-line styling, because the styles appear in the same line as the HTML.  You can probably see the shortcomings
-        of this approach almost immediately.  If you want to make all your paragraphs display in blue, then you'll have to add this style attribute to each one.
-        That's going to quickly add up to a lot of duplicative work, and if you ever want to change the color later on, then it'll be even more work to update
-        each one.
-      </p>
-      <h3>Build to Learn</h3>
-      <p>
-        Before we go any further, as a part of active learning it's important to do exercises and practice, as well as read and comprehend. 
-        Actively exercising the knowledge you just learned actually ingrains that knowledge in your brain, making it accessible later on. 
-        For that reason, for every concept we learn, I highly recommend you try it yourself. Take the sample I provide and make it your own 
-        by changing the styling.  Typing it out and practicing will really help with your retention. You will learn best through this 
-        tutorial by building a number of sample pages and styling them alongside the exercises.
-      </p>
-      <p>
-        Learn as you build.
-      </p>
-      <h3>Embedded Styles</h3>
-      <p>
-        Let's get back to our problem of having to add a style attribute to every HTML element we want to change.  There's an easier way to do this.  
-        If you want to add styles to an entire page, then you can also put these in the head section of your HTML.
-      </p>
-      <p>Here's an example:</p>
-      <textarea rows="18">
+    <p style="color: royalblue">Think of London, a small city</p>
+    <h3>Inline Styles</h3>
+    <p>
+      This way of using CSS is called in-line styling, because the styles appear in the same line as the HTML. You can
+      probably see the shortcomings
+      of this approach almost immediately. If you want to make all your paragraphs display in blue, then you'll have to
+      add this style attribute to each one.
+      That's going to quickly add up to a lot of duplicative work, and if you ever want to change the color later on,
+      then it'll be even more work to update
+      each one.
+    </p>
+    <h3>Build to Learn</h3>
+    <p>
+      Before we go any further, as a part of active learning it's important to do exercises and practice, as well as
+      read and comprehend.
+      Actively exercising the knowledge you just learned actually ingrains that knowledge in your brain, making it
+      accessible later on.
+      For that reason, for every concept we learn, I highly recommend you try it yourself. Take the sample I provide and
+      make it your own
+      by changing the styling. Typing it out and practicing will really help with your retention. You will learn best
+      through this
+      tutorial by building a number of sample pages and styling them alongside the exercises.
+    </p>
+    <p>
+      Learn as you build.
+    </p>
+    <h3>Embedded Styles</h3>
+    <p>
+      Let's get back to our problem of having to add a style attribute to every HTML element we want to change. There's
+      an easier way to do this.
+      If you want to add styles to an entire page, then you can also put these in the head section of your HTML.
+    </p>
+    <p>Here's an example:</p>
+    <textarea rows="18">
 <!DOCTYPE html>
 <html>
   <head>
@@ -105,46 +124,57 @@
   </body>
 </html>
       </textarea>
-      <p>
-        Copy and paste the code above into a text editor and save it as 'index.html'.  Opening it with a browser will give you a local playground where 
-        you can safely complete the rest of these exercises and continue learning CSS.  Just save your file, then reload your browser to see your changes.
-      </p>
-      <p>
-        As you can see in your local playground, we've changed the color of both paragraphs.  How'd we do it?  These 5 lines of code:
-      </p>
-      <textarea rows="6">
+    <p>
+      Copy and paste the code above into a text editor and save it as 'index.html'. Opening it with a browser will give
+      you a local playground where
+      you can safely complete the rest of these exercises and continue learning CSS. Just save your file, then reload
+      your browser to see your changes.
+    </p>
+    <p>
+      As you can see in your local playground, we've changed the color of both paragraphs. How'd we do it? These 5 lines
+      of code:
+    </p>
+    <textarea rows="6">
 <style>
   p {
     color: royalblue;
   }
 </style>
       </textarea>
-      <p>What we see defined above is a CSS rule.  Each CSS rule is composed of three parts: selector, property, and value:</p>
-      <img class="diagram" src="assets/style-embedded.svg" alt="annotated diagram of style element" height="160">
-      <p>These three parts break down succinctly as:</p>
-      <ul>
-        <li><strong>Selector</strong> defines the target of the rule or what part of the HTML this rule will be applied on (e.g. all p tags or paragraphs).</li>
-        <li><strong>Property</strong> defines what about the target is going to be changed, so in this case it's the font color of paragraphs.</li>
-        <li><strong>Value</strong> defines the property's new setting, so in this case, the font color property now has a value of royalblue.</li>
-      </ul>
-      <p>
-        This second way of defining styles is more useful, because you can define rules that apply to an entire HTML web page.  Think of all the HTML elements you know.  
-        You can now change the color of anything!  However, once again, you're probably already asking questions about the shortcomings that might accompany using the 
-        style tag in the head of your document.
-      </p>
-      <p>Questions like:</p>
-      <ul>
-        <li>What if I have a lot of CSS rules?  My head element will be really big.</li>
-        <li>What if I want to share the same styles across multiple pages?</li>
-      </ul>
-      <p>The final (most widely accepted) way to incorporate CSS into HTML is through using external stylesheets.</p>
-      <h3>External Styles</h3>
-      <p>
-        You can link to a separate CSS file where you save all of your rules apart from your HTML.  This answers both of the questions above, because now you can reference
-        as many external stylesheets as you need, and you only need a single line of code for each stylesheet.  Let's see what that looks like:
-      </p>
-      <p>Your <strong>index.html</strong> file would contain the following:</p>
-      <textarea rows="14">
+    <p>What we see defined above is a CSS rule. Each CSS rule is composed of three parts: selector, property, and value:
+    </p>
+    <img class="diagram" src="assets/style-embedded.svg" alt="annotated diagram of style element" height="160">
+    <p>These three parts break down succinctly as:</p>
+    <ul>
+      <li><strong>Selector</strong> defines the target of the rule or what part of the HTML this rule will be applied on
+        (e.g. all p tags or paragraphs).</li>
+      <li><strong>Property</strong> defines what about the target is going to be changed, so in this case it's the font
+        color of paragraphs.</li>
+      <li><strong>Value</strong> defines the property's new setting, so in this case, the font color property now has a
+        value of royalblue.</li>
+    </ul>
+    <p>
+      This second way of defining styles is more useful, because you can define rules that apply to an entire HTML web
+      page. Think of all the HTML elements you know.
+      You can now change the color of anything! However, once again, you're probably already asking questions about the
+      shortcomings that might accompany using the
+      style tag in the head of your document.
+    </p>
+    <p>Questions like:</p>
+    <ul>
+      <li>What if I have a lot of CSS rules? My head element will be really big.</li>
+      <li>What if I want to share the same styles across multiple pages?</li>
+    </ul>
+    <p>The final (most widely accepted) way to incorporate CSS into HTML is through using external stylesheets.</p>
+    <h3>External Styles</h3>
+    <p>
+      You can link to a separate CSS file where you save all of your rules apart from your HTML. This answers both of
+      the questions above, because now you can reference
+      as many external stylesheets as you need, and you only need a single line of code for each stylesheet. Let's see
+      what that looks like:
+    </p>
+    <p>Your <strong>index.html</strong> file would contain the following:</p>
+    <textarea rows="14">
 <!DOCTYPE html>
 <html>
   <head>
@@ -159,137 +189,156 @@
   </body>
 </html>
       </textarea>
-      <p>While your <strong>styles.css</strong> file would contain the rule:</p>
-      <textarea rows="4">
+    <p>While your <strong>styles.css</strong> file would contain the rule:</p>
+    <textarea rows="4">
 p {
   color: royalblue;
 }
       </textarea>
-      <p>
-        By adding the link element, identifying the relative reference as being to a stylesheet, and through using the href attribute to refer to the location of that stylesheet, 
-        you tell the browser what CSS rules to apply to the HTML document it just received.  The CSS sheet referenced can contain any number of rules.
-      </p>
-      <h2>Selectors</h2>
-      <p>
-        Selectors define the target for the CSS rule you're defining, and up until now, we've only seen one type of selector for elements.  The element selector is powerful, because
-        you can modify the display properties of all the instances of that element on a page, but what if you want to be more <em>selective</em> and only target certain elements?
-      </p>
-      <p>That's where knowing all of the possible selectors comes in handy and can help you:</p>
-      <ul>
-        <li><strong>Element</strong> selectors refer to HTML elements by type (e.g. p) and change all the instances of that element on a page.</li>
-        <li><strong>Class</strong> selectors refer to HTML elements by their class attribute.  Class is a global HTML attribute available to all elements.</li>
-        <li><strong>Identifier</strong> selectors refer to a single specific HTML element's id attribute.  id is also global, but unlike class must be unique.</li>
-      </ul>
-      <h3>Class</h3>
-      <p>
-        The class attribute can be applied to any HTML element, and it can be used to span different types of elements, so that you can easily select them in your CSS by using
-        the class selector.  The class selector syntax is a period . followed by the class name:
-      </p>
-      <div class="code">
-        <figure>
-          <figcaption>HTML</figcaption>
-          <textarea rows="6" readonly>
+    <p>
+      By adding the link element, identifying the relative reference as being to a stylesheet, and through using the
+      href attribute to refer to the location of that stylesheet,
+      you tell the browser what CSS rules to apply to the HTML document it just received. The CSS sheet referenced can
+      contain any number of rules.
+    </p>
+    <h2>Selectors</h2>
+    <p>
+      Selectors define the target for the CSS rule you're defining, and up until now, we've only seen one type of
+      selector for elements. The element selector is powerful, because
+      you can modify the display properties of all the instances of that element on a page, but what if you want to be
+      more <em>selective</em> and only target certain elements?
+    </p>
+    <p>That's where knowing all of the possible selectors comes in handy and can help you:</p>
+    <ul>
+      <li><strong>Element</strong> selectors refer to HTML elements by type (e.g. p) and change all the instances of
+        that element on a page.</li>
+      <li><strong>Class</strong> selectors refer to HTML elements by their class attribute. Class is a global HTML
+        attribute available to all elements.</li>
+      <li><strong>Identifier</strong> selectors refer to a single specific HTML element's id attribute. id is also
+        global, but unlike class must be unique.</li>
+    </ul>
+    <h3>Class</h3>
+    <p>
+      The class attribute can be applied to any HTML element, and it can be used to span different types of elements, so
+      that you can easily select them in your CSS by using
+      the class selector. The class selector syntax is a period . followed by the class name:
+    </p>
+    <div class="code">
+      <figure>
+        <figcaption>HTML</figcaption>
+        <textarea rows="6" readonly>
 <p>David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, <q class="lyrics">Think of London, a small city</q>.</p>
           </textarea>
-        </figure>
-        <figure>
-          <figcaption>CSS</figcaption>
-          <pre><code><style contenteditable>
+      </figure>
+      <figure>
+        <figcaption>CSS</figcaption>
+        <pre><code><style contenteditable>
   .lyrics {
     color: royalblue;
     line-height: 120%;
   }
           </style></code></pre>
-        </figure>
-        <figure>
-          <figcaption>Display</figcaption>
-          <p>David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, <q class="lyrics">Think of London, a small city</q>.</p>
-        </figure>
-      </div>
-      <p>When applied to a set of song lyrics like this one would appear as:</p>
-      <blockquote class="lyrics">
-        <p>
-          Think of London, a small city
-        </p>
-        <p>
-          It's dark, dark in the daytime<br>
-          The people sleep, sleep in the daytime<br>
-          If they want to, if they want to
-        </p>
-        <p>
-          I'm checking them out<br>
-          I'm checking them out<br>
-          I got it figured out<br>
-          I got it figured out<br>
-          There's good points and bad points<br>
-          Find a city<br>
-          Find myself a city to live in...
-        </p>
-        <cite>-Talking Heads</cite>
-      </blockquote>
-      <p>And to this smaller snippet embedded in a sentence as well:</p>
-      <p>David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, <q class="lyrics">Think of London, a small city.</q></p>
-      <p>The multiple lines of the song above are a blockquote, while the single opening lyric in the previous sentence is a quote element.  If we're only using either
-        inline styles or element selectors, then we have a few problems:</p>
-      <ul>
-        <li>If we had used inline styles, then we'd have to add a style attribute to both elements.</li>
-        <li>If we had used an element selector, then we'd have to write two rules:
-          <ul>
-            <li>one for blockquote elements</li>
-            <li>one for quote elements</li>
-          </ul>
-        </li>
-      </ul>
+      </figure>
+      <figure>
+        <figcaption>Display</figcaption>
+        <p>David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, <q
+            class="lyrics">Think of London, a small city</q>.</p>
+      </figure>
+    </div>
+    <p>When applied to a set of song lyrics like this one would appear as:</p>
+    <blockquote class="lyrics">
       <p>
-        However, because we defined a class, then we can simply add the class to each element we want to appear like a lyric, reducing the need to write extra CSS.  
-        Now, if we want to style songs the same way on all the pages of our site, we just need to import this stylesheet and then add the lyrics class to the elements
-        representing songs.
+        Think of London, a small city
       </p>
-      <p>The same class can be applied to any number of elements, but what about when you have a truly unique or single element that you want to style in
-          a special or certain way?  That's what the HTML id attribute is for.
-      </p>
-      <h3>Identifier</h3>
       <p>
-        Using the identifier attribute (abbreviated as id in HTML), CSS can target individual elements on a page.  As a quick refresher, the value of the id attribute must be
-        unique on a page, meaning one and only one element with an id of the given value can exist.
+        It's dark, dark in the daytime<br>
+        The people sleep, sleep in the daytime<br>
+        If they want to, if they want to
       </p>
-      <div class="code">
-        <figure>
-          <figcaption>HTML</figcaption>
-          <textarea rows="5" readonly>
+      <p>
+        I'm checking them out<br>
+        I'm checking them out<br>
+        I got it figured out<br>
+        I got it figured out<br>
+        There's good points and bad points<br>
+        Find a city<br>
+        Find myself a city to live in...
+      </p>
+      <cite>-Talking Heads</cite>
+    </blockquote>
+    <p>And to this smaller snippet embedded in a sentence as well:</p>
+    <p>David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, <q
+        class="lyrics">Think of London, a small city.</q></p>
+    <p>The multiple lines of the song above are a blockquote, while the single opening lyric in the previous sentence is
+      a quote element. If we're only using either
+      inline styles or element selectors, then we have a few problems:</p>
+    <ul>
+      <li>If we had used inline styles, then we'd have to add a style attribute to both elements.</li>
+      <li>If we had used an element selector, then we'd have to write two rules:
+        <ul>
+          <li>one for blockquote elements</li>
+          <li>one for quote elements</li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      However, because we defined a class, then we can simply add the class to each element we want to appear like a
+      lyric, reducing the need to write extra CSS.
+      Now, if we want to style songs the same way on all the pages of our site, we just need to import this stylesheet
+      and then add the lyrics class to the elements
+      representing songs.
+    </p>
+    <p>The same class can be applied to any number of elements, but what about when you have a truly unique or single
+      element that you want to style in
+      a special or certain way? That's what the HTML id attribute is for.
+    </p>
+    <h3>Identifier</h3>
+    <p>
+      Using the identifier attribute (abbreviated as id in HTML), CSS can target individual elements on a page. As a
+      quick refresher, the value of the id attribute must be
+      unique on a page, meaning one and only one element with an id of the given value can exist.
+    </p>
+    <div class="code">
+      <figure>
+        <figcaption>HTML</figcaption>
+        <textarea rows="5" readonly>
   <p>Like the lyrics you just read? <br><br>
     <span id="call-to-action">Listen to the Talking Heads Right Now!</span></p>
           </textarea>
-        </figure>
-        <figure>
-          <figcaption>CSS</figcaption>
-          <pre><code><style contenteditable>
+      </figure>
+      <figure>
+        <figcaption>CSS</figcaption>
+        <pre><code><style contenteditable>
   #call-to-action {
     background-color: lightgray;
     color: blueviolet;
   }
           </style></code></pre>
-        </figure>
-        <figure>
-          <figcaption>Display</figcaption>
-          <p>Like the lyrics you just read?<br><br> <span id="call-to-action">Listen to the Talking Heads Right Now!</span></p>
-        </figure>
-      </div>
-      <h3>Important</h3>
-      <h2>Colors</h2>
-      <p>
-        Color can be expressed in four different formats.  There are a limited number of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">named colors</a>, 
-        and then there are colors defined by specific values.  For colors defined by specific values, CSS offers three different ways to express them:
-      </p>
-      <ul>
-        <li>Hexadecimal</li>
-        <li>Hue, Saturation, Lightness (HSL)</li>
-        <li>Red, Green, Blue (RGB)</li>
-      </ul>
-      <p>
-        Each format has advantages and disadvantages.  For starters, let's see the same named color, royalblue, in all the formats:
-      </p>
-      <textarea rows="19">
+      </figure>
+      <figure>
+        <figcaption>Display</figcaption>
+        <p>Like the lyrics you just read?<br><br> <span id="call-to-action">Listen to the Talking Heads Right
+            Now!</span></p>
+      </figure>
+    </div>
+    <h3>Important</h3>
+    <h2>Colors</h2>
+    <p>
+      Color can be expressed in four different formats. There are a limited number of <a
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">named colors</a>,
+      and then there are colors defined by specific values. For colors defined by specific values, CSS offers three
+      different ways to express them:
+    </p>
+    <ul>
+      <li>Hexadecimal</li>
+      <li>Hue, Saturation, Lightness (HSL)</li>
+      <li>Red, Green, Blue (RGB)</li>
+    </ul>
+    <p>
+      Each format has advantages and disadvantages. For starters, let's see the same named color, royalblue, in all the
+      formats:
+    </p>
+    <textarea rows="19">
 p {
   color: royalblue;
 }
@@ -309,312 +358,354 @@ p {
   color: rgb(65, 105, 225);
 }
       </textarea>
-      <p>
-        Each one of the rules above will make the paragraph elements on a page the same color blue. So if they're all the same, you're probably wondering, why does CSS offer so
-        many ways of doing the same thing, defining color?
-      </p>
-      <p>
-        It all comes down to different use cases and who is defining color and consuming color.
-      </p>
-      <h3>Hexadecimal</h3>
-      <p>
-        Hexadecimal is the most common way you see colors defined, because a single numerical value can represent an entire color.  When designing your own styles, you will most likely
-        find yourself using a color picker like this one (click the input below):
-      </p>
-      <input type="color" value="#4169e1">
-      <p>
-        The color picker tells you the values in each format (HSL, RGB) for the given color you've chosen, and the hexadecimal value appears in the "Color name:" 
-        field.  Having a color represented as a single value is useful because it's easier for you to work with one value in your code and to go from color picker directly to CSS.
-        You just copy the "Color name" hexadecimal value from the picker and then paste that single value into your CSS, and you're off to a colorful race track!
-      </p>
-      <p>
-        One shortcoming of defining colors in hexadecimal is that it's difficult for a human to read.  The values are defined as #RRGGBB, meaning two place are saved for how much
-        Red (RR), Green (GG), and Blue (BB) make up the whole color.  However, it's hard to look at two colors, say #E71C1C, and #1C5AE7, and tell that they're a red and a blue.
-      </p>
-      <p>
-        Making color easier to understand for humans is where the Hue, Saturation, and Lightness color format come in to play.
-      </p>
-      <h3>Hue, Saturation, Lightness (HSL)</h3>
-      <p>
-        HSL was invented by a french engineer, Georges Valensi, who in 1938 was trying to solve a television broadcasting problem.  TV broadcasters needed a way to maintain backwards
-        compatability with monochrome (black and white) TV receivers and the new color TVs.  Luminance (how much black or white existed) was broadcast as an unmodified value, so Mr. Valensi 
-        came up with the HSL color space in order to support color, while still maintaining compatability with existing monochrome TVs.  
-      </p>
-      <h4>Hue</h4>
-      <p>
-        HSL color space is shaped as a cylinder, so the first attribute, <strong>hue</strong>, has an acceptable range aligned with the number of degrees in a circle (360).  The hue 
-        (also called chroma) value chosen is essentially the base color.  To see what I mean, I have created a table of color values below along with their hues, so you can see how each
-        30 degree "chunk" of the circle corresponds to actual colors.  You can click on any of these color picker inputs to see how hue changes.
-      </p>
-      <table style="border: 1px solid black">
-        <tr>
-          <th scope="row">Name</th>
-          <td>red</td>
-          <td>orange</td>
-          <td>yellow</td>
-          <td>lime</td>
-          <td>green</td>
-          <td>irish</td>
-          <td>cyan</td>
-          <td>azure</td>
-          <td>blue</td>
-          <td>purple</td>
-          <td>magenta</td>
-          <td>hot pink</td>
-        </tr>
-        <tr>
-          <th scope="row">Hue</th>
-          <td>0</td>
-          <td>30</td>
-          <td>60</td>
-          <td>90</td>
-          <td>120</td>
-          <td>150</td>
-          <td>180</td>
-          <td>210</td>
-          <td>240</td>
-          <td>270</td>
-          <td>300</td>
-          <td>330</td>
-        </tr>
-        <tr>
-          <th scope="row">Color</th>
-          <td><input type="color" value="#FF0000"></td>
-          <td><input type="color" value="#FF8000"></td>
-          <td><input type="color" value="#FFFF00"></td>
-          <td><input type="color" value="#80FF00"></td>
-          <td><input type="color" value="#00FF00"></td>
-          <td><input type="color" value="#00FF80"></td>
-          <td><input type="color" value="#00FFFF"></td>
-          <td><input type="color" value="#0080FF"></td>
-          <td><input type="color" value="#0000FF"></td>
-          <td><input type="color" value="#8000FF"></td>
-          <td><input type="color" value="#FF00FF"></td>
-          <td><input type="color" value="#FF0080"></td>
-        </tr>
-      </table>
-      <p>
-        So now, if you remember that Red is when Hue is 0, Green is when Hue is 120, and Blue is when Hue is 240, then for colors defined in the HSL format, you can pretty easily tell
-        which ballpark you're in, just by looking at a single value (the first one, Hue).  That's why HSL is often referred to as a human readable or human digestible color format.
-      </p>
-      <p>
-        When defining color using HSL in CSS, you use the following format: <br>
-<pre>
+    <p>
+      Each one of the rules above will make the paragraph elements on a page the same color blue. So if they're all the
+      same, you're probably wondering, why does CSS offer so
+      many ways of doing the same thing, defining color?
+    </p>
+    <p>
+      It all comes down to different use cases and who is defining color and consuming color.
+    </p>
+    <h3>Hexadecimal</h3>
+    <p>
+      Hexadecimal is the most common way you see colors defined, because a single numerical value can represent an
+      entire color. When designing your own styles, you will most likely
+      find yourself using a color picker like this one (click the input below):
+    </p>
+    <input type="color" value="#4169e1">
+    <p>
+      The color picker tells you the values in each format (HSL, RGB) for the given color you've chosen, and the
+      hexadecimal value appears in the "Color name:"
+      field. Having a color represented as a single value is useful because it's easier for you to work with one value
+      in your code and to go from color picker directly to CSS.
+      You just copy the "Color name" hexadecimal value from the picker and then paste that single value into your CSS,
+      and you're off to a colorful race track!
+    </p>
+    <p>
+      One shortcoming of defining colors in hexadecimal is that it's difficult for a human to read. The values are
+      defined as #RRGGBB, meaning two place are saved for how much
+      Red (RR), Green (GG), and Blue (BB) make up the whole color. However, it's hard to look at two colors, say
+      #E71C1C, and #1C5AE7, and tell that they're a red and a blue.
+    </p>
+    <p>
+      Making color easier to understand for humans is where the Hue, Saturation, and Lightness color format come in to
+      play.
+    </p>
+    <h3>Hue, Saturation, Lightness (HSL)</h3>
+    <p>
+      HSL was invented by a french engineer, Georges Valensi, who in 1938 was trying to solve a television broadcasting
+      problem. TV broadcasters needed a way to maintain backwards
+      compatability with monochrome (black and white) TV receivers and the new color TVs. Luminance (how much black or
+      white existed) was broadcast as an unmodified value, so Mr. Valensi
+      came up with the HSL color space in order to support color, while still maintaining compatability with existing
+      monochrome TVs.
+    </p>
+    <h4>Hue</h4>
+    <p>
+      HSL color space is shaped as a cylinder, so the first attribute, <strong>hue</strong>, has an acceptable range
+      aligned with the number of degrees in a circle (360). The hue
+      (also called chroma) value chosen is essentially the base color. To see what I mean, I have created a table of
+      color values below along with their hues, so you can see how each
+      30 degree "chunk" of the circle corresponds to actual colors. You can click on any of these color picker inputs to
+      see how hue changes.
+    </p>
+    <table style="border: 1px solid black">
+      <tr>
+        <th scope="row">Name</th>
+        <td>red</td>
+        <td>orange</td>
+        <td>yellow</td>
+        <td>lime</td>
+        <td>green</td>
+        <td>irish</td>
+        <td>cyan</td>
+        <td>azure</td>
+        <td>blue</td>
+        <td>purple</td>
+        <td>magenta</td>
+        <td>hot pink</td>
+      </tr>
+      <tr>
+        <th scope="row">Hue</th>
+        <td>0</td>
+        <td>30</td>
+        <td>60</td>
+        <td>90</td>
+        <td>120</td>
+        <td>150</td>
+        <td>180</td>
+        <td>210</td>
+        <td>240</td>
+        <td>270</td>
+        <td>300</td>
+        <td>330</td>
+      </tr>
+      <tr>
+        <th scope="row">Color</th>
+        <td><input type="color" value="#FF0000"></td>
+        <td><input type="color" value="#FF8000"></td>
+        <td><input type="color" value="#FFFF00"></td>
+        <td><input type="color" value="#80FF00"></td>
+        <td><input type="color" value="#00FF00"></td>
+        <td><input type="color" value="#00FF80"></td>
+        <td><input type="color" value="#00FFFF"></td>
+        <td><input type="color" value="#0080FF"></td>
+        <td><input type="color" value="#0000FF"></td>
+        <td><input type="color" value="#8000FF"></td>
+        <td><input type="color" value="#FF00FF"></td>
+        <td><input type="color" value="#FF0080"></td>
+      </tr>
+    </table>
+    <p>
+      So now, if you remember that Red is when Hue is 0, Green is when Hue is 120, and Blue is when Hue is 240, then for
+      colors defined in the HSL format, you can pretty easily tell
+      which ballpark you're in, just by looking at a single value (the first one, Hue). That's why HSL is often referred
+      to as a human readable or human digestible color format.
+    </p>
+    <p>
+      When defining color using HSL in CSS, you use the following format: <br>
+    <pre>
   color: hsl(hue, saturation, lightness);
 </pre>
-      </p>
-      <p>Without knowing what saturation or lightness do, can you look at the CSS rule below and the hue value to guess the color?</p>
-<pre>
+    </p>
+    <p>Without knowing what saturation or lightness do, can you look at the CSS rule below and the hue value to guess
+      the color?</p>
+    <pre>
   <code>
   p {
     color: hsl(230,75%,90%);
   }
   </code>
 </pre>
-      <details>
-        <summary>Guess the color before expanding this paragraph!</summary>
-        <p style="color: #3956E6">
-          Did you guess a shade of <strong>blue</strong>?  If so, well done!  If not, look at hues and colors above once more.  See how the hue for azure is 210 and the hue for blue is 240?
-          Since the hue in the CSS rule above is 230, between azure and blue, we could safely guess that the paragraph would be colored some shade of blue.
-        </p>
-      </details>
-      <p>Next we're going to learn how the rest of the HSL color format is defined.</p>
-      <h4>Saturation</h4>
-      <p>
-        Saturation is a value that ranges from 0-100% and it defines how much or how strong the color you've chosen appears.  In our example below, we'll use purple to see how changing
-        the saturation changes the color.  A total lack of saturation (no color) leaves us with just white, while full saturation (all the color) results in a bold purple.
-      </p>
-      <table style="border: 1px solid black">
-        <tr>
-          <th scope="row">Saturation</th>
-          <td>0</td>
-          <td>10</td>
-          <td>20</td>
-          <td>30</td>
-          <td>40</td>
-          <td>50</td>
-          <td>60</td>
-          <td>70</td>
-          <td>80</td>
-          <td>90</td>
-          <td>100</td>
-        </tr>
-        <tr>
-          <th scope="row">Color</th>
-          <td><input type="color" value="#FFFFFF"></td>
-          <td><input type="color" value="#F2E6FF"></td>
-          <td><input type="color" value="#E4CCFF"></td>
-          <td><input type="color" value="#D7B3FF"></td>
-          <td><input type="color" value="#C999FF"></td>
-          <td><input type="color" value="#BC80FF"></td>
-          <td><input type="color" value="#AE66FF"></td>
-          <td><input type="color" value="#A14DFF"></td>
-          <td><input type="color" value="#9333FF"></td>
-          <td><input type="color" value="#8619FF"></td>
-          <td><input type="color" value="#7900FF"></td>
-        </tr>
-      </table>
-      <h4>Lightness</h4>
-      <p>
-        Lightness is a value that also ranges from 0-100%, but it defines how much black (0%) or white (100%) is in the color.  As you can imagine, a total lack of lightness (0%) results
-        in a block color, while full lightness (100%) gives you bright, fully lit colors.
-      </p>
-      <table style="border: 1px solid black">
-        <tr>
-          <th scope="row">Lightness</th>
-          <td>0</td>
-          <td>10</td>
-          <td>20</td>
-          <td>30</td>
-          <td>40</td>
-          <td>50</td>
-          <td>60</td>
-          <td>70</td>
-          <td>80</td>
-          <td>90</td>
-          <td>100</td>
-        </tr>
-        <tr>
-          <th scope="row">Color</th>
-          <td><input type="color" value="#000000"></td>
-          <td><input type="color" value="#000D1A"></td>
-          <td><input type="color" value="#001A33"></td>
-          <td><input type="color" value="#00274D"></td>
-          <td><input type="color" value="#003466"></td>
-          <td><input type="color" value="#004180"></td>
-          <td><input type="color" value="#004E99"></td>
-          <td><input type="color" value="#005BB3"></td>
-          <td><input type="color" value="#0068CC"></td>
-          <td><input type="color" value="#0075E6"></td>
-          <td><input type="color" value="#0080FF"></td>
-        </tr>
-      </table>
-      <p>
-        Stepping back for a second to combine our new understanding for all three aspects of the HSL format:
-      </p>
-      <ul>
-        <li>Hue: the basic color to be rendered</li>
-        <li>Saturation: the amount or strength of that color</li>
-        <li>Lightness: the brightness or lightness of that color</li>
-      </ul>
-      <p>
-        It's now easier for us to return to our original guessing example and see how the different values effect the color rendered:
-      </p>
-<pre>
-  <code>
-  p {
-    color: hsl(230,75%,90%);
-  }
-  </code>
-</pre>
+    <details>
+      <summary>Guess the color before expanding this paragraph!</summary>
       <p style="color: #3956E6">
-        We definitely have a blue (hue = 230), there's a lot of blue (saturation = 75%), and it's a bright shade of blue (lightness = 90%).
+        Did you guess a shade of <strong>blue</strong>? If so, well done! If not, look at hues and colors above once
+        more. See how the hue for azure is 210 and the hue for blue is 240?
+        Since the hue in the CSS rule above is 230, between azure and blue, we could safely guess that the paragraph
+        would be colored some shade of blue.
       </p>
-      <p>If HSL is easier for humans, then what about computers?  How do they make sense of color?  That's why we have RGB.</p>
-      <h3>Red, Green, Blue (RGB)</h3>
-      <p>
-        The red, green, blue or RGB color model is based on adding three base colors together (you've probably already guessed which)
-        to produce every other color in the rainbow.  Unlike HSL where hue is essentially the color, RGB colors are determined by how much of
-        each base color is present.  RGB values can range from 0-255 with 0 representing none of the color being present and 255 representing 
-        the maximum of that color.  The color notation is similar to that of HSL, except with rgb instead:
-      </p>
-<pre>
+    </details>
+    <p>Next we're going to learn how the rest of the HSL color format is defined.</p>
+    <h4>Saturation</h4>
+    <p>
+      Saturation is a value that ranges from 0-100% and it defines how much or how strong the color you've chosen
+      appears. In our example below, we'll use purple to see how changing
+      the saturation changes the color. A total lack of saturation (no color) leaves us with just white, while full
+      saturation (all the color) results in a bold purple.
+    </p>
+    <table style="border: 1px solid black">
+      <tr>
+        <th scope="row">Saturation</th>
+        <td>0</td>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <th scope="row">Color</th>
+        <td><input type="color" value="#FFFFFF"></td>
+        <td><input type="color" value="#F2E6FF"></td>
+        <td><input type="color" value="#E4CCFF"></td>
+        <td><input type="color" value="#D7B3FF"></td>
+        <td><input type="color" value="#C999FF"></td>
+        <td><input type="color" value="#BC80FF"></td>
+        <td><input type="color" value="#AE66FF"></td>
+        <td><input type="color" value="#A14DFF"></td>
+        <td><input type="color" value="#9333FF"></td>
+        <td><input type="color" value="#8619FF"></td>
+        <td><input type="color" value="#7900FF"></td>
+      </tr>
+    </table>
+    <h4>Lightness</h4>
+    <p>
+      Lightness is a value that also ranges from 0-100%, but it defines how much black (0%) or white (100%) is in the
+      color. As you can imagine, a total lack of lightness (0%) results
+      in a block color, while full lightness (100%) gives you bright, fully lit colors.
+    </p>
+    <table style="border: 1px solid black">
+      <tr>
+        <th scope="row">Lightness</th>
+        <td>0</td>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <th scope="row">Color</th>
+        <td><input type="color" value="#000000"></td>
+        <td><input type="color" value="#000D1A"></td>
+        <td><input type="color" value="#001A33"></td>
+        <td><input type="color" value="#00274D"></td>
+        <td><input type="color" value="#003466"></td>
+        <td><input type="color" value="#004180"></td>
+        <td><input type="color" value="#004E99"></td>
+        <td><input type="color" value="#005BB3"></td>
+        <td><input type="color" value="#0068CC"></td>
+        <td><input type="color" value="#0075E6"></td>
+        <td><input type="color" value="#0080FF"></td>
+      </tr>
+    </table>
+    <p>
+      Stepping back for a second to combine our new understanding for all three aspects of the HSL format:
+    </p>
+    <ul>
+      <li>Hue: the basic color to be rendered</li>
+      <li>Saturation: the amount or strength of that color</li>
+      <li>Lightness: the brightness or lightness of that color</li>
+    </ul>
+    <p>
+      It's now easier for us to return to our original guessing example and see how the different values effect the
+      color rendered:
+    </p>
+    <pre>
+  <code>
+  p {
+    color: hsl(230,75%,90%);
+  }
+  </code>
+</pre>
+    <p style="color: #3956E6">
+      We definitely have a blue (hue = 230), there's a lot of blue (saturation = 75%), and it's a bright shade of blue
+      (lightness = 90%).
+    </p>
+    <p>If HSL is easier for humans, then what about computers? How do they make sense of color? That's why we have RGB.
+    </p>
+    <h3>Red, Green, Blue (RGB)</h3>
+    <p>
+      The red, green, blue or RGB color model is based on adding three base colors together (you've probably already
+      guessed which)
+      to produce every other color in the rainbow. Unlike HSL where hue is essentially the color, RGB colors are
+      determined by how much of
+      each base color is present. RGB values can range from 0-255 with 0 representing none of the color being present
+      and 255 representing
+      the maximum of that color. The color notation is similar to that of HSL, except with rgb instead:
+    </p>
+    <pre>
   color: rgb(red,green,blue);
 </pre>
-      <table style="border: 1px solid black">
-        <tr>
-          <th scope="row">Values</th>
-          <td>rgb(255,0,0)</td>
-          <td>rgb(0,255,0)</td>
-          <td>rgb(0,0,255)</td>
-        </tr>
-        <tr>
-          <th scope="row">Color</th>
-          <td><input type="color" value="#FF0000"></td>
-          <td><input type="color" value="#00FF00"></td>
-          <td><input type="color" value="#0000FF"></td>
-        </tr>
-      </table>
-      <p>So, if you want a color like orange, then what colors combined make orange?  Can you guess?</p>
-      <details>
-        <summary>Click here to see the answer!</summary>
-        <p>To make orange you start with a lot of red (255) and then add about half green (125).  You don't need any blue (0).</p>
-<pre>
+    <table style="border: 1px solid black">
+      <tr>
+        <th scope="row">Values</th>
+        <td>rgb(255,0,0)</td>
+        <td>rgb(0,255,0)</td>
+        <td>rgb(0,0,255)</td>
+      </tr>
+      <tr>
+        <th scope="row">Color</th>
+        <td><input type="color" value="#FF0000"></td>
+        <td><input type="color" value="#00FF00"></td>
+        <td><input type="color" value="#0000FF"></td>
+      </tr>
+    </table>
+    <p>So, if you want a color like orange, then what colors combined make orange? Can you guess?</p>
+    <details>
+      <summary>Click here to see the answer!</summary>
+      <p>To make orange you start with a lot of red (255) and then add about half green (125). You don't need any blue
+        (0).</p>
+      <pre>
   color: rgb(255,125,0)
 </pre>
-        <p>And you get a bright, strong, bold orange like this:</p>
-        <input type="color" value="#FF7D00">
-      </details>
-      <p>That was probably pretty difficult to guess though, right?</p>
-      <p>Imagine if you saw a color defined like this:</p>
-      <textarea rows="4">
+      <p>And you get a bright, strong, bold orange like this:</p>
+      <input type="color" value="#FF7D00">
+    </details>
+    <p>That was probably pretty difficult to guess though, right?</p>
+    <p>Imagine if you saw a color defined like this:</p>
+    <textarea rows="4">
 p {
   color: rgb(65, 105, 225);
 }
       </textarea>
-      <p>Any idea what color that might be?</p>
-      <p>
-        There's about 25% of the possible red, 40% of the possible green, and a large amount of blue 90%ish.  It's probably a blue,
-        and maybe it's some sort of green-ish blue, since there's so much green in it?  I can't really tell what color this will end
-        up as just based off the raw RGB values.
-      </p>
-      <p style="color: royalblue">Guess what?  It's our original royalblue.</p>
-      <input type="color" value="#4169e1">
-      <p>That's why RGB is a color format designed for computers and electronic devices. It's not very human readable.</p>
-      <p>So why does RGB exist?</p>
-      <p>
-        Well, the combination of 256 values (0 to 255) of each color means that 16,777,216 (256 * 256 *256) precisely defined colors are available in
-        this color format.  That's a huge color spectrum.  Also, defining color in this way is easier, computationally, on computers.
-        Today, that doesn't matter anymore, because computers are very fast, but when different color formats were being adopted by 
-        early computers, this mattered a lot.
-      </p>
+    <p>Any idea what color that might be?</p>
+    <p>
+      There's about 25% of the possible red, 40% of the possible green, and a large amount of blue 90%ish. It's probably
+      a blue,
+      and maybe it's some sort of green-ish blue, since there's so much green in it? I can't really tell what color this
+      will end
+      up as just based off the raw RGB values.
+    </p>
+    <p style="color: royalblue">Guess what? It's our original royalblue.</p>
+    <input type="color" value="#4169e1">
+    <p>That's why RGB is a color format designed for computers and electronic devices. It's not very human readable.</p>
+    <p>So why does RGB exist?</p>
+    <p>
+      Well, the combination of 256 values (0 to 255) of each color means that 16,777,216 (256 * 256 *256) precisely
+      defined colors are available in
+      this color format. That's a huge color spectrum. Also, defining color in this way is easier, computationally, on
+      computers.
+      Today, that doesn't matter anymore, because computers are very fast, but when different color formats were being
+      adopted by
+      early computers, this mattered a lot.
+    </p>
 
-      <h3>Alpha Channel</h3>
-      <p>
-        Finally, for both RGB and HSL color definitions, you have the option of adding an additional dimension for transparency.  This is called the 
-        alpha channel, and it defines how transparent the color renders.  The values for Alpha range from 0-1 with 0 representing full transparency 
-        (invisible) and 1 representing full color (no transparency).  This royalblue definition using rgba is the same as not specifying alpha:
-      </p>
-<textarea rows="4">
+    <h3>Alpha Channel</h3>
+    <p>
+      Finally, for both RGB and HSL color definitions, you have the option of adding an additional dimension for
+      transparency. This is called the
+      alpha channel, and it defines how transparent the color renders. The values for Alpha range from 0-1 with 0
+      representing full transparency
+      (invisible) and 1 representing full color (no transparency). This royalblue definition using rgba is the same as
+      not specifying alpha:
+    </p>
+    <textarea rows="4">
 p {
   color: rgba(65, 105, 225, 1)
 }
 </textarea>
-      <p>
-        The alpha channel is typically used for backgrounds, because it allows you to blend different colors together on multiple layers.
-      </p>
-<textarea rows="5">
+    <p>
+      The alpha channel is typically used for backgrounds, because it allows you to blend different colors together on
+      multiple layers.
+    </p>
+    <textarea rows="5">
 p {
   background-color: hsla(30, 75%, 57%, 0.25);
   color: hsla(225, 73%, 57%, 0.75);
 }
-</textarea>  
-      <p class="ex-alphachannel">
-        Blending color with alpha opens another door to displaying elements together using CSS!
-      </p>
-      <p>The paragraph above actually has a bright, bold orange color selected for its background, but it's rendering as a faded orange because
-        the alpha channel is telling the browser to only render it at 25% transparency.  The same is true for the faded blue of the text, which
-        is our same royalblue, but is now set at 75% transparency and is blending in with the background orange. 
-      </p>
-      <h2>Properties</h2>
-      <h3>Cascade</h3>
-      Define the cascade and explain why it's called Cascading Style Sheets
-      <h3>Inline Styles</h3>
-      Explain how inline styles will beat out other selectors
-      <h2>Advanced Selectors</h2>
-      <h4>Combined</h4>
-      <p>
-         If you need more precision in how to select elements and apply CSS rules to them, then you can combine different types of selectors.
-         For example, combine both element and class selectors to target subsets of elements.  For example, displaying priority items inside of a list.
-      </p>
+</textarea>
+    <p class="ex-alphachannel">
+      Blending color with alpha opens another door to displaying elements together using CSS!
+    </p>
+    <p>The paragraph above actually has a bright, bold orange color selected for its background, but it's rendering as a
+      faded orange because
+      the alpha channel is telling the browser to only render it at 25% transparency. The same is true for the faded
+      blue of the text, which
+      is our same royalblue, but is now set at 75% transparency and is blending in with the background orange.
+    </p>
+    <h2>Properties</h2>
+    <h3>Cascade</h3>
+    Define the cascade and explain why it's called Cascading Style Sheets
+    <h3>Inline Styles</h3>
+    Explain how inline styles will beat out other selectors
+    <h2>Advanced Selectors</h2>
+    <h4>Combined</h4>
+    <p>
+      If you need more precision in how to select elements and apply CSS rules to them, then you can combine different
+      types of selectors.
+      For example, combine both element and class selectors to target subsets of elements. For example, displaying
+      priority items inside of a list.
+    </p>
 
     <div class="code">
       <figure>
-      <figcaption>HTML</figcaption>
-      <script>
-        
-      </script>
-<textarea class="language-html" readonly rows="7">
+        <figcaption>HTML</figcaption>
+        <script>
+
+        </script>
+        <textarea class="language-html" readonly rows="7">
     <ul>
       <li class="priority">Find a water supply</li>
       <li>Choose a location</li>
@@ -625,7 +716,7 @@ p {
       </figure>
       <figure>
         <figcaption>CSS</figcaption>
-<pre><code contenteditable><style contenteditable>
+        <pre><code contenteditable><style contenteditable>
   li.priority {
     font-weight: bold;
   }
@@ -642,69 +733,76 @@ p {
       </figure>
 
     </div>
-      <h4>Hierarchy</h4>
-      <p>Define hiearchies by putting a space between selectors:</p>
-      <div class="code">
-        <figure>
-          <figcaption>HTML</figcaption>
-          <textarea rows="5" readonly>
+    <h4>Hierarchy</h4>
+    <p>Define hiearchies by putting a space between selectors:</p>
+    <div class="code">
+      <figure>
+        <figcaption>HTML</figcaption>
+        <textarea rows="5" readonly>
   <p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness, then came the strangers.</q></p>
           </textarea>
-        </figure>
-        <figure>
-          <figcaption>CSS</figcaption>
-          <pre><code><style contenteditable>
+      </figure>
+      <figure>
+        <figcaption>CSS</figcaption>
+        <pre><code><style contenteditable>
   p q {
     font-style: italic;
   }
           </style></code></pre>
-        </figure>
-        <figure>
-          <figcaption>Display</figcaption>
-          <p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness, then came the strangers.</q></p>
-        </figure>
-      </div>
-      <p>And the resulting display of quotes inside of paragraph elements in the document will be italicized, as you see above.</p>
-      <h4>Pseudo-class</h4>
-      <h2>Typography</h2>
-      <p>Introduction paragraph on typography</p>
-      <h3>Units</h3>
-      <h4>Absolute</h4>
-      <p>Absolute units can be more difficult to make responsive and scalable.</p>
-      <h5>Pixels (PX)</h5>
-      <p>Not actually always 1px on your screen do to the different types of displays</p>
-      <h5>Points (PT)</h5>
-      <h5>Centimeters (CM)</h5>
-      <h5>Inches (IN)</h5>
-      <h5>Millimeters (MM)</h5>
-      <h4>Relative</h4>
-      <p>Relative units are designed to be used with changing screen sizes.</p>
-      <h5>Relative Units (EM)</h5> 
-      <p>Typically used with font sizes where 1em is equal to the font-size of the parent element. 1em is 100% of the font size.</p>
-      <p>Very useful for when an element should scale based off its parent element.</p>
-      <h5>Root EMs (REM)</h5>
-      <p>Relative to the root element's font size, so a relative unit based off a single absolute value. This makes using REMs generally more reliable.</p>
-      <h5>View Height (VH)</h5>
-      <p>The viewport is the seeable space presented by the browser in which the content of your page lives.  This changes as a user resizes their browser window.</p>
-      <p>View Height (vh) units are a relative stand in for percetanges, so 1vh is equivalent to 1% of the height of the viewport.</p>
-      <h5>View Width (VW)</h5>
-      <h5>Percentage (%)</h5>
-      <p>Always set relative to another value, which is sometimes the element itself or the parent element</p>
-      <h2>Positioning</h2>
-      <p>vh and vw</p>
-      <p>percentages</p>
-      <h2>Box Model</h2>
-      <h2>Display</h2>
-      <h2>Grid</h2>
-      <h2>Sources</h2>
-      Read more about Mr. Valensi and HSL on <a href="https://en.wikipedia.org/wiki/HSL_and_HSV">Wikipedia</a>.
-    </main>
+      </figure>
+      <figure>
+        <figcaption>Display</figcaption>
+        <p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness,
+            then came the strangers.</q></p>
+      </figure>
+    </div>
+    <p>And the resulting display of quotes inside of paragraph elements in the document will be italicized, as you see
+      above.</p>
+    <h4>Pseudo-class</h4>
+    <h2>Typography</h2>
+    <p>Introduction paragraph on typography</p>
+    <h3>Units</h3>
+    <h4>Absolute</h4>
+    <p>Absolute units can be more difficult to make responsive and scalable.</p>
+    <h5>Pixels (PX)</h5>
+    <p>Not actually always 1px on your screen do to the different types of displays</p>
+    <h5>Points (PT)</h5>
+    <h5>Centimeters (CM)</h5>
+    <h5>Inches (IN)</h5>
+    <h5>Millimeters (MM)</h5>
+    <h4>Relative</h4>
+    <p>Relative units are designed to be used with changing screen sizes.</p>
+    <h5>Relative Units (EM)</h5>
+    <p>Typically used with font sizes where 1em is equal to the font-size of the parent element. 1em is 100% of the font
+      size.</p>
+    <p>Very useful for when an element should scale based off its parent element.</p>
+    <h5>Root EMs (REM)</h5>
+    <p>Relative to the root element's font size, so a relative unit based off a single absolute value. This makes using
+      REMs generally more reliable.</p>
+    <h5>View Height (VH)</h5>
+    <p>The viewport is the seeable space presented by the browser in which the content of your page lives. This changes
+      as a user resizes their browser window.</p>
+    <p>View Height (vh) units are a relative stand in for percetanges, so 1vh is equivalent to 1% of the height of the
+      viewport.</p>
+    <h5>View Width (VW)</h5>
+    <h5>Percentage (%)</h5>
+    <p>Always set relative to another value, which is sometimes the element itself or the parent element</p>
+    <h2>Positioning</h2>
+    <p>vh and vw</p>
+    <p>percentages</p>
+    <h2>Box Model</h2>
+    <h2>Display</h2>
+    <h2>Grid</h2>
+    <h2>Sources</h2>
+    Read more about Mr. Valensi and HSL on <a href="https://en.wikipedia.org/wiki/HSL_and_HSV">Wikipedia</a>.
+  </main>
 
-    <!-- More images
+  <!-- More images
     <img src="assets/jonathan-roger-LY1eyQMFeyo-unsplash.jpg" alt="City skyline in the evening bathed in blue and purple light by Jonathan Roger on Unsplash" width="60%">
     <img src="assets/alex-knight-Ys-DBJeX0nE-unsplash.jpg" alt="City at night in blue, green, and pink light by Alex Knight on Unsplash" width="60%"> -->
-    <footer>
-      <!-- Created by <a href="https://rchillard.com/">RCH</a> -->
-    </footer>
-  </body>
+  <footer>
+    <!-- Created by <a href="https://rchillard.com/">RCH</a> -->
+  </footer>
+</body>
+
 </html>
