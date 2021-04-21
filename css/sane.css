@@ -11,10 +11,10 @@
  * 2. Correct the line height.
  * 3. Prevent adjustments of font size after orientation changes in iOS.
  */
-html {
+ html {
 	color: #222;
 	font-size: 1em; /* 1 */
-	line-height: 1.5; /* 2 */
+	line-height: 1.4; /* 2 */
 	-webkit-text-size-adjust: 100%; /* 3 */
 }
 
@@ -46,7 +46,6 @@ body {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-	/* 1 */
 	font-size: 2em;
 	margin: 0.67em 0;
 }
@@ -60,7 +59,6 @@ figure,
 blockquote,
 dl,
 dd {
-	/* 2 */
 	margin: 0;
 }
 
