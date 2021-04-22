@@ -255,6 +255,10 @@ textarea:read-only {
 	margin-top: 1rem;
 }
 
+.block {
+	display: inline-block;
+}
+
 .diagram {
 	width: 100%;
 }
