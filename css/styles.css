@@ -34,6 +34,7 @@ body {
 
 footer {
 	grid-area: footer;
+	height: 5rem;
 	text-align: center;
 }
 
@@ -259,7 +260,7 @@ textarea:read-only {
 
 .button:hover {
 	background-color: var(--color-blue);
-	border: 1px solid var(--color-purple);
+	border: 1px solid var(--color-purple); 
 	color: white;
 }
 

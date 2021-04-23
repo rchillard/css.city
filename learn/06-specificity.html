@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS City | Learn CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="Single page tutorial to teach the basics of CSS to beginners">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/sane.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- <base href="https://css.city/"> -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a id="menu-title" href="index.html">
+        CSS <img id="logo" src="assets/city-sunset.png" alt="City at sunset">
+      </a>
+      <ul>
+        <li><a href="learn.html">Learn</a>
+          <ul>
+            <li><a href="learn.html">Introduction</a></li>
+            <li><a href="learn/01-selectors.html">Selectors</a></li>
+            <li><a href="learn/02-colors.html">Colors</a></li>
+            <li><a href="learn/03-typography.html">Typography</a></li>
+            <!-- <li><a href="learn/04-box-model.html">Box Model</a></li>
+            <li><a href="learn/05-positioning.html">Positioning</a></li>
+            <li><a href="learn/06-specificity.html">Specificity</a></li> -->
+          </ul>
+        </li>
+        <li><a href="practice.html">Practice</a>
+          <ul>
+            <!-- <li><a href="practice/building-memory.html">Building Memory</a></li>
+            <li><a href="practice/playground.html">Experimenting</a></li>
+            <li><a href="practice/playing-games.html">Playing Games</a></li> -->
+          </ul>
+        </li>
+        <li>
+          <a href="reference.html">Reference</a>
+          <ul>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="strategies.html">Strategies</a></li>
+            <li><a href="templates.html">Templates</a></li>
+          </ul>
+        </li>
+        <li><a href="tools.html">Tools</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p class="construction">Work in progress</p>
+    <h1>Learn Specificity</h1>
+    <h2>Properties</h2>
+    <h3>Cascade</h3>
+    Define the cascade and explain why it's called Cascading Style Sheets
+    <h3>Inline Styles</h3>
+    Explain how inline styles will beat out other selectors
+    <h2>Advanced Selectors</h2>
+    <h4>Combined</h4>
+    <p>
+      If you need more precision in how to select elements and apply CSS rules to them, then you can combine different
+      types of selectors.
+      For example, combine both element and class selectors to target subsets of elements. For example, displaying
+      priority items inside of a list.
+    </p>
+
+    <div class="code">
+      <figure>
+        <figcaption>HTML</figcaption>
+        <script>
+
+        </script>
+        <textarea class="language-html" readonly rows="7">
+    <ul>
+      <li class="priority">Find a water supply</li>
+      <li>Choose a location</li>
+      <li>Build connecting roads</li>
+    </ul>
+</textarea>
+
+      </figure>
+      <figure>
+        <figcaption>CSS</figcaption>
+        <pre><code contenteditable><style contenteditable>
+  li.priority {
+    font-weight: bold;
+  }
+</style></code>
+</pre>
+      </figure>
+      <figure>
+        <figcaption>Display</figcaption>
+        <ul>
+          <li class="priority">Find a water supply</li>
+          <li>Choose a location</li>
+          <li>Build connecting roads</li>
+        </ul>
+      </figure>
+
+    </div>
+    <h4>Hierarchy</h4>
+    <p>Define hiearchies by putting a space between selectors:</p>
+    <div class="code">
+      <figure>
+        <figcaption>HTML</figcaption>
+        <textarea rows="5" readonly>
+  <p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness, then came the strangers.</q></p>
+          </textarea>
+      </figure>
+      <figure>
+        <figcaption>CSS</figcaption>
+        <pre><code><style contenteditable>
+  p q {
+    font-style: italic;
+  }
+          </style></code></pre>
+      </figure>
+      <figure>
+        <figcaption>Display</figcaption>
+        <p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness,
+            then came the strangers.</q></p>
+      </figure>
+    </div>
+    <p>And the resulting display of quotes inside of paragraph elements in the document will be italicized, as you see
+      above.</p>
+    <h4>Pseudo-class</h4>
+  </main>
+
+  <!-- More images
+    <img src="assets/jonathan-roger-LY1eyQMFeyo-unsplash.jpg" alt="City skyline in the evening bathed in blue and purple light by Jonathan Roger on Unsplash" width="60%">
+    <img src="assets/alex-knight-Ys-DBJeX0nE-unsplash.jpg" alt="City at night in blue, green, and pink light by Alex Knight on Unsplash" width="60%"> -->
+  <footer>
+    <!-- Created by <a href="https://rchillard.com/">RCH</a> -->
+  </footer>
+</body>
+
+</html>
