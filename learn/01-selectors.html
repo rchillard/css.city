@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS City | Learn CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="Single page tutorial to teach the basics of CSS to beginners">
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../css/sane.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <!-- <base href="https://css.city/"> -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a id="menu-title" href="index.html">
+        CSS <img id="logo" src="../assets/city-sunset.png" alt="City at sunset">
+      </a>
+      <ul>
+        <li><a href="learn.html">Learn</a>
+          <ul>
+            <li><a href="learn.html">Introduction</a></li>
+            <li><a href="learn-01-selectors.html">Selectors</a></li>
+            <li><a href="learn-02-colors.html">Colors</a></li>
+            <!-- <li><a href="learn-properties.html"></a></li>
+            <li><a href="learn-typography.html"></a></li>
+            <li><a href="learn-positioning.html"></a></li>
+            <li><a href="learn-box-model.html"></a></li>
+            <li><a href="learn-display.html"></a></li>
+            <li><a href="learn-grid.html"></a></li>
+            <li><a href="learn-flexbox.html"></a></li> -->
+          </ul>
+        </li>
+        <li><a href="practice.html">Practice</a>
+          <ul>
+            <li><a href="practice-building-memory.html">Building Memory</a></li>
+            <li><a href="practice-playground.html">Experimenting</a></li>
+            <li><a href="practiceplaying-games.html">Playing Games</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="reference.html">Reference</a>
+          <ul>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="strategies.html">Strategies</a></li>
+            <li><a href="templates.html">Templates</a></li>
+          </ul>
+        </li>
+        <li><a href="tools.html">Tools</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p class="construction">Work in progress</p>
+    <h1>Learn Selectors</h1>
+    <p>
+      Selectors define the target for the CSS rule you're defining, and up until now, we've only seen one type of
+      selector for elements. The element selector is powerful, because
+      you can modify the display properties of all the instances of that element on a page, but what if you want to be
+      more <em>selective</em> and only target certain elements?
+    </p>
+    <p>That's where knowing all of the possible selectors comes in handy and can help you:</p>
+    <ul>
+      <li><strong>Element</strong> selectors refer to HTML elements by type (e.g. p) and change all the instances of
+        that element on a page.</li>
+      <li><strong>Class</strong> selectors refer to HTML elements by their class attribute. Class is a global HTML
+        attribute available to all elements.</li>
+      <li><strong>Identifier</strong> selectors refer to a single specific HTML element's id attribute. id is also
+        global, but unlike class must be unique.</li>
+    </ul>
+    <h3>Class</h3>
+    <p>
+      The class attribute can be applied to any HTML element, and it can be used to span different types of elements, so
+      that you can easily select them in your CSS by using
+      the class selector. The class selector syntax is a period . followed by the class name:
+    </p>
+    <div class="code">
+      <figure>
+        <figcaption>HTML</figcaption>
+        <textarea rows="6" readonly>
+<p>David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, <q class="lyrics">Think of London, a small city</q>.</p>
+          </textarea>
+      </figure>
+      <figure>
+        <figcaption>CSS</figcaption>
+        <pre><code><style contenteditable>
+  .lyrics {
+    color: royalblue;
+    line-height: 120%;
+  }
+          </style></code></pre>
+      </figure>
+      <figure>
+        <figcaption>Display</figcaption>
+        <p>David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, <q
+            class="lyrics">Think of London, a small city</q>.</p>
+      </figure>
+    </div>
+    <p>When applied to a set of song lyrics like this one would appear as:</p>
+    <blockquote class="lyrics">
+      <p>
+        Think of London, a small city
+      </p>
+      <p>
+        It's dark, dark in the daytime<br>
+        The people sleep, sleep in the daytime<br>
+        If they want to, if they want to
+      </p>
+      <p>
+        I'm checking them out<br>
+        I'm checking them out<br>
+        I got it figured out<br>
+        I got it figured out<br>
+        There's good points and bad points<br>
+        Find a city<br>
+        Find myself a city to live in...
+      </p>
+      <cite>-Talking Heads</cite>
+    </blockquote>
+    <p>And to this smaller snippet embedded in a sentence as well:</p>
+    <p>David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, <q
+        class="lyrics">Think of London, a small city.</q></p>
+    <p>The multiple lines of the song above are a blockquote, while the single opening lyric in the previous sentence is
+      a quote element. If we're only using either
+      inline styles or element selectors, then we have a few problems:</p>
+    <ul>
+      <li>If we had used inline styles, then we'd have to add a style attribute to both elements.</li>
+      <li>If we had used an element selector, then we'd have to write two rules:
+        <ul>
+          <li>one for blockquote elements</li>
+          <li>one for quote elements</li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      However, because we defined a class, then we can simply add the class to each element we want to appear like a
+      lyric, reducing the need to write extra CSS.
+      Now, if we want to style songs the same way on all the pages of our site, we just need to import this stylesheet
+      and then add the lyrics class to the elements
+      representing songs.
+    </p>
+    <p>The same class can be applied to any number of elements, but what about when you have a truly unique or single
+      element that you want to style in
+      a special or certain way? That's what the HTML id attribute is for.
+    </p>
+    <h3>Identifier</h3>
+    <p>
+      Using the identifier attribute (abbreviated as id in HTML), CSS can target individual elements on a page. As a
+      quick refresher, the value of the id attribute must be
+      unique on a page, meaning one and only one element with an id of the given value can exist.
+    </p>
+    <div class="code">
+      <figure>
+        <figcaption>HTML</figcaption>
+        <textarea rows="5" readonly>
+  <p>Like the lyrics you just read? <br><br>
+    <span id="call-to-action">Listen to the Talking Heads Right Now!</span></p>
+          </textarea>
+      </figure>
+      <figure>
+        <figcaption>CSS</figcaption>
+        <pre><code><style contenteditable>
+  #call-to-action {
+    background-color: lightgray;
+    color: blueviolet;
+  }
+          </style></code></pre>
+      </figure>
+      <figure>
+        <figcaption>Display</figcaption>
+        <p>Like the lyrics you just read?<br><br> <span id="call-to-action">Listen to the Talking Heads Right
+            Now!</span></p>
+      </figure>
+    </div>
+    <h3>Important</h3>
+  </main>
+
+  <!-- More images
+    <img src="assets/jonathan-roger-LY1eyQMFeyo-unsplash.jpg" alt="City skyline in the evening bathed in blue and purple light by Jonathan Roger on Unsplash" width="60%">
+    <img src="assets/alex-knight-Ys-DBJeX0nE-unsplash.jpg" alt="City at night in blue, green, and pink light by Alex Knight on Unsplash" width="60%"> -->
+  <footer>
+    <!-- Created by <a href="https://rchillard.com/">RCH</a> -->
+  </footer>
+</body>
+
+</html>

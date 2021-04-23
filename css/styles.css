@@ -242,6 +242,32 @@ textarea:read-only {
 /* Blocks */
 
 /* Utilities */
+.arrow {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+}
+
+.button {
+	background-color: white;
+	border: 1px solid var(--color-blue);
+	display: block;
+	padding: 1rem;
+	text-align: center;
+}
+
+.button:hover {
+	background-color: var(--color-blue);
+	border: 1px solid var(--color-purple);
+	color: white;
+}
+
+.button:hover > .arrow {
+	border: solid white;
+	border-width: 0 3px 3px 0;
+}
+
 .code {
 	display: grid;
 	grid-gap: 1rem;
@@ -252,7 +278,6 @@ textarea:read-only {
 .construction {
 	margin: 0 auto;
 	text-align: center;
-	margin-top: 1rem;
 }
 
 .block {
@@ -278,8 +303,18 @@ textarea:read-only {
 	padding-right: .5rem;
 }
 
+.left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+}
+
 li.priority {
 	font-weight: bold;
+}
+
+.right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
 }
 
 #call-to-action {
