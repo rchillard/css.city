@@ -8,15 +8,14 @@ I recently returned to the world of web development, and I've been delighted to 
 
 ### Learn
 
-Single page tutorial that takes you through the basics of CSS:
-
+Tutorials that take you through the basics of CSS:
+- Introduction
 - Selectors
-- Box model
-- Positioning
-- Display
 - Colors
 - Typography
-- Grid
+- Box Model
+- Positioning
+- Specificity
 
 ### Reference
 
