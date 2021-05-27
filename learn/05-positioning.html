@@ -6,324 +6,60 @@
   <title>CSS City | Learn CSS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Description" content="Single page tutorial to teach the basics of CSS to beginners">
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="css/sane.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../css/sane.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
   <!-- <base href="https://css.city/"> -->
 </head>
 
 <body>
   <header>
     <nav>
-      <a id="menu-title" href="index.html">
-        CSS <img id="logo" src="assets/city-sunset.png" alt="City at sunset">
+      <a id="menu-title" href="../index.html">
+        CSS <img id="logo" src="../assets/city-sunset.png" alt="City at sunset">
       </a>
       <ul>
-        <li><a href="learn.html">Learn</a>
+        <li><a href="../learn.html">Learn</a>
           <ul>
-            <li><a href="learn.html">Introduction</a></li>
-            <li><a href="learn/01-selectors.html">Selectors</a></li>
-            <li><a href="learn/02-colors.html">Colors</a></li>
-            <li><a href="learn/03-typography.html">Typography</a></li>
-            <!-- <li><a href="learn/04-box-model.html">Box Model</a></li>
-            <li><a href="learn/05-positioning.html">Positioning</a></li>
-            <li><a href="learn/06-specificity.html">Specificity</a></li> -->
+            <li><a href="../learn.html">Introduction</a></li>
+            <li><a href="01-selectors.html">Selectors</a></li>
+            <li><a href="02-colors.html">Colors</a></li>
+            <li><a href="03-typography.html">Typography</a></li>
+            <!-- <li><a href="04-box-model.html">Box Model</a></li>
+            <li><a href="05-positioning.html">Positioning</a></li>
+            <li><a href="06-specificity.html">Specificity</a></li> -->
           </ul>
         </li>
-        <li><a href="practice.html">Practice</a>
+        <li><a href="../practice.html">Practice</a>
           <ul>
-            <!-- <li><a href="practice/building-memory.html">Building Memory</a></li>
-            <li><a href="practice/playground.html">Experimenting</a></li>
-            <li><a href="practice/playing-games.html">Playing Games</a></li> -->
+            <!-- <li><a href="../practice/building-memory.html">Building Memory</a></li>
+            <li><a href="../practice/playground.html">Experimenting</a></li>
+            <li><a href="../practice/playing-games.html">Playing Games</a></li> -->
           </ul>
         </li>
         <li>
-          <a href="reference.html">Reference</a>
+          <a href="../reference.html">Reference</a>
           <ul>
-            <li><a href="articles.html">Articles</a></li>
-            <li><a href="strategies.html">Strategies</a></li>
-            <li><a href="templates.html">Templates</a></li>
+            <li><a href="../articles.html">Articles</a></li>
+            <li><a href="../strategies.html">Strategies</a></li>
+            <li><a href="../templates.html">Templates</a></li>
           </ul>
         </li>
-        <li><a href="tools.html">Tools</a></li>
+        <li><a href="../tools.html">Tools</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <p class="construction">Work in progress</p>
-    <h1>Learn CSS</h1>
-    <p>
-      CSS stands for Cascading Style Sheets. CSS is a sister technology to Hypertext Markup Language (HTML), because it
-      enables you to modify the
-      appearance of your HTML. If you think of a website as a house, then HTML is used to provide structure like the
-      frame, walls, appliances
-      and furniture, while CSS is used to paint the walls, hang the lights, frame the pictures, and even to position
-      your furniture. This introduction
-      to CSS assumes that you know basic HTML. If you have not learned HTML yet, then I recommend you do that first by
-      checking out
-      <a href="https://html.haus/learn.html">HTML.Haus</a> for an easy to read singe page tutorial.
-    </p>
-    <h2>What is CSS?</h2>
-    <p>
-      CSS is a specific language for styling web pages written in HTML. You can change the color and size of HTML
-      elements with CSS. You can change the font of
-      textual elements, as well as characteristics like bold, italics, and spacing. You can change the layout of a web
-      page as well as where the
-      elements display on the page. If HTML lets you build with raw materials, then CSS gives you a paint brush, a
-      measuring tape, a level, all the tools
-      you need to refine the appearance, layout, and style of a page.
-    </p>
-    <p>
-      If you completed the <a href="https://html.haus/learn.html">HTML.Haus</a> tutorial, then you've already seen a
-      little CSS, at least in its simplest
-      form. The easiest way to start using CSS is by applying it directly to individual elements using the
-      <em>style</em> attribute in your HTML:
-    </p>
-    <textarea>
-<p style="color: royalblue">Think of London, a small city</p>
-      </textarea>
-    <p style="color: royalblue">Think of London, a small city</p>
-    <h3>Inline Styles</h3>
-    <p>
-      This way of using CSS is called in-line styling, because the styles appear in the same line as the HTML. You can
-      probably see the shortcomings
-      of this approach almost immediately. If you want to make all your paragraphs display in blue, then you'll have to
-      add this style attribute to each one.
-      That's going to quickly add up to a lot of duplicative work, and if you ever want to change the color later on,
-      then it'll be even more work to update
-      each one.
-    </p>
-    <h3>Build to Learn</h3>
-    <p>
-      Before we go any further, as a part of active learning it's important to do exercises and practice, as well as
-      read and comprehend.
-      Actively exercising the knowledge you just learned actually ingrains that knowledge in your brain, making it
-      accessible later on.
-      For that reason, for every concept we learn, I highly recommend you try it yourself. Take the sample I provide and
-      make it your own
-      by changing the styling. Typing it out and practicing will really help with your retention. You will learn best
-      through this
-      tutorial by building a number of sample pages and styling them alongside the exercises.
-    </p>
-    <p>
-      Learn as you build.
-    </p>
-    <h3>Embedded Styles</h3>
-    <p>
-      Let's get back to our problem of having to add a style attribute to every HTML element we want to change. There's
-      an easier way to do this.
-      If you want to add styles to an entire page, then you can also put these in the head section of your HTML.
-    </p>
-    <p>Here's an example:</p>
-    <textarea rows="18">
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>CSS Playground</title>
-    <style>
-      p {
-        color: royalblue;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Let's Paint the Town</h1>
-    <p>I'm excited you're starting your CSS journey. Let's learn how to style together!</p>
-    <p>We'll be stronger together, and learning CSS while expanding your knowledge of HTML is the way to go.</p>
-  </body>
-</html>
-      </textarea>
-    <p>
-      Copy and paste the code above into a text editor and save it as 'index.html'. Opening it with a browser will give
-      you a local playground where
-      you can safely complete the rest of these exercises and continue learning CSS. Just save your file, then reload
-      your browser to see your changes.
-    </p>
-    <p>
-      As you can see in your local playground, we've changed the color of both paragraphs. How'd we do it? These 5 lines
-      of code:
-    </p>
-    <textarea rows="6">
-<style>
-  p {
-    color: royalblue;
-  }
-</style>
-      </textarea>
-    <p>What we see defined above is a CSS rule. Each CSS rule is composed of three parts: selector, property, and value:
-    </p>
-    <img class="diagram" src="assets/style-embedded.svg" alt="annotated diagram of style element" height="160">
-    <p>These three parts break down succinctly as:</p>
-    <ul>
-      <li><strong>Selector</strong> defines the target of the rule or what part of the HTML this rule will be applied on
-        (e.g. all p tags or paragraphs).</li>
-      <li><strong>Property</strong> defines what about the target is going to be changed, so in this case it's the font
-        color of paragraphs.</li>
-      <li><strong>Value</strong> defines the property's new setting, so in this case, the font color property now has a
-        value of royalblue.</li>
-    </ul>
-    <p>
-      This second way of defining styles is more useful, because you can define rules that apply to an entire HTML web
-      page. Think of all the HTML elements you know.
-      You can now change the color of anything! However, once again, you're probably already asking questions about the
-      shortcomings that might accompany using the
-      style tag in the head of your document.
-    </p>
-    <p>Questions like:</p>
-    <ul>
-      <li>What if I have a lot of CSS rules? My head element will be really big.</li>
-      <li>What if I want to share the same styles across multiple pages?</li>
-    </ul>
-    <p>The final (most widely accepted) way to incorporate CSS into HTML is through using external stylesheets.</p>
-    <h3>External Styles</h3>
-    <p>
-      You can link to a separate CSS file where you save all of your rules apart from your HTML. This answers both of
-      the questions above, because now you can reference
-      as many external stylesheets as you need, and you only need a single line of code for each stylesheet. Let's see
-      what that looks like:
-    </p>
-    <p>Your <strong>index.html</strong> file would contain the following:</p>
-    <textarea rows="14">
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>CSS Playground</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <h1>Let's Paint the Town</h1>
-    <p>I'm excited you're starting your CSS journey. Let's learn how to style together!</p>
-    <p>We'll be stronger together, and learning CSS while expanding your knowledge of HTML is the way to go.</p>
-  </body>
-</html>
-      </textarea>
-    <p>While your <strong>styles.css</strong> file would contain the rule:</p>
-    <textarea rows="4">
-p {
-  color: royalblue;
-}
-      </textarea>
-    <p>
-      By adding the link element, identifying the relative reference as being to a stylesheet, and through using the
-      href attribute to refer to the location of that stylesheet,
-      you tell the browser what CSS rules to apply to the HTML document it just received. The CSS sheet referenced can
-      contain any number of rules.
-    </p>
-    
-    <a class="button" href="learn/01-selectors.html"><strong>Next:</strong> Learn about Selectors <i class="arrow right"></i></a>
-
-    <h2>Properties</h2>
-    <h3>Cascade</h3>
-    Define the cascade and explain why it's called Cascading Style Sheets
-    <h3>Inline Styles</h3>
-    Explain how inline styles will beat out other selectors
-    <h2>Advanced Selectors</h2>
-    <h4>Combined</h4>
-    <p>
-      If you need more precision in how to select elements and apply CSS rules to them, then you can combine different
-      types of selectors.
-      For example, combine both element and class selectors to target subsets of elements. For example, displaying
-      priority items inside of a list.
-    </p>
-
-    <div class="code">
-      <figure>
-        <figcaption>HTML</figcaption>
-        <script>
-
-        </script>
-        <textarea class="language-html" readonly rows="7">
-    <ul>
-      <li class="priority">Find a water supply</li>
-      <li>Choose a location</li>
-      <li>Build connecting roads</li>
-    </ul>
-</textarea>
-
-      </figure>
-      <figure>
-        <figcaption>CSS</figcaption>
-        <pre><code contenteditable><style contenteditable>
-  li.priority {
-    font-weight: bold;
-  }
-</style></code>
-</pre>
-      </figure>
-      <figure>
-        <figcaption>Display</figcaption>
-        <ul>
-          <li class="priority">Find a water supply</li>
-          <li>Choose a location</li>
-          <li>Build connecting roads</li>
-        </ul>
-      </figure>
-
-    </div>
-    <h4>Hierarchy</h4>
-    <p>Define hiearchies by putting a space between selectors:</p>
-    <div class="code">
-      <figure>
-        <figcaption>HTML</figcaption>
-        <textarea rows="5" readonly>
-  <p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness, then came the strangers.</q></p>
-          </textarea>
-      </figure>
-      <figure>
-        <figcaption>CSS</figcaption>
-        <pre><code><style contenteditable>
-  p q {
-    font-style: italic;
-  }
-          </style></code></pre>
-      </figure>
-      <figure>
-        <figcaption>Display</figcaption>
-        <p>In Alex Proyas Dark City, Dr. Schreber's opening lines set the tone for the film, <q>First came darkness,
-            then came the strangers.</q></p>
-      </figure>
-    </div>
-    <p>And the resulting display of quotes inside of paragraph elements in the document will be italicized, as you see
-      above.</p>
-    <h4>Pseudo-class</h4>
-    <h2>Typography</h2>
-    <p>Introduction paragraph on typography</p>
-    <h3>Units</h3>
-    <h4>Absolute</h4>
-    <p>Absolute units can be more difficult to make responsive and scalable.</p>
-    <h5>Pixels (PX)</h5>
-    <p>Not actually always 1px on your screen do to the different types of displays</p>
-    <h5>Points (PT)</h5>
-    <h5>Centimeters (CM)</h5>
-    <h5>Inches (IN)</h5>
-    <h5>Millimeters (MM)</h5>
-    <h4>Relative</h4>
-    <p>Relative units are designed to be used with changing screen sizes.</p>
-    <h5>Relative Units (EM)</h5>
-    <p>Typically used with font sizes where 1em is equal to the font-size of the parent element. 1em is 100% of the font
-      size.</p>
-    <p>Very useful for when an element should scale based off its parent element.</p>
-    <h5>Root EMs (REM)</h5>
-    <p>Relative to the root element's font size, so a relative unit based off a single absolute value. This makes using
-      REMs generally more reliable.</p>
-    <h5>View Height (VH)</h5>
-    <p>The viewport is the seeable space presented by the browser in which the content of your page lives. This changes
-      as a user resizes their browser window.</p>
-    <p>View Height (vh) units are a relative stand in for percetanges, so 1vh is equivalent to 1% of the height of the
-      viewport.</p>
-    <h5>View Width (VW)</h5>
-    <h5>Percentage (%)</h5>
-    <p>Always set relative to another value, which is sometimes the element itself or the parent element</p>
-    <h2>Positioning</h2>
+    <h1>Learn Positioning</h1>
     <p>vh and vw</p>
     <p>percentages</p>
     <h2>Box Model</h2>
     <h2>Display</h2>
     <h2>Grid</h2>
     <h2>Sources</h2>
-    Read more about Mr. Valensi and HSL on <a href="https://en.wikipedia.org/wiki/HSL_and_HSV">Wikipedia</a>.
+    <a class="button" href="06-specificity.html"><strong>Next:</strong> Learn about Specificity <i
+      class="arrow right"></i></a>
   </main>
 
   <!-- More images
