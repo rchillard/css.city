@@ -94,6 +94,11 @@ nav ul li {
 	text-align: left;
 }
 
+/* Hover over main menu items */
+/* nav ul li:hover {
+	background-color: var(--color-purple);
+} */
+
 nav ul li a {
 	text-decoration: none;
 }
@@ -112,14 +117,20 @@ nav ul li ul {
 	left: 0px;
 	padding: .5rem 0 0 0;
 	position: absolute;
-	top: 1.5rem;
 	white-space: nowrap;
 	width: auto;
 }
 
 nav ul li ul li:hover {
 	background: lightgray;
+
 }
+
+/* Display list item decoration on hover */
+/* nav ul li ul li:hover:before {
+	content:"\2022";
+	margin-right: 5px;
+} */
 
 nav ul li ul li,
 nav ul li ul li a {
@@ -252,14 +263,14 @@ textarea:read-only {
 
 /* Utilities */
 .arrow {
-	border: solid black;
+	border: solid var(--color-blue);
 	border-width: 0 3px 3px 0;
 	display: inline-block;
 	padding: 3px;
 }
 
 .button {
-	background-color: white;
+	background-color: lightgray;
 	border: 1px solid var(--color-blue);
 	display: block;
 	padding: 1rem;
