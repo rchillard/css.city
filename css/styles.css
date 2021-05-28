@@ -263,28 +263,31 @@ textarea:read-only {
 
 /* Utilities */
 .arrow {
-	border: solid var(--color-blue);
+	border: solid white;
 	border-width: 0 3px 3px 0;
 	display: inline-block;
 	padding: 3px;
 }
 
 .button {
-	background-color: lightgray;
-	border: 1px solid var(--color-blue);
+	background-color: black;
+	border: 5px solid var(--color-purple);
+	color: white;
 	display: block;
+	margin: 1rem auto;
 	padding: 1rem;
 	text-align: center;
+	width: 50%;
 }
 
 .button:hover {
-	background-color: var(--color-blue);
-	border: 1px solid var(--color-purple); 
-	color: white;
+	background-color: white;
+	border-image: linear-gradient(to right, var(--color-purple), var(--color-pink)) 1;
+	color: black;
 }
 
 .button:hover > .arrow {
-	border: solid white;
+	border: solid black;
 	border-width: 0 3px 3px 0;
 }
 
