@@ -185,9 +185,10 @@
       You can link to a separate CSS file where you save all of your rules apart from your HTML. This answers both of
       the questions above, because now you can reference
       as many external stylesheets as you need, and you only need a single line of code for each stylesheet. Let's see
-      what that looks like:
+      what that looks like.
     </p>
     <p>Your <strong>index.html</strong> file would contain the following:</p>
+
     <textarea rows="14">
 <!DOCTYPE html>
 <html>
@@ -203,7 +204,13 @@
   </body>
 </html>
       </textarea>
-    <p>While your <strong>styles.css</strong> file would contain the rule:</p>
+    <p>
+      Do you see the new link element in the head?
+    </p>
+    <textarea>
+<link rel="stylesheet" href="styles.css">
+    </textarea>
+    <p>While your <strong>styles.css</strong> file (which needs to be in the same directory) would contain the rule:</p>
     <textarea rows="4">
 p {
   color: royalblue;
@@ -215,7 +222,10 @@ p {
       you tell the browser what CSS rules to apply to the HTML document it just received. The CSS sheet referenced can
       contain any number of rules.
     </p>
-
+    <p>
+      Now that we understand how to incorporate CSS in our HTML, let's learn the different ways we can select elements.
+    </p>
+    <br>
     <a class="button" href="learn/01-selectors.html"><strong>Next:</strong> Learn about Selectors <i
         class="arrow right"></i></a>
 
