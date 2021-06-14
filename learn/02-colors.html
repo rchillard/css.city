@@ -71,26 +71,27 @@
       Each format has advantages and disadvantages. For starters, let's see the same named color, royalblue, in all the
       formats:
     </p>
-    <textarea rows="19">
-p {
-  color: royalblue;
-}
+    <pre>
+      <code>
+  p {
+    color: royalblue;
+  }
 
-/* Hexadecimal */
-p {
-  color: #4169e1;
-}
+  /* Hexadecimal */
+  p {
+    color: #4169e1;
+  }
 
-/* Hue, Saturation, Lightness */
-p {
-  color: hsl(225, 73%, 57%);
-}
+  /* Hue, Saturation, Lightness */
+  p {
+    color: hsl(225, 73%, 57%);
+  }
 
-/* Red, Green Blue */
-p {
-  color: rgb(65, 105, 225);
-}
-      </textarea>
+  /* Red, Green Blue */
+  p {
+    color: rgb(65, 105, 225);
+  }
+      </code></pre>
     <p>
       Each one of the rules above will make the paragraph elements on a page the same color blue. So if they're all the
       same, you're probably wondering, why does CSS offer so
@@ -232,9 +233,9 @@ p {
     </div>
     <p>
       When defining color using HSL in CSS, you use the following format: <br>
-    <pre>
+    <pre><code>
   color: hsl(hue, saturation, lightness);
-</pre>
+    </code></pre>
     </p>
     <p>Without knowing what saturation or lightness do, can you look at the CSS rule below and the hue value to guess
       the color?</p>
@@ -366,9 +367,9 @@ p {
       and 255 representing
       the maximum of that color. The color notation is similar to that of HSL, except with rgb instead:
     </p>
-    <pre>
+    <pre><code>
   color: rgb(red,green,blue);
-</pre>
+    </code></pre>
     <table style="border: 1px solid black;">
       <tr>
         <th scope="row">Values</th>
@@ -396,11 +397,11 @@ p {
     </details>
     <p>That was probably pretty difficult to guess though, right?</p>
     <p>Imagine if you saw a color defined like this:</p>
-    <textarea rows="4">
-p {
-  color: rgb(65, 105, 225);
-}
-      </textarea>
+    <pre><code>
+  p {
+    color: rgb(65, 105, 225);
+  }
+    </code></pre>
     <p>Any idea what color that might be?</p>
     <p>
       There's about 25% of the possible red, 40% of the possible green, and a large amount of blue 90%ish. It's probably
@@ -433,21 +434,21 @@ p {
       (invisible) and 1 representing full color (no transparency). This royalblue definition using rgba is the same as
       not specifying alpha:
     </p>
-    <textarea rows="4">
-p {
-  color: rgba(65, 105, 225, 1)
-}
-</textarea>
+    <pre><code>
+  p {
+    color: rgba(65, 105, 225, 1)
+  }
+    </code></pre>
     <p>
       The alpha channel is typically used for backgrounds, because it allows you to blend different colors together on
       multiple layers.
     </p>
-    <textarea rows="5">
-p {
-  background-color: hsla(30, 75%, 57%, 0.25);
-  color: hsla(225, 73%, 57%, 0.75);
-}
-</textarea>
+    <pre><code>
+  p {
+    background-color: hsla(30, 75%, 57%, 0.25);
+    color: hsla(225, 73%, 57%, 0.75);
+  }
+    </code></pre>
     <p class="ex-alphachannel">
       Blending color with alpha opens another door to displaying elements together using CSS!
     </p>
@@ -459,25 +460,32 @@ p {
     </p>
     <h3>Accessibility</h3>
     <p>
-      Using color correctly means making it accessible to everyone, even those with visual impairments.  This is part of
-      embracing the idea of universal design. Universal design in physical buildings is the idea that all people should have equal 
-      access to a building, regardless of their level of mobility. That's why buildings have ramps for people in wheelchairs. 
-      The same is true for our digital world on the web. Every user, regardless of their situation, should have the same ease 
-      of access to your website. This includes users that are visually impaired and might have difficulty discerning between similar colors. 
+      Using color correctly means making it accessible to everyone, even those with visual impairments. This is part of
+      embracing the idea of universal design. Universal design in physical buildings is the idea that all people should
+      have equal
+      access to a building, regardless of their level of mobility. That's why buildings have ramps for people in
+      wheelchairs.
+      The same is true for our digital world on the web. Every user, regardless of their situation, should have the same
+      ease
+      of access to your website. This includes users that are visually impaired and might have difficulty discerning
+      between similar colors.
     </p>
     <p>
       There's a lot to learn about getting color contrast right, and I want you to read from the experts:
     </p>
     <ul>
-      <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast">Understanding WCAG: Color Contrast</a></li>
+      <li><a
+          href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast">Understanding
+          WCAG: Color Contrast</a></li>
       <li><a href="https://webaim.org/resources/contrastchecker/">Color Contrast Checker Tool</a></li>
       <li><a href="https://web.dev/color-contrast/">Google Chrome's Lighthouse Auditing Tool for Color Contrast</a></li>
     </ul>
     <p>
-      In the future, this section will be expanded to cover accessibility further, but for now, please rely on the experts above.
+      In the future, this section will be expanded to cover accessibility further, but for now, please rely on the
+      experts above.
     </p>
     <p>
-      You've learned a lot about color.  Now what about fonts and typography?
+      You've learned a lot about color. Now what about fonts and typography?
     </p>
     <h3>Credits</h3>
     <p><sup>1</sup>Read more about Mr. Valensi and HSL on <a
