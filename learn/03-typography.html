@@ -56,10 +56,260 @@
   <main>
     <p class="construction">Work in progress</p>
     <h1>Learn Typography</h1>
-    <p>Introduction paragraph on typography</p>
+    <p>Typography is the art of arranging letters to make them readable and appealing to the eye. Back when there were
+      printing presses and typewriters, typographers developed different metal sets of letters, which were called
+      typefaces. A typeface is a collection of letters (glyphs) with consistent size, weight, and style. We know
+      typefaces today by a different name: fonts.</p>
+    <h2>Fonts</h2>
+    <p>
+      As a web developer, you will be tasked with understanding how different fonts work together, what meaning they
+      convey,
+      and how to use them to enhance websites and web applications.
+    </p>
+    <p>
+      Try changing the value of font-family below from "Arial" to "Georgia".
+    </p>
 
+    <div class="code">
+      <figure>
+        <figcaption>HTML</figcaption>
+        <textarea rows="6" readonly>
+<p class="font-family-1">The weight of a particular font is the thickness of the character outlines relative to their height.</p>
+          </textarea>
+      </figure>
+      <figure>
+        <figcaption>CSS</figcaption>
+        <pre><code><style contenteditable>.font-family-1 {
+  font-family: "Arial";
+}
+          </style></code></pre>
+      </figure>
+      <figure>
+        <figcaption>Display</figcaption>
+        <p class="font-family-1">The weight of a particular font is the thickness of the character outlines relative
+          to their height.</p>
+      </figure>
+    </div>
+    <p>
+      You can quickly see how your choice of font can change the feeling of text. Doesn't Georgia feels like a font you
+      might read in a newspaper? That's why this property is called font-family, because Georgia belongs to a family of
+      fonts called serifs.
+    </p>
+    <h3>Size</h3>
+    <p>Try changing the value of font-size below to make the size larger. I bet you can intuit how:</p>
+    <div class="code">
+      <figure>
+        <figcaption>HTML</figcaption>
+        <textarea rows="7" readonly>
+<p class="font-size-1">Optical sizes are more common for serif fonts, since their typically finer detail and higher contrast benefits more from being bulked up for smaller sizes and made less overpowering at larger ones.</p>
+          </textarea>
+      </figure>
+      <figure>
+        <figcaption>CSS</figcaption>
+        <pre><code><style contenteditable>.font-size-1 {
+  font-size: 14px;
+}
+          </style></code></pre>
+      </figure>
+      <figure>
+        <figcaption>Display</figcaption>
+        <p class="font-size-1">Optical sizes are more common for serif fonts, since their typically finer detail and
+          higher contrast benefits more from being bulked up for smaller sizes and made less overpowering at larger
+          ones.</p>
+      </figure>
+    </div>
+    <p>At what size does the page start to be pushed downward because the font is too large?</p>
+    <details>
+      <summary>Click here to check your answer!</summary>
+      <p>
+        The text should start to shift around 19px, if you're on a standard HD (1920x1080) screen. We'll learn more
+        about layout later.
+      </p>
+    </details>
+    <p>
+      Size is very important for obvious reasons: you want your user to be able to read the text on your webpage, but
+      it's
+      also a great way to indicate importance or lack of importance.
+    </p>
+    <h3>Style</h3>
+    <p>Try changing the value of font-style below to "italic" or "oblique" to see how the text changes:</p>
+    <div class="code">
+      <figure>
+        <figcaption>HTML</figcaption>
+        <textarea rows="7" readonly>
+<p class="font-style-1">In European typefaces, especially Roman ones, a slope or slanted style is used to emphasize important words. This is called italic type or oblique type.</p>
+          </textarea>
+      </figure>
+      <figure>
+        <figcaption>CSS</figcaption>
+        <pre><code><style contenteditable>.font-style-1 {
+  font-style: normal;
+}
+          </style></code></pre>
+      </figure>
+      <figure>
+        <figcaption>Display</figcaption>
+        <p class="font-style-1">In European typefaces, especially Roman ones, a slope or slanted style is used to
+          emphasize important words. This is called italic type or oblique type. </p>
+      </figure>
+    </div>
+    <p>Slanted styles can be used to convey emphasis or to offset certain key words for importance.</p>
+    <h3>Weight</h3>
+    <p>Weight or how wide text appears can also help draw attention to important text or differentiate labels from
+      normal text.</p>
+    <p>Try changing the value of font-weight below to <span style="font-weight: 700;">700</span> or <span
+        style="font-weight: 900;">900</span> to see how heavy the text becomes:</p>
+    <div class="code">
+      <figure>
+        <figcaption>HTML</figcaption>
+        <textarea rows="7" readonly>
+<p class="font-weight-1">A typeface may come in fonts of many weights, from ultra-light to extra-bold or black; four to six weights are not unusual, and a few typefaces have as many as a dozen.</p>
+          </textarea>
+      </figure>
+      <figure>
+        <figcaption>CSS</figcaption>
+        <pre><code><style contenteditable>.font-weight-1 {
+  font-weight: 500;
+}
+          </style></code></pre>
+      </figure>
+      <figure>
+        <figcaption>Display</figcaption>
+        <p class="font-weight-1">A typeface may come in fonts of many weights, from ultra-light to extra-bold or black;
+          four to six weights are not unusual, and a few typefaces have as many as a dozen.</p>
+      </figure>
+    </div>
+    <p>This covers the primary properties you'll use to style fonts. There's much more to learn, but for now, this gets
+      us started.</p>
+    <h2>Font Families</h2>
+    <p>
+      Remember how we changed the font-family above to Georgia and suddenly, it started feeling like we were reading a
+      newspaper?
+      That's because over time different font families have been used for different purposes. We're going to learn about
+      three
+      primary families now.
+    </p>
+    <h3>Serif</h3>
+    <p>A serif is a small line or stroke regularly attached to the end of a larger stroke in a letter or symbol within a
+      particular font or family of fonts.<sup>1</sup> This is the older family of fonts, because they originate from the
+      Greeks and Romans. Their letters are more ornate because they were originally inscribed in stone or painted by
+      brush. These fonts are referred to as Roman fonts.
+    <p>
+    <p>You'll recognize some common serif fonts, such as:</p>
+    <ul>
+      <li style="font-family: Times New Roman">Times New Roman - The quick brown fox jumps over the lazy dog.</li>
+      <li style="font-family: Georgia">Georgia - The quick brown fox jumps over the lazy dog.</li>
+    </ul>
+
+    <h3>Sans-serif</h3>
+    <p>
+      By contrast, sans-serif means without serifs (<a href="https://www.websters1913.com/words/Sans">sans</a> means
+      without). You'll recognize sans-serif fonts as being the most common on the web. These used to be referred to
+      as Gothic fonts. They're generally more minimal and modern.
+    </p>
+    <p>
+      You probably know or at least recognize fonts like:
+    </p>
+    <ul>
+      <li style="font-family: Arial">Arial - The quick brown fox jumps over the lazy dog.</li>
+      <li style="font-family: Verdana">Verdana - The quick brown fox jumps over the lazy dog.</li>
+    </ul>
+    <p>
+      Let's look at a few letters at a super large size to see the difference:
+    </p>
+    <table>
+      <tr>
+        <td style="font-family: serif">serif</td>
+        <td style="font-family: sans-serif">sans-serif</td>
+      </tr>
+      <tr>
+        <td style="font-family: Georgia">Georgia</td>
+        <td style="font-family: Arial">Arial</td>
+      </tr>
+      <tr>
+        <td style="font-family: Georgia; font-size: 10rem;">Fam</td>
+        <td style="font-family: Arial; font-size: 10rem;">Fam</td>
+      </tr>
+    </table>
+    <p>
+      The font rabbit hole is deep, but if you fundamentally understand the difference between serif and san-serif
+      families, then you have a good
+      first layer to get started exploring the wider world of typography.
+    </p>
+    <p>
+      Before we move on, let's talk about one more family: monospace.
+    </p>
+    <h3>Monospace</h3>
+    <p>Monospace fonts are fonts where the characters all have the same width. In today's web, these are most often used
+      to display code. On this website, every code example is in monospace. This is a legacy of how old computer
+      terminals used to work. However, it's for a good reason. Monospace fonts are often easier to read.</p>
+    <p>One widely used monospace font is:</p>
+    <ul>
+      <li style="font-family: 'Courier New', Courier, monospace">Courier New - The quick brown fox jumps over the lazy
+        dog.</li>
+    </ul>
+    <p>Can you see how the text is much wider, because every letter takes up the same width?</p>
+    <h3>Other Families</h3>
+    <p>
+      There are two other families of fonts that this tutorial does not cover: cursive and fantasy. In short, cursive
+      fonts emulate handwriting, while fantasy fonts are often used for symbols. Since this tutorial is only an
+      introduction to CSS, we are intentionally leaving these two families for you to explore later. They're less
+      common.
+    </p>
+    <h2>Web Safe Fonts</h2>
+    <p>
+      So far, we've only seen fonts which are called <super>web safe fonts</super>. These are called web safe fonts,
+      because they are considered to be installed and available on all major devices. This is important, because you
+      want your users to be able to see your website in the font you intended.
+    </p>
+    <p>
+      Resources like <a href="https://www.cssfontstack.com/">CSS Font Stack</a> track how well covered different fonts
+      are across different operating systems. What is a Font Stack, anyway?
+    </p>
+    <h2>Font Stacks</h2>
+    <p>
+      The font-family attribute allows you to specify a list of fonts that the user's browser will load in order of
+      availability, starting from the beginning of the list and progressing through to the end until the computer finds
+      one available. This list is called a font stack. It's important, because it allows you to specify a series of
+      fallbacks for every user's computer. By doing this, you ensure your font is at least stylistically appropriate
+      to a single family.
+    </p>
+    <p>
+      The designers you work as a web developer will generally not want a specific serif font to degrade into a
+      sans-serif font, if that individual font is not available on a user's computer.
+    </p>
+    <p>Here are examples for each font family we discussed:</p>
+    <textarea rows="4">
+.serif {
+  font-family: Times, Times New Roman, Georgia, serif;
+}
+    </textarea>
+    <p style="font-family: Times, Times New Roman, Georgia, serif">The quick brown fox jumps over the lazy dog.</p>
+
+    <textarea rows="4">
+.sansserif {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+} 
+    </textarea>
+    <p style="font-family: Verdana, Arial, Helvetica, sans-serif">The quick brown fox jumps over the lazy dog.</p>
+    <textarea rows="4">
+.monospace {
+  font-family: Lucida Console, Courier, monospace;
+}
+    </textarea>
+    <p style="font-family: Lucida Console, Courier, monospace">The quick brown fox jumps over the lazy dog.</p>
+
+    <h2>Bonus</h2>
+    <p>Why is the sentence "The quick brown fox jumps over the lazy dog." used for displaying fonts?</p>
+    <details>
+      <summary>Can you guess before you see the answer?</summary>
+      <p>
+        It's a sentence that features every letter of the alphabet! It's been used for over a hundred years by
+        typographers who needed an example sentence to test out typewriters.
+      </p>
+    </details>
     <a class="button" href="04-units.html"><strong>Next:</strong> Learn about Units of Measurement <i
-      class="arrow right"></i></a>
+        class="arrow right"></i></a>
   </main>
 
   <!-- More images

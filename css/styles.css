@@ -36,6 +36,10 @@ details {
 	padding: .5rem;
 }
 
+details p {
+	margin-top: 1rem;
+}
+
 footer {
 	grid-area: footer;
 	height: 5rem;
