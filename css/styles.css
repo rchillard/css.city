@@ -32,6 +32,10 @@ body {
 	scrollbar-color: var(--color-purple) var(--color-pink);
 }
 
+details {
+	padding: .5rem;
+}
+
 footer {
 	grid-area: footer;
 	height: 5rem;
@@ -297,6 +301,55 @@ textarea:read-only {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 2;
 }
+
+/* Method utilized from
+https://stackoverflow.com/questions/12813573/position-icons-into-circle
+ */
+.color-wheel-hsl {
+	background: conic-gradient(
+		hsl(0, 100%, 50%),
+		hsl(30, 100%, 50%),
+		hsl(60, 100%, 50%),
+		hsl(90, 100%, 50%),
+		hsl(120, 100%, 50%),
+		hsl(150, 100%, 50%),
+		hsl(180, 100%, 50%),
+		hsl(210, 100%, 50%),
+		hsl(240, 100%, 50%),
+		hsl(270, 100%, 50%),
+		hsl(300, 100%, 50%),
+		hsl(330, 100%, 50%),
+		hsl(360, 100%, 50%)
+	);
+	position: relative;
+	width: 24em;
+	height: 24em;
+	border: dashed 1px;
+	border-radius: 50%;
+	margin: 5em;
+}
+
+.color-wheel-hsl span {
+	display: block;
+	font-weight: bold;
+	position: absolute;
+	top: 50%; left: 50%;
+	width: 4em; height: 4em;
+	margin: -1em;
+}
+
+.deg000 { transform: translate(14em); }
+.deg030 { transform: rotate(30deg)  translate(14em) rotate(-30deg); }
+.deg060 { transform: rotate(60deg)  translate(14em) rotate(-60deg); }
+.deg090 { transform: rotate(90deg)  translate(14em) rotate(-90deg); }
+.deg120 { transform: rotate(120deg) translate(14em) rotate(-120deg); }
+.deg150 { transform: rotate(150deg) translate(14em) rotate(-150deg); }
+.deg180 { transform: rotate(180deg) translate(14em) rotate(-180deg); }
+.deg210 { transform: rotate(210deg) translate(14em) rotate(-210deg); }
+.deg240 { transform: rotate(240deg) translate(14em) rotate(-240deg); }
+.deg270 { transform: rotate(270deg) translate(14em) rotate(-270deg); }
+.deg300 { transform: rotate(300deg) translate(14em) rotate(-300deg); }
+.deg330 { transform: rotate(330deg) translate(14em) rotate(-330deg); }
 
 .construction {
 	margin: 0 auto;

@@ -99,6 +99,17 @@ p {
     <p>
       It all comes down to different use cases and who is defining color and consuming color.
     </p>
+    <details>
+      <summary>What are those /* */ characters in the code above?</summary>
+      <br>
+      <p>
+        That's a code comment! Comments are lines ignored by the computer but used by programmers to leave notes
+        (comments) to themselves or each other. In this case, I added a comment above each rule to tell you which color
+        format we were using. In general, code is read more than it is written, so it's a good habit to comment your
+        code.
+      </p>
+    </details>
+
     <h2>Hexadecimal</h2>
     <p>
       Hexadecimal is the most common way you see colors defined, because a single numerical value can represent an
@@ -106,17 +117,25 @@ p {
       find yourself using a color picker like this one (click the input below):
     </p>
     <input type="color" value="#4169e1">
+    <p>#4169E1</p>
     <p>
-      The color picker tells you the values in each format (HSL, RGB) for the given color you've chosen, and the
-      hexadecimal value appears in the "Color name:"
-      field. Having a color represented as a single value is useful because it's easier for you to work with one value
-      in your code and to go from color picker directly to CSS.
-      You just copy the "Color name" hexadecimal value from the picker and then paste that single value into your CSS,
-      and you're off to a colorful race track!
+      The color picker tells you the values in each format (Hexadecimal, HSL, RGB) for the given color you've chosen.
+    <ul>
+      <li>Chrome users (or a browser based off of Chromium) can click on the values at the bottom of the dialog
+        to toggle between different color formats. When you're on the right type, it will say "HEX" at the
+        bottom.</li>
+      <li>Firefox users can see the hexadecimal value in the "Color name:" field.</li>
+      <li>Safari users will have a more difficult time using the color input element to see raw values. We
+        recommend you use <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> for web development, as it
+        has superior tooling for building websites and learning CSS.</li>
+    </ul> Having a color
+    represented as a single value is useful because it's easier for you to work with one value in your code and to go
+    from color picker directly to CSS. You just copy the "Color name" hexadecimal value from the picker and then paste
+    that single value into your CSS, and you're off to a colorful race track!
     </p>
     <p>
       One shortcoming of defining colors in hexadecimal is that it's difficult for a human to read. The values are
-      defined as #RRGGBB, meaning two place are saved for how much
+      defined as #RRGGBB, meaning two places are saved for how much
       Red (RR), Green (GG), and Blue (BB) make up the whole color. However, it's hard to look at two colors, say
       #E71C1C, and #1C5AE7, and tell that they're a red and a blue.
     </p>
@@ -131,7 +150,7 @@ p {
       compatability with monochrome (black and white) TV receivers and the new color TVs. Luminance (how much black or
       white existed) was broadcast as an unmodified value, so Mr. Valensi
       came up with the HSL color space in order to support color, while still maintaining compatability with existing
-      monochrome TVs.
+      monochrome TVs.<sup>1</sup>
     </p>
     <h3>Hue</h3>
     <p>
@@ -195,6 +214,21 @@ p {
       which ballpark you're in, just by looking at a single value (the first one, Hue). That's why HSL is often referred
       to as a human readable or human digestible color format.
     </p>
+    <p>It may be easier to see what I mean when we look at a color wheel with the <strong>Hue</strong> values annotated:</p>
+    <div class="color-wheel-hsl">
+      <span class="deg270">0</span>
+      <span class="deg300">30</span>
+      <span class="deg330">60</span>
+      <span class="deg000">90</span>
+      <span class="deg030">120</span>
+      <span class="deg060">150</span>
+      <span class="deg090">180</span>
+      <span class="deg120">210</span>
+      <span class="deg150">240</span>
+      <span class="deg180">270</span>
+      <span class="deg210">300</span>
+      <span class="deg240">330</span>
+    </div>
     <p>
       When defining color using HSL in CSS, you use the following format: <br>
     <pre>
@@ -419,7 +453,8 @@ p {
       is our same royalblue, but is now set at 75% transparency and is blending in with the background orange.
     </p>
 
-    <p>Read more about Mr. Valensi and HSL on <a href="https://en.wikipedia.org/wiki/HSL_and_HSV">Wikipedia</a>.</p>
+    <p><sup>1</sup>Read more about Mr. Valensi and HSL on <a
+        href="https://en.wikipedia.org/wiki/HSL_and_HSV">Wikipedia</a>.</p>
 
     <a class="button" href="03-typography.html"><strong>Next:</strong> Learn about Typography <i
         class="arrow right"></i></a>
