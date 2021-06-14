@@ -214,7 +214,8 @@ p {
       which ballpark you're in, just by looking at a single value (the first one, Hue). That's why HSL is often referred
       to as a human readable or human digestible color format.
     </p>
-    <p>It may be easier to see what I mean when we look at a color wheel with the <strong>Hue</strong> values annotated:</p>
+    <p>It may be easier to see what I mean when we look at a color wheel with the <strong>Hue</strong> values annotated:
+    </p>
     <div class="color-wheel-hsl">
       <span class="deg270">0</span>
       <span class="deg300">30</span>
@@ -295,7 +296,7 @@ p {
     <p>
       Lightness is a value that also ranges from 0-100%, but it defines how much black (0%) or white (100%) is in the
       color. As you can imagine, a total lack of lightness (0%) results
-      in a block color, while full lightness (100%) gives you bright, fully lit colors.
+      in a black color, while full lightness (100%) gives you bright, fully lit colors.
     </p>
     <table style="border: 1px solid black">
       <tr>
@@ -350,7 +351,10 @@ p {
       We definitely have a blue (hue = 230), there's a lot of blue (saturation = 75%), and it's a bright shade of blue
       (lightness = 90%).
     </p>
-    <p>If HSL is easier for humans, then what about computers? How do they make sense of color? That's why we have RGB.
+    <p>If HSL is easier for humans, then what about computers? How do they make sense of color?
+    </p>
+    <p>
+      That's why we have RGB.
     </p>
     <h2>Red, Green, Blue (RGB)</h2>
     <p>
@@ -365,7 +369,7 @@ p {
     <pre>
   color: rgb(red,green,blue);
 </pre>
-    <table style="border: 1px solid black">
+    <table style="border: 1px solid black;">
       <tr>
         <th scope="row">Values</th>
         <td>rgb(255,0,0)</td>
@@ -401,9 +405,10 @@ p {
     <p>
       There's about 25% of the possible red, 40% of the possible green, and a large amount of blue 90%ish. It's probably
       a blue,
-      and maybe it's some sort of green-ish blue, since there's so much green in it? I can't really tell what color this
-      will end
-      up as just based off the raw RGB values.
+      and maybe it's some sort of green-ish blue, since there's so much green in it?
+    </p>
+    <p>
+      I can't really tell what color this will end up as just based off the raw RGB values.
     </p>
     <p style="color: royalblue">Guess what? It's our original royalblue.</p>
     <input type="color" value="#4169e1">
@@ -452,7 +457,29 @@ p {
       blue of the text, which
       is our same royalblue, but is now set at 75% transparency and is blending in with the background orange.
     </p>
-
+    <h3>Accessibility</h3>
+    <p>
+      Using color correctly means making it accessible to everyone, even those with visual impairments.  This is part of
+      embracing the idea of universal design. Universal design in physical buildings is the idea that all people should have equal 
+      access to a building, regardless of their level of mobility. That's why buildings have ramps for people in wheelchairs. 
+      The same is true for our digital world on the web. Every user, regardless of their situation, should have the same ease 
+      of access to your website. This includes users that are visually impaired and might have difficulty discerning between similar colors. 
+    </p>
+    <p>
+      There's a lot to learn about getting color contrast right, and I want you to read from the experts:
+    </p>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast">Understanding WCAG: Color Contrast</a></li>
+      <li><a href="https://webaim.org/resources/contrastchecker/">Color Contrast Checker Tool</a></li>
+      <li><a href="https://web.dev/color-contrast/">Color contrast using Google Chrome's Lighthouse auditing tool</a></li>
+    </ul>
+    <p>
+      In the future, this section will be expanded to cover accessibility further, but for now, please rely on the experts above.
+    </p>
+    <p>
+      You've learned a lot about color.  Now what about fonts and typography?
+    </p>
+    <h3>Credits</h3>
     <p><sup>1</sup>Read more about Mr. Valensi and HSL on <a
         href="https://en.wikipedia.org/wiki/HSL_and_HSV">Wikipedia</a>.</p>
 
