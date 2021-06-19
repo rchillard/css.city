@@ -56,34 +56,103 @@
   <main>
     <p class="construction">Work in progress</p>
     <h1>Learn Units</h1>
-    <h3>Units</h3>
-    <h4>Absolute</h4>
+    <p>CSS allows you to use different units of measurement to describe properties. These properties range from font
+      size to element size. They help you, the web developer, position elements as well as describe elements.
+      This is all a part of giving you maximum flexibility, so you can design websites as you see fit. Well designed
+      websites are responsive.
+    </p>
+    <h2>Responsive Design</h2>
+    <p>Responsive design is the concept that as the size of a screen varies, the presentation of a website will change
+      to optimally display the content. You experience responsive design every day when you use your computer (a wide
+      screen) to access a web page, and then you go to that same web page on your phone and see a smaller, more compact
+      site.
+    </p>
+    <p>
+
+    </p>
+    <h2>Absolute</h2>
     <p>Absolute units can be more difficult to make responsive and scalable.</p>
-    <h5>Pixels (PX)</h5>
-    <p>Not actually always 1px on your screen do to the different types of displays</p>
-    <h5>Points (PT)</h5>
-    <h5>Centimeters (CM)</h5>
-    <h5>Inches (IN)</h5>
-    <h5>Millimeters (MM)</h5>
-    <h4>Relative</h4>
-    <p>Relative units are designed to be used with changing screen sizes.</p>
-    <h5>Relative Units (EM)</h5>
-    <p>Typically used with font sizes where 1em is equal to the font-size of the parent element. 1em is 100% of the font
+    <h3>Pixels (PX)</h3>
+    <p></p>
+    <table>
+      <tr>
+        <td>Pros</td>
+        <td>Cons</td>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li>Allows you to specify an exact size of an element</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Not actually always 1px on your screen due to the different types of displays.</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <h3>Other Units</h3>
+    <p>
+      There are other types of units, which we will not cover here, because they are more relative to print
+      applications. They are points (pt), inches (in), centimeteres (cm), and millimeters (mm).
+    </p>
+    <h2>Relative</h2>
+    <p>
+      Relative units are designed to be used with changing screen sizes. They are powerful, because they give you
+      greater
+      flexibility, but they're also sometimes difficult to use, because they are always relative to some other value.
+      The
+      value that they're relative to can change based off of the property you are modifying. Sometimes, the relative
+      value
+      is the element you're modifying itself, and sometimes it's
+    </p>
+    <h3>Relative Units (EM)</h3>
+    <p>Typically used with font sizes where 1em is equal to the font-size of the parent element. 1em is 100% of the
+      font
       size.</p>
     <p>Very useful for when an element should scale based off its parent element.</p>
-    <h5>Root EMs (REM)</h5>
-    <p>Relative to the root element's font size, so a relative unit based off a single absolute value. This makes using
+    <h3>Root EMs (REM)</h3>
+    <p>Relative to the root element's font size, so a relative unit based off a single absolute value. This makes
+      using
       REMs generally more reliable.</p>
-    <h5>View Height (VH)</h5>
-    <p>The viewport is the seeable space presented by the browser in which the content of your page lives. This changes
+    <h3>View Height (VH)</h3>
+    <p>The viewport is the seeable space presented by the browser in which the content of your page lives. This
+      changes
       as a user resizes their browser window.</p>
     <p>View Height (vh) units are a relative stand in for percetanges, so 1vh is equivalent to 1% of the height of the
       viewport.</p>
-    <h5>View Width (VW)</h5>
-    <h5>Percentage (%)</h5>
-    <p>Always set relative to another value, which is sometimes the element itself or the parent element</p>
-    <a class="button" href="05-positioning.html"><strong>Next:</strong> Learn about Positioning <i
-      class="arrow right"></i></a>
+    <h3>View Width (VW)</h3>
+    <h3>Percentage (%)</h3>
+    <p>Always set relative to another value, which is sometimes the element itself or the parent element.</p>
+    <table class="pro-con">
+      <thead>
+        <tr>
+          <td>Pros</td>
+          <td>Cons</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <ul>
+              <li>Allows you to divide elements inside a container into easy to understand portions (e.g. 50% / 50%)
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>The relative value changes across properties</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="tutorial-navigation">
+      <a class="button" href="03-typography.html"><i class="arrow left"></i>Back</a>
+      <a class="button" href="05-positioning.html"><strong>Next:</strong> Learn about Positioning <i
+          class="arrow right"></i></a>
+    </div>
   </main>
 
   <!-- More images

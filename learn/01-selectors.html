@@ -64,12 +64,12 @@
     </p>
     <p>That's where knowing all of the possible selectors comes in handy and can help you:</p>
     <ul>
-      <li><strong>Element</strong> selectors refer to HTML elements by type (e.g. p for paragraph) and change all the
+      <li><strong>Element</strong> selectors refer to elements by type (e.g. p for paragraph) and change all the
         instances of
         that element.</li>
-      <li><strong>Class</strong> selectors refer to HTML elements by their class attribute. Class is a global HTML
+      <li><strong>Class</strong> selectors refer to elements by their class attribute. Class is a global HTML
         attribute available to all elements.</li>
-      <li><strong>Identifier</strong> selectors refer to a single HTML element's id attribute. id is also
+      <li><strong>Identifier</strong> selectors refer to a single element's id attribute. id is also
         global, but unlike class must be unique.</li>
     </ul>
     <h3>Class</h3>
@@ -87,8 +87,7 @@
       </figure>
       <figure>
         <figcaption>CSS</figcaption>
-        <pre><code><style contenteditable>
-  .lyrics {
+        <pre><code><style contenteditable>.lyrics {
     color: royalblue;
     line-height: 120%;
   }
@@ -156,15 +155,14 @@
     <div class="code">
       <figure>
         <figcaption>HTML</figcaption>
-        <textarea rows="5" readonly>
+        <textarea rows="6" readonly>
   <p>Like the lyrics you just read? <br><br>
-    <span id="call-to-action">Listen to the Talking Heads Right Now!</span></p>
+    <span id="call-to-action">Listen to the Talking Heads Now!</span></p>
           </textarea>
       </figure>
       <figure>
         <figcaption>CSS</figcaption>
-        <pre><code><style contenteditable>
-  #call-to-action {
+        <pre><code><style contenteditable>#call-to-action {
     background-color: lightgray;
     color: blueviolet;
   }
@@ -172,8 +170,7 @@
       </figure>
       <figure>
         <figcaption>Display</figcaption>
-        <p>Like the lyrics you just read?<br><br> <span id="call-to-action">Listen to the Talking Heads Right
-            Now!</span></p>
+        <p>Like the lyrics you just read?<br><br> <span id="call-to-action">Listen to the Talking Heads Now!</span></p>
       </figure>
     </div>
     <p>
@@ -185,7 +182,10 @@
       Now that you understand how to use the three different types of selectors, let's learn more about colors. 
     </p>
     <br>
-    <a class="button" href="02-colors.html"><strong>Next:</strong> Learn about Colors <i class="arrow right"></i></a>
+    <div class="tutorial-navigation">
+      <a class="button" href="../learn.html"><i class="arrow left"></i>Back</a>
+      <a class="button" href="02-colors.html"><strong>Next:</strong> Learn about Colors <i class="arrow right"></i></a>
+    </div>
   </main>
 
   <!-- More images

@@ -268,6 +268,11 @@ textarea:read-only {
 }
 
 /* Blocks */
+.tutorial-navigation {
+	display: grid;
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 1;
+}
 
 /* Utilities */
 .arrow {
@@ -282,10 +287,11 @@ textarea:read-only {
 	border: 5px solid var(--color-purple);
 	color: white;
 	display: block;
+	font-size: 1.1em;
 	margin: 1rem auto;
 	padding: 1rem;
 	text-align: center;
-	width: 60%;
+	width: 90%;
 }
 
 .button:hover {
@@ -389,6 +395,12 @@ https://stackoverflow.com/questions/12813573/position-icons-into-circle
 
 li.priority {
 	font-weight: bold;
+}
+
+.pro-con {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
 }
 
 .right {
