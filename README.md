@@ -13,17 +13,23 @@ Tutorials that take you through the basics of CSS:
 - Selectors
 - Colors
 - Typography
-- Box Model
+- Units
 - Positioning
+- Box Model
+- Layout
 - Specificity
+
+### Practice
+
+- Building Memory
+- Experimenting on the Playground
+- Playing Games
 
 ### Reference
 
-- Selectors
 - Attributes
-- Values and Units
 
-### Strategies
+#### Strategies
 
 - Stylesheets
 - Inline styling
@@ -31,7 +37,12 @@ Tutorials that take you through the basics of CSS:
 - CSS Modules
 - Styled-components
 
-### Templates
+#### Templates
 
 - Font families
 - Water.css
+
+### Tools
+
+- Specificity Calculator
+- Minifier
