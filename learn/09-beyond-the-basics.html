@@ -10,6 +10,43 @@
   <link rel="stylesheet" type="text/css" href="../css/sane.css">
   <link rel="stylesheet" type="text/css" href="../css/styles.css">
   <!-- <base href="https://css.city/"> -->
+
+  <style>
+    /* Example calc */
+    .spectrum {
+      background-color: rgb(calc(var(--intensity) * 51), 0, 0);
+      text-align: center;
+      width: 20%;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    /* Example counter */
+    :root {
+      counter-reset: footnotes;
+    }
+
+    sup {
+      counter-increment: footnotes;
+    }
+
+    sup::after {
+      content: counter(footnotes);
+    }
+
+    /* Example focus-within */
+    .example-dropdown {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    button:focus-within .example-dropdown {
+      opacity: 1;
+      visibility: visible;
+    }
+  </style>
 </head>
 
 <body>
@@ -56,6 +93,123 @@
   <main>
     <p class="construction">Work in progress</p>
     <h1>Beyond the Basics</h1>
+    <h2>Variables</h2>
+    <p>Using the root element selector, you can define global variables in your CSS:</p>
+    <code>
+      :root {
+        --primary-color: rgb(125, 125, 125);
+        --secondary-color: rgb(175, 175, 175);
+      }
+    </code>
+    <h2>Calculations</h2>
+    <p>
+    </p>
+    <pre>
+      <code>
+        .spectrum {
+          background-color: rgb(calc(var(--intensity) * 51), 0, 0);
+          text-align: center;
+          width: 20%;
+        }
+    
+        .flex {
+          display: flex;
+        }
+      </code>
+    </pre>
+    <textarea>
+      <div class="flex">
+        <div class="spectrum" style="--intensity: 1">1</div>
+        <div class="spectrum" style="--intensity: 2">2</div>
+        <div class="spectrum" style="--intensity: 3">3</div>
+        <div class="spectrum" style="--intensity: 4">4</div>
+        <div class="spectrum" style="--intensity: 5">5</div>
+      </div>
+    </textarea>
+    <p>
+      Results in creating a band of colors:
+    </p>
+    <div class="flex">
+      <div class="spectrum" style="--intensity: 1">1</div>
+      <div class="spectrum" style="--intensity: 2">2</div>
+      <div class="spectrum" style="--intensity: 3">3</div>
+      <div class="spectrum" style="--intensity: 4">4</div>
+      <div class="spectrum" style="--intensity: 5">5</div>
+    </div>
+
+    <h2>Responsive Design</h2>
+    <h3>Media Queries</h3>
+    <h3>Clamping Width</h3>
+    <code>
+      img {
+        width: clamp(300px, 50%, 800px);
+                     min preferred max
+      }
+    </code>
+    <h3>Aspect Ratio</h3>
+    Specifying the aspect ratio of a piece of media (image, video):
+    <code>
+      img {
+        width: 100%;
+        aspect-ratio: 4/3;
+      }
+    </code>
+
+    <h2>Counters</h2>
+    <p>If you find yourself writing a list of footnotes manually in your HTML, you may be forced to re-write all the
+      numbers whenever you insert a new footnote in the middle. Consider using CSS counters to generate these
+      numbered footnotes instead!</p>
+    <pre>
+      <code>
+  :root {
+    counter-reset: footnotes;
+  }
+
+  sup {
+    counter-increment: footnotes;
+  }
+  
+  sup::after {
+    content: counter(footnotes);
+  }
+      </code>
+    </pre>
+    <p>The counter() CSS function returns a string representing the current value of the named counter.<sup></sup></p>
+    <p>The counter-increment CSS property increases or decreases the value of a CSS counter by a given value.<sup></sup>
+    </p>
+    <p>The counter-reset CSS property resets a CSS counter to a given value.<sup></sup></p>
+    <p></p>
+    <p>Footnotes</p>
+    <ol>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/counter()">Counter</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/counter-increment">Counter Increment</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/counter-reset">Counter Reset</a></li>
+    </ol>
+    <h2>Focus Within</h2>
+    <pre>
+<code>
+  .example-menu {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  button:focus-within .example-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+</code>
+    </pre>
+    <button>
+      Let's see options
+      <ul class="example-dropdown">
+        <li>Option one</li>
+        <li>Option two</li>
+        <li>Option three</li>
+      </ul>
+    </button>
+    <h2>PostCSS</h2>
+
+    <h2>Sass</h2>
     <div class="tutorial-navigation">
       <a class="button" href="08-specificity.html"><i class="arrow left"></i>Back</a>
       <a class="button" href="../reference.html">Consult the <strong>Reference</strong> </a>

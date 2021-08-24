@@ -56,6 +56,27 @@
   <main>
     <p class="construction">Work in progress</p>
     <h1>Learn Layout</h1>
+
+    <h2>Flexbox</h2>
+    <p>Single column or row</p>
+    <code>
+      .flex {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+    </code>
+
+    <h2>Grid</h2>
+    <p>Multiple columns and rows</p>
+    <code>
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+      }
+    </code>
     <div class="tutorial-navigation">
       <a class="button" href="06-box-model.html"><i class="arrow left"></i>Back</a>
       <a class="button" href="08-specificity.html"><strong>Next:</strong> Learn about Specificity <i
