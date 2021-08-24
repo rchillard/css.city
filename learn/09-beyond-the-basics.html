@@ -35,17 +35,6 @@
     sup::after {
       content: counter(footnotes);
     }
-
-    /* Example focus-within */
-    .example-dropdown {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    button:focus-within .example-dropdown {
-      opacity: 1;
-      visibility: visible;
-    }
   </style>
 </head>
 
@@ -199,17 +188,42 @@
   }
 </code>
     </pre>
+    <style>
+      /* Example focus-within */
+      .example-dropdown {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      button:focus-within .example-dropdown {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
     <button>
       Let's see options
       <ul class="example-dropdown">
-        <li>Option one</li>
-        <li>Option two</li>
-        <li>Option three</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
       </ul>
+      <button class="example-dropdown">Option 1</button>
+      <button class="example-dropdown">Option 2</button>
+      <button class="example-dropdown">Option 3</button>
     </button>
-    <h2>PostCSS</h2>
-
     <h2>Sass</h2>
+    <p>Sass is a style sheet preprocessor, which means it expands CSS syntax and then interprets your Sass files and
+      preprocesses them into fully expressed CSS, which a browser can use. This adds a build step to your CSS.</p>
+    <p>
+      <a href="https://sass-lang.com/">Sass - Syntactically awesome style sheets</a>
+    </p>
+
+    <h2>PostCSS</h2>
+    <p>PostCSS is a tool that automatically adds different browser vendor prefixes to your CSS using JavaScript.</p>
+    <p>
+      <a href="https://postcss.org/">PostCSS - add vendor prefixes to CSS rules using values from caniuse.com</a>
+    </p>
+
     <div class="tutorial-navigation">
       <a class="button" href="08-specificity.html"><i class="arrow left"></i>Back</a>
       <a class="button" href="../reference.html">Consult the <strong>Reference</strong> </a>
