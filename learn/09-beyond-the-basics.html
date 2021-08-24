@@ -135,6 +135,15 @@
                      min preferred max
       }
     </code>
+
+    <p>Thinking about clamping width to meet design standards, such as the infamous 45-75 character width for single column text.</p>
+    <pre>
+      <code>
+        p {
+          width: clamp(45ch, 50%, 75ch);
+        }
+      </code>
+    </pre>
     <h3>Aspect Ratio</h3>
     Specifying the aspect ratio of a piece of media (image, video):
     <code>
