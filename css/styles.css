@@ -236,6 +236,10 @@ textarea:read-only {
 		/* 576px */
 	}
 
+	html {
+		font-size: 110%;
+	}
+
 	textarea {
 		width: 95%;
 	}
@@ -249,6 +253,10 @@ textarea:read-only {
 		/* 595.2 px */
 	}
 
+	html {
+		font-size: 120%;
+	}
+
 	textarea {
 		width: 100%;
 	}
@@ -260,6 +268,10 @@ textarea:read-only {
 		grid-template-columns: 25% 50% 25%;
 		/* width: 50vw; */
 		/* 600 px */
+	}
+
+	html {
+		font-size: 130%;
 	}
 
 	textarea {
