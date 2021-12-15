@@ -169,12 +169,18 @@ script {
 }
 
 table {
+	border-collapse: collapse;
 	text-align: center;
+}
+
+th {
+	text-align: left;
 }
 
 tr,
 td {
 	border: 1px solid black;
+	padding: 5px;
 }
 
 textarea {
