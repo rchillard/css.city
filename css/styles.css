@@ -206,6 +206,171 @@ textarea:read-only {
 	outline-offset: 0.25rem;
 }
 
+/* Composition */
+
+/* Blocks */
+.tutorial-navigation {
+	display: grid;
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 1;
+}
+
+/* Utilities */
+.arrow {
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+}
+
+.button {
+	background-color: black;
+	border: 5px solid var(--color-purple);
+	color: white;
+	display: block;
+	font-size: 1.1em;
+	margin: 1rem auto;
+	padding: 1rem;
+	text-align: center;
+	width: 90%;
+}
+
+.button:hover {
+	background-color: white;
+	border-image: linear-gradient(to right, var(--color-purple), var(--color-pink)) 1;
+	color: black;
+}
+
+.button:hover > .arrow {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+}
+
+.code {
+	display: flex;
+	grid-gap: 1rem;
+	flex-direction: column;
+}
+
+.code > * {
+	width: 100%;
+}
+
+/* Method utilized from
+https://stackoverflow.com/questions/12813573/position-icons-into-circle
+ */
+.color-wheel-hsl {
+	background: conic-gradient(
+		hsl(0, 100%, 50%),
+		hsl(30, 100%, 50%),
+		hsl(60, 100%, 50%),
+		hsl(90, 100%, 50%),
+		hsl(120, 100%, 50%),
+		hsl(150, 100%, 50%),
+		hsl(180, 100%, 50%),
+		hsl(210, 100%, 50%),
+		hsl(240, 100%, 50%),
+		hsl(270, 100%, 50%),
+		hsl(300, 100%, 50%),
+		hsl(330, 100%, 50%),
+		hsl(360, 100%, 50%)
+	);
+	position: relative;
+	width: 24em;
+	height: 24em;
+	border-radius: 50%;
+	margin: 5em;
+}
+
+.color-wheel-hsl span {
+	display: block;
+	font-weight: bold;
+	position: absolute;
+	top: 50%; left: 50%;
+	width: 4em; height: 4em;
+	margin: -1em;
+}
+
+.deg000 { transform: translate(14em); }
+.deg030 { transform: rotate(30deg)  translate(14em) rotate(-30deg); }
+.deg060 { transform: rotate(60deg)  translate(14em) rotate(-60deg); }
+.deg090 { transform: rotate(90deg)  translate(14em) rotate(-90deg); }
+.deg120 { transform: rotate(120deg) translate(14em) rotate(-120deg); }
+.deg150 { transform: rotate(150deg) translate(14em) rotate(-150deg); }
+.deg180 { transform: rotate(180deg) translate(14em) rotate(-180deg); }
+.deg210 { transform: rotate(210deg) translate(14em) rotate(-210deg); }
+.deg240 { transform: rotate(240deg) translate(14em) rotate(-240deg); }
+.deg270 { transform: rotate(270deg) translate(14em) rotate(-270deg); }
+.deg300 { transform: rotate(300deg) translate(14em) rotate(-300deg); }
+.deg330 { transform: rotate(330deg) translate(14em) rotate(-330deg); }
+
+.construction {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.block {
+	display: inline-block;
+}
+
+.diagram {
+	width: 100%;
+}
+
+.ex-alphachannel {
+	background-color: hsla(30, 75%, 57%, 0.25);
+	color: hsla(225, 73%, 57%, 0.75);
+}
+
+.lyrics {
+	color: royalblue;
+	line-height: 120%;
+}
+
+.left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+}
+
+li.priority {
+	font-weight: bold;
+}
+
+.pro-con {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+}
+
+.right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+#call-to-action {
+	background-color: lightgray;
+	color: blueviolet;
+}
+
+#menu-title {
+	align-self: flex-start;
+	border: 2px solid darkorchid;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: .5ch;
+	margin-top: 1ch;
+	text-decoration: none;
+}
+
+#menu-title img {
+	display: inline-block;
+	height: 24px;
+	padding-left: .1ch;
+	vertical-align: text-top;
+}
+
 /* MEDIA QUERIES */
 
 /* Extra small devices (phones, 600px and down) */
@@ -283,169 +448,8 @@ textarea:read-only {
 	textarea {
 		width: 100%;
 	}
-}
 
-/* Blocks */
-.tutorial-navigation {
-	display: grid;
-	grid-template-columns: 25% 75%;
-	grid-template-rows: 1;
-}
-
-/* Utilities */
-.arrow {
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	display: inline-block;
-	padding: 3px;
-}
-
-.button {
-	background-color: black;
-	border: 5px solid var(--color-purple);
-	color: white;
-	display: block;
-	font-size: 1.1em;
-	margin: 1rem auto;
-	padding: 1rem;
-	text-align: center;
-	width: 90%;
-}
-
-.button:hover {
-	background-color: white;
-	border-image: linear-gradient(to right, var(--color-purple), var(--color-pink)) 1;
-	color: black;
-}
-
-.button:hover > .arrow {
-	border: solid black;
-	border-width: 0 3px 3px 0;
-}
-
-.code {
-	display: grid;
-	grid-gap: 1rem;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 2;
-}
-
-/* Method utilized from
-https://stackoverflow.com/questions/12813573/position-icons-into-circle
- */
-.color-wheel-hsl {
-	background: conic-gradient(
-		hsl(0, 100%, 50%),
-		hsl(30, 100%, 50%),
-		hsl(60, 100%, 50%),
-		hsl(90, 100%, 50%),
-		hsl(120, 100%, 50%),
-		hsl(150, 100%, 50%),
-		hsl(180, 100%, 50%),
-		hsl(210, 100%, 50%),
-		hsl(240, 100%, 50%),
-		hsl(270, 100%, 50%),
-		hsl(300, 100%, 50%),
-		hsl(330, 100%, 50%),
-		hsl(360, 100%, 50%)
-	);
-	position: relative;
-	width: 24em;
-	height: 24em;
-	border-radius: 50%;
-	margin: 5em;
-}
-
-.color-wheel-hsl span {
-	display: block;
-	font-weight: bold;
-	position: absolute;
-	top: 50%; left: 50%;
-	width: 4em; height: 4em;
-	margin: -1em;
-}
-
-.deg000 { transform: translate(14em); }
-.deg030 { transform: rotate(30deg)  translate(14em) rotate(-30deg); }
-.deg060 { transform: rotate(60deg)  translate(14em) rotate(-60deg); }
-.deg090 { transform: rotate(90deg)  translate(14em) rotate(-90deg); }
-.deg120 { transform: rotate(120deg) translate(14em) rotate(-120deg); }
-.deg150 { transform: rotate(150deg) translate(14em) rotate(-150deg); }
-.deg180 { transform: rotate(180deg) translate(14em) rotate(-180deg); }
-.deg210 { transform: rotate(210deg) translate(14em) rotate(-210deg); }
-.deg240 { transform: rotate(240deg) translate(14em) rotate(-240deg); }
-.deg270 { transform: rotate(270deg) translate(14em) rotate(-270deg); }
-.deg300 { transform: rotate(300deg) translate(14em) rotate(-300deg); }
-.deg330 { transform: rotate(330deg) translate(14em) rotate(-330deg); }
-
-.construction {
-	margin: 0 auto;
-	text-align: center;
-}
-
-.block {
-	display: inline-block;
-}
-
-.diagram {
-	width: 100%;
-}
-
-.ex-alphachannel {
-	background-color: hsla(30, 75%, 57%, 0.25);
-	color: hsla(225, 73%, 57%, 0.75);
-}
-
-.lyrics {
-	color: royalblue;
-	line-height: 120%;
-}
-
-.nav-link {
-	padding-left: .5rem;
-	padding-right: .5rem;
-}
-
-.left {
-	transform: rotate(135deg);
-	-webkit-transform: rotate(135deg);
-}
-
-li.priority {
-	font-weight: bold;
-}
-
-.pro-con {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: auto;
-}
-
-.right {
-	transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
-}
-
-#call-to-action {
-	background-color: lightgray;
-	color: blueviolet;
-}
-
-#menu-title {
-	align-self: flex-start;
-	border: 2px solid darkorchid;
-	background-color: black;
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	padding-left: .5ch;
-	margin-top: 1ch;
-	text-decoration: none;
-}
-
-#menu-title img {
-	display: inline-block;
-	height: 24px;
-	padding-left: .1ch;
-	vertical-align: text-top;
+	.code {
+		flex-direction: row;
+	}
 }

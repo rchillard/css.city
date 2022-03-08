@@ -46,3 +46,61 @@ Tutorials that take you through the basics of CSS:
 
 - Specificity Calculator
 - Minifier
+
+## Cities
+
+The following cities have been or will be implemented in a [CSS Zen Garden](http://www.csszengarden.com/) style way.  These are organized by continent to try and accomplish distribution:
+
+
+Africa
+- [ ] Cairo
+- [ ] Dar es Salaam
+- [ ] Johannesburg
+- [ ] Khartoum
+- [ ] Kinshasa
+- [ ] Lagos
+
+Asia
+- [ ] Bangkok
+- [ ] Beijing
+- [ ] Delhi
+- [ ] Dhaka
+- [ ] Hong Kong
+- [ ] Jakarta
+- [ ] Karachi
+- [ ] Mumbai
+- [ ] Osaka
+- [ ] Seoul
+- [ ] Shanghai
+- [ ] Singapore
+- [ ] Tokyo
+  
+Europe
+- [ ] Berlin
+- [ ] London
+- [ ] Madrid
+- [ ] Moscow
+- [ ] Paris
+- [ ] Rome
+
+Middle East
+- [ ] Amman
+- [ ] Baghdad
+- [ ] Dubai
+- [ ] Istanbul
+- [ ] Tehran
+- [ ] Tel Aviv
+- [ ] Riyadh
+
+North America
+- [ ] Los Angeles 
+- [ ] Mexico City
+- [ ] New York
+- [ ] Toronto
+
+South America
+- [ ] Buenos Aires
+- [ ] Lima
+- [ ] Rio de Janeiro
+- [ ] Santiago
+- [ ] Sao Paulo
