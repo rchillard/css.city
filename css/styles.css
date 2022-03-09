@@ -189,11 +189,7 @@ textarea {
 	scrollbar-face-color: var(--color-blue);
 	scrollbar-track-color: var(--color-blue);
 	margin-top: .5rem;
-}
-
-textarea:read-only {
-	border: none;
-	resize: none;
+	width: 100%;
 }
 
 [contenteditable] {
@@ -381,9 +377,6 @@ li.priority {
 		/* 570 px */
 	}
 
-	textarea {
-		width: 90%;
-	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -392,10 +385,6 @@ li.priority {
 		grid-template-columns: 5% 90% 5%;
 		/* width: 90vw; */
 		/* 540 px */
-	}
-
-	textarea {
-		width: 90%;
 	}
 }
 
@@ -408,11 +397,7 @@ li.priority {
 	}
 
 	html {
-		font-size: 110%;
-	}
-
-	textarea {
-		width: 95%;
+		font-size: 105%;
 	}
 }
 
@@ -425,11 +410,7 @@ li.priority {
 	}
 
 	html {
-		font-size: 120%;
-	}
-
-	textarea {
-		width: 100%;
+		font-size: 110%;
 	}
 }
 
@@ -442,11 +423,7 @@ li.priority {
 	}
 
 	html {
-		font-size: 130%;
-	}
-
-	textarea {
-		width: 100%;
+		font-size: 115%;
 	}
 
 	.code {
