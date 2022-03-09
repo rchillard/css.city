@@ -80,28 +80,31 @@
       the class selector. The class selector syntax is a period . followed by the class name:
     </p>
     <div class="code">
-      <figure>
+
+      <figure class="html">
         <figcaption>HTML</figcaption>
         <textarea readonly>
-<p>
-  David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, 
-  <q class="lyrics">Think of London, a small city</q>.
-</p>
-        </textarea>
+  <p>
+    David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, 
+    <q class="lyrics">Think of London, a small city</q>.
+  </p></textarea>
       </figure>
-      <figure>
-      <figcaption>CSS</figcaption>
-      <pre><code><style contenteditable>.lyrics {
-    color: royalblue;
-    line-height: 120%;
-  }
-          </style></code></pre>
+
+      <figure class="css">
+        <figcaption>CSS</figcaption>
+        <pre><code><style contenteditable>.lyrics {
+  color: royalblue;
+  line-height: 120%;
+}
+        </style></code></pre>
       </figure>
-      <figure>
+
+      <figure class="display">
         <figcaption>Display</figcaption>
         <p>David Byrne starts Talking Heads' song Cities with an oxymoronic and humuorous first line, <q
             class="lyrics">Think of London, a small city</q>.</p>
       </figure>
+
     </div>
     <p>When applied to a set of song lyrics like this one would appear as:</p>
     <blockquote class="lyrics">
@@ -157,22 +160,24 @@
       unique on a page, meaning one and only one element with that id can exist.
     </p>
     <div class="code">
-      <figure>
+      <figure class="html">
         <figcaption>HTML</figcaption>
-        <textarea rows="6" readonly>
-  <p>Like the lyrics you just read? <br><br>
-    <span id="call-to-action">Listen to the Talking Heads Now!</span></p>
-          </textarea>
+        <textarea readonly>
+<p>
+  Like the lyrics you just read? <br> <br>
+  <span id="call-to-action">Listen to the Talking Heads Now!</span>
+</p>
+        </textarea>
       </figure>
-      <figure>
-        <figcaption>CSS</figcaption>
+      <figure class="css">
+        <figcaption>CSS </figcaption>
         <pre><code><style contenteditable>#call-to-action {
-    background-color: lightgray;
-    color: blueviolet;
-  }
-          </style></code></pre>
+  background-color: lightgray;
+  color: blueviolet;
+}</style></code></pre>
+      <span class="edit-me">edit me</span>
       </figure>
-      <figure>
+      <figure class="display">
         <figcaption>Display</figcaption>
         <p>Like the lyrics you just read?<br><br> <span id="call-to-action">Listen to the Talking Heads Now!</span></p>
       </figure>

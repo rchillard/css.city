@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .autogrow {
+            display: grid;
+        }
+
+        .autogrow::after {
+            content: attr(data-replicated-value) " ";
+            white-space: pre-wrap;
+            visibility: hidden;
+        }
+
+        .autogrow>textarea {
+            resize: none;
+        }
+
+        .autogrow>textarea,
+        .autogrow::after {
+            /* Add textarea styles here so that the textarea and div look the same */
+            grid-area: 1 / 1 / 2 / 2;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="content">Type something</label>
+    <div class="autogrow">
+        <textarea id="content" oninput="this.parentNode.setAttribute('data-replicated-value', this.value)"
+            onload="this.parentNode.setAttribute('data-replicated-value', this.value)"><p>
+    Like the lyrics you just read? <br> <br>
+    <span id="call-to-action">Listen to the Talking Heads Now!</span>
+</p>
+
+        </textarea>
+    </div>
+
+    <script>
+        function setAutogrow() {
+            let autogrow = document.querySelector('.autogrow');
+            let content = autogrow ? autogrow.querySelector('textarea') : null;
+            if (!autogrow || !content) return;
+            autogrow.setAttribute('data-replicated-value', content.value);
+        }
+        setAutogrow();
+    </script>
+</body>
+
+</html>

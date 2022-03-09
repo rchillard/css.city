@@ -1,13 +1,12 @@
 window.addEventListener('resize', function () {
-    resizeTextareas();
+    resizeToScrollHeight(document.querySelectorAll('textarea'));
 })
 
 document.addEventListener('DOMContentLoaded', function () {
-    resizeTextareas();
+    resizeToScrollHeight(document.querySelectorAll('textarea'));
 }, false);
 
-function resizeTextareas() {
-    const nodelist = document.querySelectorAll('textarea')
+function resizeToScrollHeight(nodelist) {
     for (const node of nodelist) {
         node.style.height = "";
         node.style.height = node.scrollHeight + 3 + "px";

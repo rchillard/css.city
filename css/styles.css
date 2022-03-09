@@ -75,12 +75,16 @@ header {
 }
 
 figcaption {
+	font-size: 16px;
 	font-weight: bold;
-	text-align: center;
+	text-align: left;
+	padding: .5rem;
 }
 
 figure {
+	font-size: 14px;
 	margin: 0;
+	position: relative;
 }
 
 nav {
@@ -154,8 +158,8 @@ main > * {
 }
 
 pre {
-	border: 1px solid var(--color-blue);
-	margin: .5rem 0 0 0;
+	margin: 0;
+	padding: .5rem;
 }
 
 p q {
@@ -164,8 +168,8 @@ p q {
 
 style,
 script {
-	font-family: monospace, monospace; /* monospace font */
-	white-space: pre; /* behave like <pre> */
+	/* font-family: monospace, monospace; /* monospace font */ 
+	white-space: pre-wrap; /* behave like <pre> */
 }
 
 table {
@@ -185,10 +189,16 @@ td {
 
 textarea {
 	border: 1px solid var(--color-blue);
-	scrollbar-base-color: var(--color-blue);
+	padding: .5rem;
+	resize: none;
+	width: 100%;
+}
+
+textarea:read-only {
+	border: none;
+	/* scrollbar-base-color: var(--color-blue);
 	scrollbar-face-color: var(--color-blue);
-	scrollbar-track-color: var(--color-blue);
-	margin-top: .5rem;
+	scrollbar-track-color: var(--color-blue); */
 	width: 100%;
 }
 
@@ -250,6 +260,47 @@ textarea {
 
 .code > * {
 	width: 100%;
+}
+
+.code > .css {
+	border: 1px solid var(--color-purple);
+}
+
+.css > figcaption {
+	background-color: var(--color-purple);
+	border-bottom: 1px solid var(--color-purple);
+	color: white;
+}
+
+.edit-me {
+	bottom: 0;
+	color: gray;
+	font-size: 90%;
+	position: absolute;
+	right: .5rem;
+}
+
+.code > .html {
+	border: 1px solid var(--color-blue);
+}
+
+.html > figcaption {
+	background-color: var(--color-blue);
+	border-bottom: 1px solid var(--color-blue);
+	color: white;
+}
+
+.code > .display {
+	border: 1px solid gray;
+}
+
+.display > figcaption {
+	background-color: lightgray;
+	border-bottom: 1px solid gray;
+}
+
+.display > * {
+	padding: .5rem;
 }
 
 /* Method utilized from
