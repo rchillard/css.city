@@ -217,9 +217,9 @@ textarea:read-only {
 
 /* Blocks */
 .tutorial-navigation {
-	display: grid;
-	grid-template-columns: 25% 75%;
-	grid-template-rows: 1;
+	display: flex;
+	align-content: space-between;
+	grid-gap: 1rem;
 }
 
 /* Utilities */
@@ -228,6 +228,14 @@ textarea:read-only {
 	border-width: 0 3px 3px 0;
 	display: inline-block;
 	padding: 3px;
+}
+
+.back {
+	width: 30%;
+}
+
+.forward {
+	width: 70%;
 }
 
 .button {
@@ -239,7 +247,7 @@ textarea:read-only {
 	margin: 1rem auto;
 	padding: 1rem;
 	text-align: center;
-	width: 90%;
+	/* width: 90%; */
 }
 
 .button:hover {
@@ -255,7 +263,7 @@ textarea:read-only {
 
 .code {
 	display: flex;
-	grid-gap: 1rem;
+	grid-gap: .5rem;
 	flex-direction: column;
 }
 
