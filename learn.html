@@ -9,7 +9,7 @@
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/sane.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <script type="text/javascript" src="../js/main.js" defer></script>
+  <script type="text/javascript" src="./js/main.js" defer></script>
   <!-- <base href="https://css.city/"> -->
 </head>
 
@@ -86,9 +86,13 @@
       form. The easiest way to start using CSS is by applying it directly to individual elements using the
       <em>style</em> attribute in your HTML:
     </p>
-    <textarea>
+    <figure class="html">
+      <figcaption>HTML</figcaption>
+      <textarea readonly>
 <p style="color: royalblue">Think of London, a small city</p>
       </textarea>
+    </figure>
+
     <p style="color: royalblue">Think of London, a small city</p>
     <h3>Inline Styles</h3>
     <p>
@@ -122,7 +126,9 @@
       If you want to add styles to an entire page, then you can also put these in the head section of your HTML.
     </p>
     <p>Here's an example:</p>
-    <textarea rows="18">
+    <figure class="html">
+      <figcaption>HTML</figcaption>
+    <textarea readonly>
 <!DOCTYPE html>
 <html>
   <head>
@@ -139,8 +145,8 @@
     <p>I'm excited you're starting your CSS journey. Let's learn how to style together!</p>
     <p>We'll be stronger together, and learning CSS while expanding your knowledge of HTML is the way to go.</p>
   </body>
-</html>
-      </textarea>
+</html></textarea>
+    </figure>
     <p>
       Copy and paste the code above into a text editor and save it as 'index.html'. Opening it with a browser will give
       you a local playground where
@@ -151,13 +157,15 @@
       As you can see in your local playground, we've changed the color of both paragraphs. How'd we do it? These 5 lines
       of code:
     </p>
-    <textarea rows="6">
+    <figure class="html">
+      <figcaption>HTML</figcaption>
+    <textarea readonly>
 <style>
   p {
     color: royalblue;
   }
-</style>
-      </textarea>
+</style></textarea>
+    </figure>
     <p>What we see defined above is a CSS rule. Each CSS rule is composed of three parts: selector, property, and value:
     </p>
     <img class="diagram" src="assets/style-embedded.svg" alt="annotated diagram of style element" height="160">
@@ -192,7 +200,9 @@
     </p>
     <p>Your <strong>index.html</strong> file would contain the following:</p>
 
-    <textarea rows="14">
+    <figure class="html">
+      <figcaption>HTML</figcaption>
+    <textarea readonly>
 <!DOCTYPE html>
 <html>
   <head>
@@ -205,20 +215,24 @@
     <p>I'm excited you're starting your CSS journey. Let's learn how to style together!</p>
     <p>We'll be stronger together, and learning CSS while expanding your knowledge of HTML is the way to go.</p>
   </body>
-</html>
-      </textarea>
+</html></textarea>
+    </figure>
     <p>
       Do you see the new link element in the head?
     </p>
-    <textarea>
-<link rel="stylesheet" href="styles.css">
-    </textarea>
+    <figure class="html">
+      <figcaption>HTML</figcaption>
+    <textarea readonly>
+<link rel="stylesheet" href="styles.css"></textarea>
+    </figure>
     <p>While your <strong>styles.css</strong> file (which needs to be in the same directory) would contain the rule:</p>
-    <textarea rows="4">
+    <figure class="css">
+      <figcaption>CSS</figcaption>
+    <textarea readonly>
 p {
   color: royalblue;
 }
-      </textarea>
+</textarea></figure>
     <p>
       By adding the link element, identifying the relative reference as being to a stylesheet, and through using the
       href attribute to refer to the location of that stylesheet,
