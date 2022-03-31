@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="../css/sane.css">
   <link rel="stylesheet" type="text/css" href="../css/styles.css">
   <!-- <base href="https://css.city/"> -->
+  <script src="../js/download.js" defer></script>
   <style>
     [contenteditable] {
       /* will match all elements with contenteditable attribute */
@@ -72,7 +73,7 @@
       <h1>Playground</h1>
       <p>You can modify the CSS rules below and your changes will update in real time. Have fun, play around!</p>
     </div>
-    <pre><code><style contenteditable>
+    <pre><code><style contenteditable id="html">
     body {
         margin: 0 auto;
     }
@@ -88,5 +89,9 @@
         padding: 1rem;
     }
         </style></code></pre>
+    <p><a href="playground.css" download="playground.css" id="download">Download Your CSS</a></p>
   </main>
+  <script>
+    console.log(document.getElementById('html').textContent)
+  </script>
 </body>
