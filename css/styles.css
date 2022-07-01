@@ -102,10 +102,17 @@ nav ul {
 
 nav ul li {
 	display: inline-block;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding: 0 .5rem;
 	position: relative;
 	text-align: left;
+}
+
+/* nav ul li:hover {
+	border: 1px solid black;
+} */
+
+nav ul li:hover a {
+	color: var(--color-purple);
 }
 
 /* Hover over main menu items */
@@ -123,6 +130,7 @@ nav ul li:hover ul {
 }
 
 nav ul li ul {
+	border: 1px solid black;
 	/* border-bottom: 1px solid black;
 	border-left: 1px solid black;
 	border-right: 1px solid black; */
@@ -135,8 +143,8 @@ nav ul li ul {
 	width: auto;
 }
 
-nav ul li ul li:hover {
-	background: lightgray;
+nav ul li ul li:hover a {
+	color: var(--color-pink);
 
 }
 
