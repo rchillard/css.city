@@ -137,7 +137,7 @@ nav ul li ul {
 	display: none;
 	height: auto;
 	left: 0px;
-	padding: .5rem 0 0 0;
+	padding: .5rem 0 .5rem 0;
 	position: absolute;
 	white-space: nowrap;
 	width: auto;
@@ -416,6 +416,7 @@ li.priority {
 	color: blueviolet;
 }
 
+
 #menu-title {
 	align-self: flex-start;
 	border: 2px solid darkorchid;
@@ -436,6 +437,27 @@ li.priority {
 }
 
 /* MEDIA QUERIES */
+
+/* Extra, extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+	body {
+		grid-template-columns: 2% 96% 2%;
+	}
+
+	#menu-title {
+		padding-left: 0;
+	}
+
+	#menu-title img {
+		padding-left: 0;
+	}
+
+	#menu-title span {
+		display: none;
+	}	
+
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
