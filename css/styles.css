@@ -23,10 +23,8 @@ a {
 body {
 	border-image: linear-gradient(to right, var(--color-purple), var(--color-pink)) 1;
 	border-top: solid 5px var(--color-purple);
-	display: grid;
-	grid-template-columns: 10% 80% 10%;
-	grid-template-rows: auto;
-	grid-template-areas: ". header ." ". main ." ". footer .";
+	display: flex;
+	flex-direction: column;
 	font-family: var(--font-stack);
 	overflow-x: hidden;
 	scrollbar-color: var(--color-purple) var(--color-pink);
@@ -42,8 +40,19 @@ details p {
 	margin-top: 1rem;
 }
 
+
+dl > div {
+	border: 1px solid black;
+	flex: 1 1 8ch;	
+	margin: 1px;
+	text-align: center;
+}
+
+dt, dd {
+	padding: 1px;
+}
+
 footer {
-	grid-area: footer;
 	height: 5rem;
 	text-align: center;
 }
@@ -67,9 +76,11 @@ h3 {
 }
 
 header {
-	grid-area: header;
-	margin-top: 1rem;
+	margin: 1rem auto;
+	padding: 1rem;
 	text-align: center;
+	max-width: 65ch;
+	width: 100%;
 }
 
 [hidden] {
@@ -79,14 +90,25 @@ header {
 figcaption {
 	font-size: 16px;
 	font-weight: bold;
-	text-align: left;
 	padding: .5rem;
+	text-align: left;
 }
 
 figure {
 	font-size: 14px;
 	margin: 0;
 	position: relative;
+}
+
+main {
+	margin: 0 auto;
+	max-width: clamp(360px, 65ch, 1100px);
+	padding: 0 1rem;
+	width: 100%;
+}
+
+main > * {
+	margin-top: 1rem;
 }
 
 nav {
@@ -107,18 +129,9 @@ nav ul li {
 	text-align: left;
 }
 
-/* nav ul li:hover {
-	border: 1px solid black;
-} */
-
 nav ul li:hover a {
-	color: var(--color-purple);
+	color: var(--color-blue);
 }
-
-/* Hover over main menu items */
-/* nav ul li:hover {
-	background-color: var(--color-purple);
-} */
 
 nav ul li a {
 	text-decoration: none;
@@ -131,9 +144,6 @@ nav ul li:hover ul {
 
 nav ul li ul {
 	border: 1px solid black;
-	/* border-bottom: 1px solid black;
-	border-left: 1px solid black;
-	border-right: 1px solid black; */
 	display: none;
 	height: auto;
 	left: 0px;
@@ -145,26 +155,11 @@ nav ul li ul {
 
 nav ul li ul li:hover a {
 	color: var(--color-pink);
-
 }
-
-/* Display list item decoration on hover */
-/* nav ul li ul li:hover:before {
-	content:"\2022";
-	margin-right: 5px;
-} */
 
 nav ul li ul li,
 nav ul li ul li a {
 	display: block;
-}
-
-main {
-	grid-area: main;
-}
-
-main > * {
-	margin-top: 1rem;
 }
 
 pre {
@@ -438,12 +433,8 @@ li.priority {
 
 /* MEDIA QUERIES */
 
-/* Extra, extra small devices (phones, 400px and down) */
-@media only screen and (max-width: 400px) {
-	body {
-		grid-template-columns: 2% 96% 2%;
-	}
-
+/* Extra, extra small devices (phones, 425px and down) */
+@media only screen and (max-width: 425px) {
 	#menu-title {
 		padding-left: 0;
 	}
@@ -455,37 +446,10 @@ li.priority {
 	#menu-title span {
 		display: none;
 	}	
-
-}
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-	body {
-		grid-template-columns: 3% 94% 3%;
-		/* width: 95vw; */
-		/* 570 px */
-	}
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-	body {
-		grid-template-columns: 5% 90% 5%;
-		/* width: 90vw; */
-		/* 540 px */
-	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-	body {
-		grid-template-columns: 12.5% 75% 12.5%;
-		/* width: 75vw; */
-		/* 576px */
-	}
-
 	html {
 		font-size: 105%;
 	}
@@ -493,12 +457,6 @@ li.priority {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	body {
-		grid-template-columns: 20% 60% 20%;
-		/* width: 60vw; */
-		/* 595.2 px */
-	}
-
 	html {
 		font-size: 110%;
 	}
@@ -506,12 +464,6 @@ li.priority {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	body {
-		grid-template-columns: 25% 50% 25%;
-		/* width: 50vw; */
-		/* 600 px */
-	}
-
 	html {
 		font-size: 115%;
 	}
