@@ -155,6 +155,42 @@
         }
       </code>
     </pre>
+    <h3>Fluid Typography</h3>
+    <p>You can read a library of articles online about different approaches to fluid typography. This approach is
+      intended to let you use your new found powers with clamp() to very rapidly make an HTML document have fluid
+      typography, without explaining or getting deeply into the underlying math.</p>
+    <p>Imagine a formula for font-size:</p>
+    <pre><code>font-size: clamp([min]rem, [v]vw + [r]rem, [max]rem);</code></pre>
+    <p>Where the variables are represented by:</p>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+      <mi>y</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mi>v</mi>
+        <mn>100</mn>
+      </mfrac>
+      <mo>&#x2217;</mo>
+      <mi>x</mi>
+      <mo>+</mo>
+      <mi>r</mi>
+    </math>
+    <ul>
+      <li>x — current viewport width value (px).</li>
+      <li>y — resulting fluid font size for a current viewport width value x (px).</li>
+      <li>v — viewport width value that affects fluid value change rate (vw).</li>
+      <li>r — relative size equal to browser font size. Default value is 16px.</li>
+    </ul>
+    <p>
+      This formula was sourced from <cite><a
+          href="https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/">Modern Fluid Typrography
+          Using CSS Clamp</a> by Adrian Bece.</cite>
+      You can also use Adrian's <a href="https://modern-fluid-typography.vercel.app/">Modern fluid typrography
+        editor.</a>
+    </p>
+    <p>Here are two different examples using clamp() to try:</p>
+    <pre><code>font-size: clamp(100%, 1rem + 2vw, 24px);</code></pre>
+    <pre><code>font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);</code></pre>
+    <p>Try each of these out and see how you can replace media queries to make your typography fluid.</p>
     <h3>Aspect Ratio</h3>
     Specifying the aspect ratio of a piece of media (image, video):
     <code>
@@ -231,6 +267,10 @@
       <button class="example-dropdown">Option 2</button>
       <button class="example-dropdown">Option 3</button>
     </button>
+    <h2>The new :has() function</h2>
+    <p>For now, read more about this with Jen Simmons excellent <a
+        href="https://webkit.org/blog/13096/css-has-pseudo-class/">introductory article</a>. This section will be
+      expanded upon in the future.</p>
     <h2>Sass</h2>
     <p>Sass is a style sheet preprocessor, which means it expands CSS syntax and then interprets your Sass files and
       preprocesses them into fully expressed CSS, which a browser can use. This adds a build step to your CSS.</p>
