@@ -53,8 +53,22 @@ dt, dd {
 }
 
 footer {
-	height: 5rem;
+	margin: 1rem auto;
+	padding: 1rem;
 	text-align: center;
+	max-width: 80ch;
+	width: 100%;
+}
+
+footer > nav > a {
+	text-decoration: none;
+}
+
+footer > nav > a > img {
+	display: inline-block;
+	height: 24px;
+	padding-left: .1ch;
+	vertical-align: text-top;
 }
 
 h1,
@@ -79,7 +93,7 @@ header {
 	margin: 1rem auto;
 	padding: 1rem;
 	text-align: center;
-	max-width: 65ch;
+	max-width: 80ch;
 	width: 100%;
 }
 
@@ -102,7 +116,7 @@ figure {
 
 main {
 	margin: 0 auto;
-	max-width: clamp(360px, 65ch, 1100px);
+	max-width: clamp(360px, 80ch, 1100px);
 	padding: 0 1rem;
 	width: 100%;
 }
