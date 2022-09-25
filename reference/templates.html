@@ -62,6 +62,22 @@
       A series of CSS templates that are free to use and help you get started. Each category of templates helps you get
       started with a sane set of defaults, but addresses different use cases and needs.
     </p>
+    <h2>Basic Goodness</h2>
+    <p>Inspired from <a href="https://gist.github.com/JoeyBurzynski/617fb6201335779f8424ad9528b72c41">a gist by
+        JoeyBurzynski</a>, this is a simple, reasonable way to get started with a website that renders well on most
+      displays:
+    </p>
+    <figure class="css">
+      <figcaption>CSS</figcaption>
+      <pre><code>html {
+  font-family: system-ui;
+  font-size: clamp(1em, 0.909em + 0.45vmin, 1.25em);
+  line-height: 1.75;
+  margin: auto;
+  max-width: 70ch;
+  padding: 3em 1em;
+}</code></pre>
+    </figure>
     <h2>Sane Defaults</h2>
     <p>This stylesheet takes regular HTML elements and apply what I call "sane defaults" to them, so they make more
       sense. This is basically:</p>
@@ -70,34 +86,39 @@
       <li>Making the u element appear as a red, wavy underlined word (as a spellchecked word)</li>
     </ul>
 
-    <textarea rows="10">
-  kbd {
-    border-radius: 3px;
-    padding: 1px 2px 0;
-    border: 1px solid black;
-  }
+    <figure class="css">
+      <figcaption>CSS</figcaption>
+      <pre><code>kbd {
+  border-radius: 3px;
+  padding: 1px 2px 0;
+  border: 1px solid black;
+}
   
-  u {
-    text-decoration: red wavy underline;
-  }  
-</textarea>
+u {
+  text-decoration: red wavy underline;
+}</code></pre>
+    </figure>
 
-    <figure class="code">
-      <textarea rows="11">
-<!-- HTML -->
-<header>
-  <p>This is your header</p>
-</header>
-<main>
-  <h1>This is Your H1</h1>
-</main>
-<footer>
-  <p>This is your footer</p>
-</footer>
-</textarea>
-      <textarea rows="11">
-/* CSS */
-body {
+    <h2>Layout using CSS Grid</h2>
+    <p>This layout resizes with the viewport using CSS grid. It's more verbose than using clamp(),
+      but it also allows you finer control over breakpoints.</p>
+    <figure class="html">
+      <figcaption>HTML</figcaption>
+      <textarea rows=10 readonly>
+        <header>
+          <p>This is your header</p>
+        </header>
+        <main>
+          <h1>This is Your H1</h1>
+        </main>
+        <footer>
+          <p>This is your footer</p>
+        </footer>
+      </textarea>
+    </figure>
+    <figure class="css">
+      <figcaption>CSS</figcaption>
+      <pre><code><style contenteditable>body {
   display: grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: auto;
@@ -153,8 +174,7 @@ footer {
     body {
       grid-template-columns: 25% 50% 25%;
     }
-}
-    </textarea>
+}</style></code></pre>
     </figure>
 
   </main>
