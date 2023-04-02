@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Diagram</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .box-model {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .margin,
+        .border,
+        .padding,
+        .content {
+            font-weight: bold;
+            margin: 1vb auto;
+            border: 1px solid black;
+            text-transform: uppercase;
+        }
+
+        .margin {
+            block-size: 30vb;
+            inline-size: 30vi;
+            background-color: lightyellow;
+
+        }
+
+        .border {
+            block-size: 25vb;
+            inline-size: 25vi;
+            background-color: gray;
+        }
+
+        .padding {
+            block-size: 20vb;
+            inline-size: 20vi;
+            background-color: lightpink;
+        }
+
+        .content {
+            block-size: 15vb;
+            inline-size: 15vi;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-model">
+        <div class="margin">
+            Margin
+            <div class="border">
+                Border
+                <div class="padding">
+                    Padding
+                    <div class="content">
+                        Content
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

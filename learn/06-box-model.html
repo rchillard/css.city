@@ -64,6 +64,55 @@
     <p>You can add a <strong>border</strong> around the outside of the content and padding.</p>
     <p>You can create additional invisible space around the border with <strong>margin</strong>.</p>
     <p>This is the box model.</p>
+
+    <h2>Basic Box Model</h2>
+    <p>
+      The total width and height of an element's box are calculated by summing the content, padding, border, and margin
+      values. Understanding the CSS box model is crucial for creating layouts and positioning elements on a web page. By
+      manipulating the box model's components, you can control the appearance, spacing, and alignment of elements in
+      your design.
+    </p>
+    <h2>Logical Properties</h2>
+    <p>
+      The CSS Logical Property model is an extension of the CSS Box Model that considers the writing mode and direction
+      of a document. It provides a more natural and flexible way to style elements by adapting to the text flow of
+      different languages and layouts.
+    </p>
+    <p>
+      In the Logical Property model, dimensions, margins, paddings, and borders are defined using the writing
+      mode-relative terms "block" and "inline," rather than the traditional physical terms "top," "right," "bottom," and
+      "left." This allows styles to automatically adjust when the writing mode or direction changes, such as when
+      switching from left-to-right (LTR) to right-to-left (RTL) languages or from horizontal to vertical writing.
+    </p>
+    <p>
+      Here are the key concepts in the CSS Logical Property model:
+    </p>
+    <ul>
+      <li><strong>Writing Modes</strong>: The writing mode defines the direction in which lines of text are stacked.
+        Examples include
+        horizontal-tb (default), vertical-rl, and vertical-lr.</li>
+      <li><strong>Directionality</strong>: The directionality refers to the direction in which text flows within a line,
+        such as
+        left-to-right (LTR) or right-to-left (RTL).</li>
+      <li><strong>Block</strong>: The block direction refers to the direction in which lines of text are stacked. In a
+        horizontal
+        writing
+        mode, this would correspond to the vertical axis (top to bottom).</li>
+      <li><strong>Inline</strong>: The inline direction refers to the direction in which text flows within a line. In a
+        horizontal
+        writing
+        mode, this would correspond to the horizontal axis (left to right or right to left).</li>
+    </ul>
+    <p>
+      CSS Logical Properties provide a more intuitive way to style elements by focusing on the document's structure and
+      flow. This makes it easier to create responsive designs that work well with different writing systems, languages,
+      and layout orientations.
+    </p>
+    <p>
+      Using logical properties in your stylesheets helps ensure your designs are flexible and adaptable, providing a
+      better user experience for diverse audiences and devices.
+    </p>
+
     <div class="tutorial-navigation">
       <a class="button back" href="05-positioning.html"><i class="arrow left"></i>Back</a>
       <a class="button forward" href="07-layout.html"><strong>Next:</strong> Layout <i class="arrow right"></i></a>
