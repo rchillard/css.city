@@ -27,7 +27,7 @@ body {
 	flex-direction: column;
 	font-family: var(--font-stack);
 	overflow-x: hidden;
-	scrollbar-color: var(--color-purple) var(--color-pink);
+	/* scrollbar-color: var(--color-purple) var(--color-pink); */
 }
 
 details {
