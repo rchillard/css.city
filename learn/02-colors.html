@@ -72,27 +72,29 @@
       Each format has advantages and disadvantages. For starters, let's see the same named color, royalblue, in all the
       formats:
     </p>
-    <pre>
-      <code>
-  p {
-    color: royalblue;
-  }
-
-  /* Hexadecimal */
-  p {
-    color: #4169e1;
-  }
-
-  /* Hue, Saturation, Lightness */
-  p {
-    color: hsl(225, 73%, 57%);
-  }
-
-  /* Red, Green Blue */
-  p {
-    color: rgb(65, 105, 225);
-  }
-      </code></pre>
+    <div class="code">
+      <figure class="css">
+        <figcaption>CSS </figcaption>
+        <pre><code>/* Hexadecimal */
+p {
+  color: #4169e1;
+}</code></pre>
+      </figure>
+      <figure class="css">
+        <figcaption>CSS </figcaption>
+        <pre><code>/* Hue, Saturation, Lightness */
+p {
+  color: hsl(225, 73%, 57%);
+}</code></pre>
+      </figure>
+      <figure class="css">
+        <figcaption>CSS </figcaption>
+        <pre><code>/* Red, Green Blue */
+p {
+  color: rgb(65, 105, 225);
+}</code></pre>
+      </figure>
+    </div>
     <p>
       Each one of the rules above will make the paragraph elements on a page the same color blue. So if they're all the
       same, you're probably wondering, why does CSS offer so
@@ -309,13 +311,12 @@
     </p>
     <p>Without knowing what saturation or lightness do, can you look at the CSS rule below and the hue value to guess
       the color?</p>
-    <pre>
-  <code>
-  p {
+      <figure class="css">
+        <figcaption>CSS </figcaption>
+        <pre><code>p {
     color: hsl(230,75%,90%);
-  }
-  </code>
-</pre>
+}</code></pre>
+  </figure>
     <details>
       <summary>Guess the color before expanding this paragraph! Remember to use the color wheel for reference.</summary>
       <p style="color: #3956E6">
@@ -411,13 +412,12 @@
       It's now easier for us to return to our original guessing example and see how the different values effect the
       color rendered:
     </p>
-    <pre>
-  <code>
-  p {
+    <figure class="css">
+      <figcaption>CSS </figcaption>
+      <pre><code>p {
     color: hsl(230,75%,90%);
-  }
-  </code>
-</pre>
+}</code></pre>
+    </figure>
     <p style="color: #3956E6">
       We definitely have a blue (hue = 230), there's a lot of blue (saturation = 75%), and it's a bright shade of blue
       (lightness = 90%).
@@ -467,11 +467,12 @@
     </details>
     <p>That was probably pretty difficult to guess though, right?</p>
     <p>Imagine if you saw a color defined like this:</p>
-    <pre><code>
-  p {
+    <figure class="css">
+      <figcaption>CSS </figcaption>
+      <pre><code>p {
     color: rgb(65, 105, 225);
-  }
-    </code></pre>
+  }</code></pre>
+    </figure>
     <p>Any idea what color that might be?</p>
     <p>
       There's about 25% of the possible red, 40% of the possible green, and a large amount of blue 90%ish. It's probably
@@ -504,21 +505,23 @@
       (invisible) and 1 representing full color (no transparency). This royalblue definition using rgba is the same as
       not specifying alpha:
     </p>
-    <pre><code>
-  p {
+    <figure class="css">
+      <figcaption>CSS </figcaption>
+      <pre><code>p {
     color: rgba(65, 105, 225, 1)
-  }
-    </code></pre>
+}</code></pre>
+    </figure>
     <p>
       The alpha channel is typically used for backgrounds, because it allows you to blend different colors together on
       multiple layers.
     </p>
-    <pre><code>
-  p {
+    <figure class="css">
+      <figcaption>CSS </figcaption>
+      <pre><code>p {
     background-color: hsla(30, 75%, 57%, 0.25);
     color: hsla(225, 73%, 57%, 0.75);
-  }
-    </code></pre>
+}</code></pre>
+    </figure>
     <p class="ex-alphachannel">
       Blending color with alpha opens another door to displaying elements together using CSS!
     </p>

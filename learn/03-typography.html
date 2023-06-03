@@ -72,20 +72,20 @@
     </p>
 
     <div class="code">
-      <figure>
+      <figure class="html">
         <figcaption>HTML</figcaption>
         <textarea rows="6" readonly>
 <p class="font-family-1">The weight of a particular font is the thickness of the character outlines relative to their height.</p>
           </textarea>
       </figure>
-      <figure>
+      <figure class="css">
         <figcaption>CSS</figcaption>
         <pre><code><style contenteditable>.font-family-1 {
   font-family: "Arial";
 }
           </style></code></pre>
       </figure>
-      <figure>
+      <figure class="display">
         <figcaption>Display</figcaption>
         <p class="font-family-1">The weight of a particular font is the thickness of the character outlines relative
           to their height.</p>
@@ -99,20 +99,20 @@
     <h3>Size</h3>
     <p>Try changing the value of font-size below to make the size larger. I bet you can intuit how:</p>
     <div class="code">
-      <figure>
+      <figure class="html">
         <figcaption>HTML</figcaption>
         <textarea rows="7" readonly>
 <p class="font-size-1">Optical sizes are more common for serif fonts, since their typically finer detail and higher contrast benefits more from being bulked up for smaller sizes and made less overpowering at larger ones.</p>
           </textarea>
       </figure>
-      <figure>
+      <figure class="css">
         <figcaption>CSS</figcaption>
         <pre><code><style contenteditable>.font-size-1 {
   font-size: 14px;
 }
           </style></code></pre>
       </figure>
-      <figure>
+      <figure class="display">
         <figcaption>Display</figcaption>
         <p class="font-size-1">Optical sizes are more common for serif fonts, since their typically finer detail and
           higher contrast benefits more from being bulked up for smaller sizes and made less overpowering at larger
@@ -135,20 +135,20 @@
     <h3>Style</h3>
     <p>Try changing the value of font-style below to "italic" or "oblique" to see how the text changes:</p>
     <div class="code">
-      <figure>
+      <figure class="html">
         <figcaption>HTML</figcaption>
         <textarea rows="7" readonly>
 <p class="font-style-1">In European typefaces, especially Roman ones, a slope or slanted style is used to emphasize important words. This is called italic type or oblique type.</p>
           </textarea>
       </figure>
-      <figure>
+      <figure class="css">
         <figcaption>CSS</figcaption>
         <pre><code><style contenteditable>.font-style-1 {
   font-style: normal;
 }
           </style></code></pre>
       </figure>
-      <figure>
+      <figure class="display">
         <figcaption>Display</figcaption>
         <p class="font-style-1">In European typefaces, especially Roman ones, a slope or slanted style is used to
           emphasize important words. This is called italic type or oblique type. </p>
@@ -161,20 +161,20 @@
     <p>Try changing the value of font-weight below to <span style="font-weight: 700;">700</span> or <span
         style="font-weight: 900;">900</span> to see how heavy the text becomes:</p>
     <div class="code">
-      <figure>
+      <figure class="html">
         <figcaption>HTML</figcaption>
         <textarea rows="7" readonly>
 <p class="font-weight-1">A typeface may come in fonts of many weights, from ultra-light to extra-bold or black; four to six weights are not unusual, and a few typefaces have as many as a dozen.</p>
           </textarea>
       </figure>
-      <figure>
+      <figure class="css">
         <figcaption>CSS</figcaption>
         <pre><code><style contenteditable>.font-weight-1 {
   font-weight: 500;
 }
           </style></code></pre>
       </figure>
-      <figure>
+      <figure class="display">
         <figcaption>Display</figcaption>
         <p class="font-weight-1">A typeface may come in fonts of many weights, from ultra-light to extra-bold or black;
           four to six weights are not unusual, and a few typefaces have as many as a dozen.</p>
@@ -283,29 +283,31 @@
       into a sans-serif font, if that individual font is not available on a user's computer.
     </p>
     <p>Here are example font stacks for each font family we discussed:</p>
-    <textarea rows="4">
-.serif {
+    <figure class="css">
+      <figcaption>CSS</figcaption>
+      <pre><code>.serif {
   font-family: Times, Times New Roman, Georgia, serif;
-}
-    </textarea>
+}</code></pre>
+    </figure>
+
     <p style="font-family: Times, Times New Roman, Georgia, serif">The quick brown fox jumps over the lazy dog.</p>
-    <br>
-    <textarea rows="4">
-.sans-serif {
+    <figure class="css">
+      <figcaption>CSS</figcaption>
+      <pre><code>.sans-serif {
   font-family: Verdana, Arial, Helvetica, sans-serif;
-} 
-    </textarea>
+}</code></pre>
+    </figure>
     <p style="font-family: Verdana, Arial, Helvetica, sans-serif">The quick brown fox jumps over the lazy dog.</p>
-    <br>
-    <textarea rows="4">
-.monospace {
+    <figure class="css">
+      <figcaption>CSS</figcaption>
+      <pre><code>.monospace {
   font-family: Lucida Console, Courier, monospace;
 }
-    </textarea>
+      </code></pre>
+    </figure>
     <p style="font-family: Lucida Console, Courier, monospace">The quick brown fox jumps over the lazy dog.</p>
-    <br>
     <h2>Bonus</h2>
-    <p>Why is the sentence "The quick brown fox jumps over the lazy dog." used for displaying fonts?</p>
+    <p>Why is the sentence "The quick brown fox jumps over the lazy dog." used for font display?</p>
     <details>
       <summary>Can you guess before you see the answer?</summary>
       <p>
