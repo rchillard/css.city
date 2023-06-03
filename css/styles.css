@@ -36,9 +36,9 @@ details {
 	padding: .5rem;
 }
 
-details p {
+/* details p {
 	margin-top: 1rem;
-}
+} */
 
 dl > div {
 	border: 1px solid black;
@@ -417,6 +417,10 @@ li.priority {
 .right {
 	transform: rotate(-45deg);
 	-webkit-transform: rotate(-45deg);
+}
+
+.test {
+	background-color: #2;
 }
 
 #call-to-action {
