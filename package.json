@@ -1,0 +1,27 @@
+{
+  "name": "css.city",
+  "version": "1.0.0",
+  "description": "Website for illustrating the world of CSS possibilities. This site builds on [HTML.Haus](https://html.haus/), which will teach you HTML. Start there if you haven't learned HTML yet. If HTML is the haus ('house') or structure of webpages, then CSS is the paint, the lights, the trim, the style for houses, which makes the beautiful city that is the web possible.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "stylelint": "^15.4.0",
+    "stylelint-config-idiomatic-order": "^9.0.0",
+    "stylelint-config-standard": "^32.0.0",
+    "stylelint-order": "^6.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rchillard/css.city.git"
+  },
+  "keywords": [],
+  "author": "RCH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rchillard/css.city/issues"
+  },
+  "homepage": "https://github.com/rchillard/css.city#readme"
+}
