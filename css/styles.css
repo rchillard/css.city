@@ -414,6 +414,37 @@ li.priority {
 	grid-template-rows: auto;
 }
 
+.quote {
+	background: #EDEDED;
+	border-left: 8px solid var(--color-purple);
+	color: #555555;
+	font-style: italic;
+	margin: 50px auto;
+	padding:1.2em 30px 1.2em 75px;
+	position: relative;
+}
+  
+.quote::before {
+	content: "\201C";
+	color: var(--color-purple);
+	font-size: 4em;
+	position: absolute;
+	left: 10px;
+	top: -10px;
+}
+  
+.quote::after {
+	content: '';
+}
+  
+.quote span{
+	display: block;
+	color: #333333;
+	font-style: normal;
+	font-weight: bold;
+	margin-top: 1em;
+}
+
 .right {
 	transform: rotate(-45deg);
 	-webkit-transform: rotate(-45deg);
